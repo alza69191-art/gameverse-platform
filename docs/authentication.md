@@ -16,3 +16,22 @@ Passwords are stored as salted scrypt hashes. Registration always assigns the `p
 ## Current security scope
 
 This is the first authentication foundation, not a complete production security certification. Before public launch, add distributed rate limiting, email verification and password reset, CSRF protection for any future cross-site state-changing flows, audit logging, and security tests. Uploaded game files must be stored outside the application filesystem and scanned before review or publication.
+
+
+## Database rate limiting
+
+Apply `database/migrations/003_rate_limits.sql` in TiDB. Login and registration requests are limited by HMAC-hashed IP/email buckets; raw identifiers are not stored in the rate-limit table. The limits are conservative defaults and should be monitored and adjusted based on abuse patterns.
+
+## Player endpoints
+
+- `GET /api/v1/auth/me` — current session.
+- `GET /api/v1/users/me/favorites` — saved games.
+- `GET /api/v1/users/me/history` — play history.
+- `GET /api/v1/users/me/notifications` — account notifications.
+- `POST /api/v1/users/me/notifications` — mark one notification as read.
+
+Apply `database/migrations/004_community_moderation.sql` before using favorites, reviews, comments, reports, play history, notifications or admin audit screens.
+
+## Administrative access
+
+The first administrator is bootstrapped manually in TiDB after creating a player account. Do not add public admin registration. Admin actions are authorized on the server and written to `admin_audit_logs`.
