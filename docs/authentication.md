@@ -35,3 +35,6 @@ Apply `database/migrations/004_community_moderation.sql` before using favorites,
 ## Administrative access
 
 The first administrator is bootstrapped manually in TiDB after creating a player account. Do not add public admin registration. Admin actions are authorized on the server and written to `admin_audit_logs`.
+
+
+Apply `database/migrations/005_revocable_sessions.sql` before enabling account registration. It stores only SHA-256 hashes of random session tokens and supports server-side logout revocation. New passwords use scrypt with N=2^17, r=8 and p=1; old hashes remain verifiable for migration compatibility.
