@@ -6,7 +6,7 @@ This document records the current external discovery sources. A link in the publ
 
 | Source | What is listed | Current handling |
 |---|---|---|
-| Kenney on itch.io | Browser-playable/free titles shown on the creator's page, including Solitaire, Pixepal, KeyCars and other titles | Discovery link only. Open the individual game page and confirm its current terms before embedding, copying, or hosting files. |
+| Kenney on itch.io | Browser-playable/free titles shown on the creator's page, including Solitaire, Pixepal, KeyCars and other titles | Discovery link only. Open the individual game page and confirm its current terms before embedding, copying, or hosting files. |\n| MadKidGames | Third-party HTML5 games with generated iframe URLs, including selected 3D driving, racing, sports and flight titles | MadKidGames states embedding is free, but each game page requires its ads.txt declaration and domain approval by email. Keep its iframe hosted remotely, preserve attribution, and do not copy game binaries or imply ownership. Re-check terms and frame availability periodically. |
 
 ## Developer assets
 
@@ -31,3 +31,18 @@ This document records the current external discovery sources. A link in the publ
 ## Important distinction
 
 A source being free to download does not automatically grant GameVerse permission to re-host or redistribute it. Until rights are verified, catalogue entries link to the original publisher and do not serve third-party binaries from GameVerse.
+
+
+## MadKidGames embed conditions
+
+The selected catalogue entries are embeds, not MIT/CC0 source-code licences. MadKidGames' embed instructions say embedding is allowed free of charge, but each game page also requires this publisher record in the site's root `ads.txt` file:
+
+```text
+#MADKIDGAMES google.com, pub-2328712687113561, DIRECT, f08c47fec0942fa0
+```
+
+After deployment, the site owner must email the production domain to `[email protected]` for approval. The domain must not be treated as approved until the provider confirms it. Keep visible source attribution and provide a direct link to the original game page. If a game is removed, blocked, or its terms change, remove or replace the catalogue entry.
+
+## Third-party mobile/desktop store links
+
+The GameVerse Store page links to official Google Play, Apple App Store, and Steam product pages only. GameVerse does not host or repackage those installers, and availability, price, age rating, device compatibility and in-app purchases remain controlled by each store and publisher.
