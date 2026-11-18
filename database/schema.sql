@@ -93,3 +93,23 @@ CREATE TABLE IF NOT EXISTS asset_resources (
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT fk_asset_source FOREIGN KEY (source_id) REFERENCES catalog_sources(id)
 );
+
+-- Authentication and abuse-prevention tables required by lib/auth.ts and lib/rate-limit.ts.
+CREATE TABLE IF NOT EXISTS user_sessions (
+  token_hash CHAR(64) NOT NULL PRIMARY KEY,
+  user_id BIGINT UNSIGNED NOT NULL,
+  expires_at TIMESTAMP NOT NULL,
+  revoked_at TIMESTAMP NULL,
+  last_seen_at TIMESTAMP NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY idx_user_sessions_user (user_id),
+  KEY idx_user_sessions_expiry (expires_at),
+  CONSTRAINT fk_user_sessions_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS rate_limit_buckets (
+  bucket_key CHAR(64) NOT NULL PRIMARY KEY,
+  window_start TIMESTAMP NOT NULL,
+  hits INT UNSIGNED NOT NULL DEFAULT 0,
+  KEY idx_rate_limit_window (window_start)
+);
