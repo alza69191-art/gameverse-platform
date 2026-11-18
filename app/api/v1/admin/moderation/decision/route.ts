@@ -25,11 +25,16 @@ export async function POST(request: NextRequest) {
     connection = await getDbPool().getConnection();
     await connection.beginTransaction();
     const table = type === "comment" ? "game_comments" : type === "review" ? "game_reviews" : "game_reports";
-    const [rows] = await connection.execute(`SELECT id, user_id FROM ${table} WHERE id = ? FOR UPDATE`, [id]);
-    const item = (rows as Array<{id:number;user_id:number|bigint}>)[0];
+    const [rows] = await connection.execute(`SELECT id, user_id, status FROM ${table} WHERE id = ? FOR UPDATE`, [id]);
+    const item = (rows as Array<{id:number;user_id:number|bigint;status:string}>)[0];
     if (!item) {
       await connection.rollback();
       return NextResponse.json({ error: "العنصر غير موجود" }, { status: 404 });
+    }
+    const allowedStatus = type === "report" ? ["open","in_review"] : ["pending"];
+    if (!allowedStatus.includes(item.status)) {
+      await connection.rollback();
+      return NextResponse.json({ error: "تمت معالجة هذا العنصر مسبقاً" }, { status: 409 });
     }
 
     if (type === "comment" || type === "review") {
