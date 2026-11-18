@@ -13,7 +13,9 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "mysql2": "^3.14.0",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "@aws-sdk/client-s3": "^3.850.0",
+    "@aws-sdk/s3-request-presigner": "^3.850.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
