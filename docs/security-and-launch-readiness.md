@@ -39,6 +39,7 @@ Run these SQL files against the `gameverse` database, in order, before enabling 
 3. `database/migrations/003_rate_limits.sql`
 4. `database/migrations/004_community_moderation.sql`
 5. `database/migrations/005_revocable_sessions.sql`
+6. `database/migrations/006_admin_bootstrap_audit.sql`
 
 The application cannot prove that these migrations have been applied merely because the Render service starts. Confirm the tables exist before accepting registrations:
 - `users`
@@ -74,3 +75,14 @@ Do not declare the platform production-ready until:
 - dependency, secret, static-analysis and penetration tests are reviewed;
 - backup/restore and incident response are tested;
 - desktop/mobile and cross-browser end-to-end tests pass.
+
+
+## Create the first administrator
+
+There is no default administrator account. First register a normal account at the player site and verify that the email is yours. After applying migration 006, run the one-time CLI from a trusted local environment with the TiDB connection string supplied through the shell environment (never commit it):
+
+```bash
+BOOTSTRAP_ADMIN_CONFIRM_EMAIL="your-real-email@example.com" DATABASE_URL="your-TiDB-connection-string" node scripts/bootstrap-admin.mjs "your-real-email@example.com"
+```
+
+The script only works when there is no active administrator, requires the confirmation email to match exactly, and upgrades an existing active player account. It does not create a password or a new account. After the first administrator signs in, additional role changes should be made from the admin portal and are recorded in the audit log.
