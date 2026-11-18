@@ -6,9 +6,6 @@ on:
       - "scripts/sync-fdroid-catalog.mjs"
       - "scripts/sync-openuse-catalog.mjs"
       - "scripts/discover-open-source-games.mjs"
-      - "data/fdroid-catalog.json"
-      - "data/openuse-catalog.json"
-      - "data/game-candidates.json"
       - ".github/workflows/refresh-all-catalogues.yml"
   workflow_dispatch:
   schedule:
