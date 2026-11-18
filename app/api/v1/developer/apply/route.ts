@@ -4,6 +4,21 @@ import { getDbPool } from "@/lib/db";
 
 export const runtime = "nodejs";
 
+export async function GET(request: NextRequest) {
+  try {
+    const user = await getAuthenticatedUser(request);
+    if (!user) return NextResponse.json({ error: "سجّل الدخول أولاً" }, { status: 401 });
+    const [rows] = await getDbPool().execute(
+      "SELECT id, studio_name AS studioName, status, review_notes AS reviewNotes, created_at AS createdAt, reviewed_at AS reviewedAt FROM developer_applications WHERE user_id = ? LIMIT 1",
+      [user.id]
+    );
+    return NextResponse.json({ application: (rows as unknown[])[0] ?? null, role: user.role }, { headers: { "Cache-Control": "no-store" } });
+  } catch (error) {
+    console.error("Developer application status failed:", error);
+    return NextResponse.json({ error: "تعذر تحميل حالة الطلب" }, { status: 500 });
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     if (!isSameOrigin(request)) return NextResponse.json({ error: "طلب غير مسموح" }, { status: 403 });
@@ -26,8 +41,8 @@ export async function POST(request: NextRequest) {
     }
 
     const pool = getDbPool();
-    const [existing] = await pool.execute("SELECT id, status FROM developer_applications WHERE user_id = ? LIMIT 1", [user.id]);
-    if ((existing as Array<{id:number;status:string}>).length)
+    const [existing] = await pool.execute("SELECT id FROM developer_applications WHERE user_id = ? LIMIT 1", [user.id]);
+    if ((existing as unknown[]).length)
       return NextResponse.json({ error: "لديك طلب مطوّر مسجل مسبقاً" }, { status: 409 });
     await pool.execute(
       "INSERT INTO developer_applications (user_id, studio_name, portfolio_url, contact_email, description) VALUES (?, ?, ?, ?, ?)",
