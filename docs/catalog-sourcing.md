@@ -46,3 +46,14 @@ After deployment, the site owner must email the production domain to `[email pr
 ## Third-party mobile/desktop store links
 
 The GameVerse Store page links to official Google Play, Apple App Store, and Steam product pages only. GameVerse does not host or repackage those installers, and availability, price, age rating, device compatibility and in-app purchases remain controlled by each store and publisher.
+
+
+## Other platforms reviewed (not bulk-imported)
+
+| Platform | Finding | GameVerse decision |
+|---|---|---|
+| GameDistribution | Its publisher/developer partnership requires registration and mandatory SDK/ad integration for submitted games; it is not a blanket free public iframe catalogue for arbitrary third-party games. | Do not add games until a formal publisher agreement and approved embed/API terms are obtained. |
+| Famobi | Its official shop offers a paid Web & App Integration licence with an embed link; it also offers subscription licensing. | Keep as a future paid catalogue source; do not claim its games are free to embed. |
+| itch.io | It supports HTML5 games embedded through the publisher's project page, but each creator controls the rights and terms. | Add individual titles only after verifying the exact game's licence and whether commercial embedding/rehosting is allowed. |
+| Three.js Resources | It is a discovery/tutorial resource for building browser games, not a blanket licence for every linked game. | Use as a lead source; check each project's repository and licence separately. |
+| GitHub examples | A repository marked MIT can still have incomplete demos, missing asset rights or no working hosted build. | Import only after checking source, complete build, licence, assets, attribution and browser compatibility. The linked basic-3d-car-game repository currently documents a faux-3D CSS game and placeholder demo, so it is not imported as a polished 3D title. |
