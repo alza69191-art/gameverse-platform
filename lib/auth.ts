@@ -66,7 +66,7 @@ export async function getSessionUser(token?: string | null) {
   const tokenHash = createHash("sha256").update(token).digest("hex");
   const pool = getDbPool();
   const [rows] = await pool.execute(
-    "SELECT u.id, u.email, u.display_name, u.role, u.status, s.token_hash FROM user_sessions s JOIN users u ON u.id = s.user_id WHERE s.token_hash = ? AND s.revoked_at IS NULL AND s.expires_at > CURRENT_TIMESTAMP AND u.status = 'active' LIMIT 1",
+    "SELECT u.id, u.email, u.display_name, u.role, u.status, s.token_hash FROM user_sessions s JOIN users u ON u.id = s.user_id WHERE s.token_hash = ? AND s.revoked_at IS NULL AND s.expires_at > CURRENT_TIMESTAMP AND (s.last_seen_at IS NULL OR s.last_seen_at > DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 24 HOUR)) AND u.status = 'active' LIMIT 1",
     [tokenHash]
   );
   const user = (rows as Array<{id:number|bigint;email:string;display_name:string;role:"player"|"developer"|"admin";status:string;token_hash:string}>)[0];
