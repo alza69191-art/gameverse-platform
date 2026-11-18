@@ -1,0 +1,26 @@
+name: Apply GameVerse database migrations
+on:
+  workflow_dispatch:
+    inputs:
+      backup_confirmed:
+        description: "I have a current TiDB backup and authorize applying the idempotent schema migrations."
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  migrate:
+    if: inputs.backup_confirmed == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install database client
+        run: npm install --no-save mysql2
+      - name: Apply and verify schema
+        env:
+          GAMEVERSE_DATABASE_URL: \${{ secrets.GAMEVERSE_DATABASE_URL }}
+        run: node scripts/apply-migrations.mjs
