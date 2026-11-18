@@ -1,9 +1,15 @@
 import "server-only";
 import { createHash, randomBytes, scrypt as scryptCallback, timingSafeEqual } from "node:crypto";
-import { promisify } from "node:util";
 import { getDbPool } from "@/lib/db";
 
-const scrypt = promisify(scryptCallback);
+function deriveScrypt(password: string, salt: Buffer, keyLength: number, options: { N: number; r: number; p: number; maxmem: number }) {
+  return new Promise<Buffer>((resolve, reject) => {
+    scryptCallback(password, salt, keyLength, options, (error, derived) => {
+      if (error) reject(error);
+      else resolve(derived as Buffer);
+    });
+  });
+}
 const SESSION_COOKIE = "gv_session";
 const SESSION_SECONDS = 60 * 60 * 24 * 7;
 const SCRYPT_N = 1 << 17;
@@ -13,7 +19,7 @@ const SCRYPT_MAXMEM = 256 * 1024 * 1024;
 
 export async function hashPassword(password: string) {
   const salt = randomBytes(16);
-  const derived = (await scrypt(password, salt, 64, {
+  const derived = (await deriveScrypt(password, salt, 64, {
     N: SCRYPT_N, r: SCRYPT_R, p: SCRYPT_P, maxmem: SCRYPT_MAXMEM
   })) as Buffer;
   return `scrypt$${SCRYPT_N}$${SCRYPT_R}$${SCRYPT_P}$${salt.toString("base64url")}$${derived.toString("base64url")}`;
@@ -38,7 +44,7 @@ export async function verifyPassword(password: string, stored: string) {
     const expected = Buffer.from(hashText, "base64url");
     const salt = Buffer.from(saltText, "base64url");
     if (expected.length !== 64 || salt.length !== 16) return false;
-    const actual = (await scrypt(password, salt, expected.length, {
+    const actual = (await deriveScrypt(password, salt, expected.length, {
       N: n, r, p, maxmem: SCRYPT_MAXMEM
     })) as Buffer;
     return timingSafeEqual(actual, expected);
