@@ -3,10 +3,11 @@ import baseCatalog from "@/data/store-catalog.json";
 import fdroidCatalog from "@/data/fdroid-catalog.json";
 import openuseCatalog from "@/data/openuse-catalog.json";
 import gameCatalog from "@/data/game-catalog.json";
+import homebrewCatalog from "@/data/homebrew-catalog.json";
 import {getDbPool} from "@/lib/db";
 export const runtime="nodejs";export const dynamic="force-dynamic";
 export async function GET(){
- const items=[...(baseCatalog.items??[]),...((fdroidCatalog.items??[]) as typeof baseCatalog.items),...((openuseCatalog.items??[]) as typeof baseCatalog.items),...((gameCatalog.items??[]) as typeof baseCatalog.items)];
+ const items=[...(baseCatalog.items??[]),...((fdroidCatalog.items??[]) as typeof baseCatalog.items),...((openuseCatalog.items??[]) as typeof baseCatalog.items),...((gameCatalog.items??[]) as typeof baseCatalog.items),...((homebrewCatalog.items??[]) as typeof baseCatalog.items)];
  try{
   const [rows]=await getDbPool().execute("SELECT item_type AS type,title,slug,description,platform,source_url AS sourceUrl,download_url AS downloadUrl,license,license_url AS licenseUrl FROM catalog_submissions WHERE status='approved' ORDER BY title LIMIT 5000");
   for(const x of rows as any[]){
@@ -16,5 +17,5 @@ export async function GET(){
  const unique=new Map<string,any>();
  for(const x of items as any[])unique.set(x.id||x.slug||x.title,x);
  const result=[...unique.values()];
- return NextResponse.json({items:result,total:result.length,sources:{curated:baseCatalog.items?.length??0,fdroid:fdroidCatalog.items?.length??0,openuse:openuseCatalog.items?.length??0,games:gameCatalog.items?.length??0,community:"database"}},{headers:{"Cache-Control":"public, max-age=300, stale-while-revalidate=1800"}})
+ return NextResponse.json({items:result,total:result.length,sources:{curated:baseCatalog.items?.length??0,fdroid:fdroidCatalog.items?.length??0,openuse:openuseCatalog.items?.length??0,games:gameCatalog.items?.length??0,homebrew:homebrewCatalog.items?.length??0,community:"database"}},{headers:{"Cache-Control":"public, max-age=300, stale-while-revalidate=1800"}})
 }
