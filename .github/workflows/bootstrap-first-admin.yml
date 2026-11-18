@@ -1,0 +1,33 @@
+name: Bootstrap first GameVerse administrator
+on:
+  workflow_dispatch:
+    inputs:
+      admin_email:
+        description: "Email address of an existing active GameVerse player account"
+        required: true
+        type: string
+      confirm_no_admin:
+        description: "I confirm that GameVerse currently has no active administrator."
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  bootstrap:
+    if: inputs.confirm_no_admin == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install database client
+        run: npm install --no-save mysql2
+      - name: Promote existing player account
+        env:
+          GAMEVERSE_DATABASE_URL: \${{ secrets.GAMEVERSE_DATABASE_URL }}
+          DATABASE_URL: \${{ secrets.GAMEVERSE_DATABASE_URL }}
+          BOOTSTRAP_ADMIN_EMAIL: \${{ inputs.admin_email }}
+          BOOTSTRAP_ADMIN_CONFIRM_EMAIL: \${{ inputs.admin_email }}
+        run: node scripts/bootstrap-admin.mjs
