@@ -28,7 +28,12 @@ export function isSameOrigin(request: NextRequest) {
   const origin = request.headers.get("origin");
   if (!origin) return false;
   try {
-    return new URL(origin).origin === new URL(request.url).origin;
+    const normalized = new URL(origin).origin;
+    const allowed = new Set([
+      new URL(request.url).origin,
+      ...(process.env.ALLOWED_APP_ORIGINS ?? "").split(",").map(value => value.trim()).filter(Boolean)
+    ]);
+    return allowed.has(normalized);
   } catch {
     return false;
   }
