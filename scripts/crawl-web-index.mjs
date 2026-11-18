@@ -75,7 +75,8 @@ async function robotsAllowed(pageUrl) {
     let rules=[];
     try{
       const {response}=await safeFetch(origin+"/robots.txt",2);
-      if(response.ok){
+      if(response.status>=500||response.status===429) rules=null;
+      else if(response.ok){
         const txt=(await readLimited(response,100000)).toString("utf8");
         let active=false;
         for(const line of txt.split(/\r?\n/)){
@@ -86,10 +87,11 @@ async function robotsAllowed(pageUrl) {
           else if(active&&(key==="disallow"||key==="allow")&&value)rules.push({key,path:value});
         }
       }
-    }catch{rules=[]}
+    }catch{rules=null}
     robotsCache.set(origin,rules);
   }
   const path=pageUrl.pathname+pageUrl.search;
+  if(robotsCache.get(origin)===null)return false;
   const matching=robotsCache.get(origin).filter(r=>path.startsWith(r.path)).sort((a,b)=>b.path.length-a.path.length);
   return !matching.length||matching[0].key==="allow";
 }
