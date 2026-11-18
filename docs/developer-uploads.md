@@ -78,3 +78,20 @@ WHERE email = 'YOUR_VERIFIED_ADMIN_EMAIL'
 ```
 
 Do not expose an admin registration endpoint. Sign in again at the admin portal after running the update.
+
+## Activate the scheduled malware scanner
+
+The scanner workflow is committed at `.github/workflows/scan-uploads.yml`. It runs hourly on GitHub Actions, updates ClamAV signatures, validates ZIP structure and limits, scans archives, and posts a signed verdict. Because this repository is public, GitHub's standard hosted runners are free for public repositories according to GitHub's current billing documentation.
+
+Before the workflow can process uploads, add these **repository Actions secrets** under GitHub → Settings → Secrets and variables → Actions:
+
+- `GAMEVERSE_DATABASE_URL`: the TiDB connection URL already configured in Render's GameVerse platform service. Copy it from Render's Environment page; never paste it into source code.
+- `GAMEVERSE_R2_ENDPOINT`
+- `GAMEVERSE_R2_ACCESS_KEY_ID`
+- `GAMEVERSE_R2_SECRET_ACCESS_KEY`
+- `GAMEVERSE_R2_BUCKET`
+- `GAMEVERSE_SCAN_WEBHOOK_SECRET`: generate a new random secret locally (at least 48 random bytes), then set the exact same value in this GitHub secret and Render's `SCAN_WEBHOOK_SECRET` environment variable. Do not send the secret in chat or commit it.
+
+Use a bucket-scoped R2 token with only the permissions required for object reads. The scanner does not need public bucket access. Once the secrets and SQL migrations are in place, open GitHub → Actions → Scan quarantined game uploads → Run workflow for the first controlled test. Check the run logs and verify a known benign archive and the EICAR test file in a controlled test upload. The schedule is hourly; it is not an instant real-time scanner.
+
+If any secret is missing or a scan cannot be completed, the upload remains blocked. Never change an `error` or `pending` result to `clean` manually.
