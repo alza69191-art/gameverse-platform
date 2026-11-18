@@ -8,7 +8,7 @@ export async function GET() {
   try {
     const pool = getDbPool();
     const [rows] = await pool.query(
-      "SELECT id, title, slug, description, official_url, game_type, status, created_at FROM games WHERE status = 'approved' ORDER BY created_at DESC"
+      "SELECT id, title, slug, description, official_url, game_type, status, created_at FROM games WHERE status = 'approved' AND game_type IN ('browser','both') AND official_url IS NOT NULL ORDER BY created_at DESC"
     );
     return NextResponse.json({ games: rows });
   } catch (error) {
