@@ -2,7 +2,7 @@
 
 ## Database
 
-Apply `database/migrations/002_developer_uploads.sql` once in the TiDB SQL Editor, using the existing `gameverse` database. Back up the database first. The migration adds developer applications and a quarantine table; it does not replace the eight original tables. Also apply `database/migrations/003_rate_limits.sql` to enable authentication rate limiting and `database/migrations/004_community_moderation.sql` for favorites, ratings, comments, reports, player history, notifications and admin audit logs.
+Apply `database/migrations/002_developer_uploads.sql` once in the TiDB SQL Editor, using the existing `gameverse` database. Back up the database first. The migration adds developer applications and a quarantine table; it does not replace the eight original tables. Also apply `database/migrations/003_rate_limits.sql` to enable authentication rate limiting and `database/migrations/004_community_moderation.sql` for favorites, ratings, comments, reports, player history, notifications and admin audit logs. Finally apply `database/migrations/005_revocable_sessions.sql` so logout revokes sessions server-side.
 
 ## Cloudflare R2 configuration
 
