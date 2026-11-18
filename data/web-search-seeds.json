@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "description": "Initial crawl seeds for the GameVerse web index. The crawler obeys robots.txt and indexes page metadata and extracted text only.",
+  "seeds": [
+    "https://developer.mozilla.org/en-US/docs/Web",
+    "https://owasp.org/www-project-top-ten/",
+    "https://f-droid.org/",
+    "https://flathub.org/",
+    "https://codeberg.org/explore/repos",
+    "https://github.com/topics/open-source",
+    "https://github.com/topics/web-development",
+    "https://www.wikipedia.org/",
+    "https://www.gnu.org/",
+    "https://www.kernel.org/",
+    "https://www.python.org/",
+    "https://nodejs.org/en"
+  ]
+}
