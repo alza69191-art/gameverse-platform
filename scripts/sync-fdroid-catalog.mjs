@@ -1,6 +1,6 @@
 const fs=await import("node:fs/promises");
 const outputPath="data/fdroid-catalog.json";
-const clean=value=>typeof value==="string"?value.replace(/<[^>]*>/g," ").replace(/&nbsp;/g," ").replace(/\\s+/g," ").trim():"";
+const clean=value=>typeof value==="string"?value.replace(/<[^>]*>/g," ").replace(/&nbsp;/g," ").replace(/\s+/g," ").trim():"";
 function normalize(app){
  const id=app.packageName||app.package_name;
  if(typeof id!=="string"||!id.includes("."))return null;
