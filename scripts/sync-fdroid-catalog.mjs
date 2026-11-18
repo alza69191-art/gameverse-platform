@@ -21,5 +21,5 @@ for(const query of queries){
 }
 const items=[...found.values()].sort((a,b)=>a.title.localeCompare(b.title));
 const output={generatedAt:new Date().toISOString(),source:"F-Droid public search API",total:items.length,items,notice:"Discovery index only. Links point to official F-Droid app pages. Do not mirror binaries without verifying the signed repository index and redistribution terms."};
-await (await import("node:fs/promises")).writeFile("data/fdroid-catalog.json",JSON.stringify(output,null,2)+"\\n");
+await (await import("node:fs/promises")).writeFile("data/fdroid-catalog.json",JSON.stringify(output,null,2)+"\n");
 console.log("Indexed "+items.length+" F-Droid apps.");
