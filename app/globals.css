@@ -12,3 +12,36 @@
 .game-card-foot a{color:#ff9b5e;text-decoration:none}
 .catalog-note{line-height:2}
 .game-player-frame{background:#050a13}
+
+
+.account-shell,.profile-shell{max-width:1100px;margin:auto;padding:0 24px;min-height:100vh;color:#f7f8fc}
+.account-top{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff1a}
+.account-top>a:last-child{color:#fb923c;text-decoration:none}
+.account-top>div{display:flex;align-items:center;gap:14px;color:#b8c2d3}
+.account-top button{background:transparent;color:#f7f8fc;border:1px solid #ffffff25;border-radius:9px;padding:9px 14px;cursor:pointer}
+.account-card{width:min(100%,480px);margin:8vh auto;background:#111a2c;border:1px solid #ffffff1c;border-radius:20px;padding:30px;box-shadow:0 24px 80px #0005}
+.account-card h1,.profile-hero h1{font-size:clamp(32px,5vw,48px);line-height:1.2;margin:12px 0}
+.account-card>p,.profile-hero>p{color:#aeb9cb;line-height:1.8}
+.account-tabs{display:flex;gap:8px;margin:24px 0 18px}
+.account-tabs button{flex:1;padding:11px;border:1px solid #ffffff20;border-radius:9px;background:#0a1220;color:#b8c2d3;cursor:pointer}
+.account-tabs button.selected{background:#fb923c;color:#201308;border-color:#fb923c;font-weight:800}
+.account-card form{display:grid;gap:15px}
+.account-card label{display:grid;gap:8px;color:#dbe3ef;font-size:14px}
+.account-card input{background:#0a1220;border:1px solid #34415a;border-radius:9px;padding:13px;color:white;font:inherit}
+.account-submit{display:inline-block;text-align:center;border:0;border-radius:10px;background:#fb923c;color:#201308;padding:13px 18px;font-weight:800;text-decoration:none;cursor:pointer}
+.account-note{color:#98a6ba;font-size:13px;line-height:1.8}
+.account-error{background:#3b211c;border:1px solid #92400e;color:#fed7aa;padding:12px 14px;border-radius:9px}
+.profile-hero{padding:58px 0 36px}
+.profile-hero .account-submit{margin-top:16px}
+.profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding-bottom:60px}
+.profile-panel{background:#111a2c;border:1px solid #ffffff1c;border-radius:16px;padding:22px;min-width:0}
+.profile-panel h2{margin:0 0 16px;font-size:21px}
+.profile-panel.wide{grid-column:1/-1}
+.profile-row{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid #ffffff14;color:#f7f8fc;text-decoration:none}
+.profile-row span:last-child,.profile-row small{color:#fb923c;font-size:12px}
+.notification{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:15px 0;border-top:1px solid #ffffff14}
+.notification p{color:#c5cede;line-height:1.7;margin:6px 0}
+.notification small{color:#8e9cb2;font-size:11px}
+.notification.read{opacity:.65}
+.notification button{flex:none;background:#29364a;color:#e2e8f0;border:0;border-radius:8px;padding:8px 11px;cursor:pointer}
+@media(max-width:700px){.profile-grid{grid-template-columns:1fr}.profile-panel.wide{grid-column:auto}.account-shell,.profile-shell{padding:0 16px}.account-card{padding:22px;margin:5vh auto}.profile-row{flex-direction:column}.notification{flex-direction:column}}
