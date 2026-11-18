@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
 
     const userId = String(user.id);
     const response = NextResponse.json({ user: { id: userId, email: user.email, displayName: user.display_name, role: user.role } });
-    response.headers.set("Set-Cookie", sessionCookie(createSessionToken(userId)));
+    response.headers.set("Set-Cookie", sessionCookie(await createSessionToken(userId)));
     response.headers.set("Cache-Control", "no-store");
     return response;
   } catch (error) {
