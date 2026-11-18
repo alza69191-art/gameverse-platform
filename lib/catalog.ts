@@ -2,7 +2,7 @@ export type BrowserGame = {
   slug: string;
   title: string;
   category: string;
-  mode: "2D";
+  mode: "2D" | "3D";
   platform: "متصفح";
   description: string;
   embedUrl: string;
@@ -11,6 +11,11 @@ export type BrowserGame = {
   license: string;
   controls: string;
 };
+
+const gamesHub = "https://sausi-7.github.io/games/";
+const gamesHubRepo = "https://github.com/sausi-7/games";
+const arcadeRepo = "https://github.com/webgl-games/arcade-3d";
+const arcadeSite = "https://webgl-games.github.io/arcade-3d/";
 
 export const browserGames: BrowserGame[] = [
   { slug: "orbit-brake", title: "Orbit Brake", category: "مهارة", mode: "2D", platform: "متصفح", description: "تحكم بالجاذبية: اضغط للدفع واترك الزر للهبوط وتجنب الاصطدام.", embedUrl: "https://www.uploadarcade.com/embed/orbit-brake", sourceUrl: "https://www.uploadarcade.com/games/orbit-brake", sourceName: "Upload Arcade", license: "MIT", controls: "الماوس أو اللمس أو مفتاح المسافة" },
@@ -22,6 +27,31 @@ export const browserGames: BrowserGame[] = [
   { slug: "tiny-turrets", title: "Tiny Turrets", category: "استراتيجية", mode: "2D", platform: "متصفح", description: "ضع الأبراج في المواقع المناسبة وامنع الأعداء من عبور المسار.", embedUrl: "https://www.uploadarcade.com/embed/tiny-turrets", sourceUrl: "https://www.uploadarcade.com/games/tiny-turrets", sourceName: "Upload Arcade", license: "MIT", controls: "الماوس أو اللمس" },
   { slug: "color-relay", title: "Color Relay", category: "مهارة", mode: "2D", platform: "متصفح", description: "بدّل اللون في اللحظة المناسبة واجتز البوابات المتحركة.", embedUrl: "https://www.uploadarcade.com/embed/color-relay", sourceUrl: "https://www.uploadarcade.com/games/color-relay", sourceName: "Upload Arcade", license: "MIT", controls: "الماوس أو اللمس" },
   { slug: "higher-or-lower", title: "Higher or Lower", category: "ورق", mode: "2D", platform: "متصفح", description: "توقع إن كانت البطاقة التالية أعلى أم أقل وحافظ على سلسلة الفوز.", embedUrl: "https://www.uploadarcade.com/embed/higher-or-lower", sourceUrl: "https://www.uploadarcade.com/games/higher-or-lower", sourceName: "Upload Arcade", license: "MIT", controls: "الماوس أو اللمس" },
+
+  { slug: "2048", title: "2048", category: "ألغاز", mode: "2D", platform: "متصفح", description: "ادمج الأرقام المتطابقة وواصل حتى تصل إلى 2048.", embedUrl: gamesHub + "games/puzzle/2048/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/puzzle/2048", sourceName: "Games Hub", license: "MIT", controls: "أسهم لوحة المفاتيح أو السحب على الهاتف" },
+  { slug: "snake", title: "Snake", category: "أركيد", mode: "2D", platform: "متصفح", description: "اجمع النقاط، كبّر الثعبان وتجنب الاصطدام بنفسك.", embedUrl: gamesHub + "games/arcade/snake/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/arcade/snake", sourceName: "Games Hub", license: "MIT", controls: "الأسهم أو WASD" },
+  { slug: "chess", title: "Chess", category: "ألعاب لوحية", mode: "2D", platform: "متصفح", description: "الشطرنج الكلاسيكي ضد الكمبيوتر.", embedUrl: gamesHub + "games/board/chess/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/board/chess", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو اللمس" },
+  { slug: "sudoku", title: "Sudoku", category: "ألغاز", mode: "2D", platform: "متصفح", description: "املأ شبكة 9×9 بالأرقام دون تكرار في الصفوف والأعمدة والمربعات.", embedUrl: gamesHub + "games/puzzle/sudoku/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/puzzle/sudoku", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو اللمس ولوحة الأرقام" },
+  { slug: "bubble-shooter", title: "Bubble Shooter", category: "أركيد", mode: "2D", platform: "متصفح", description: "أطلق الفقاعات وطابق الألوان لإزالة المجموعات.", embedUrl: gamesHub + "games/casual/bubble-shooter/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/casual/bubble-shooter", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو اللمس" },
+  { slug: "football", title: "Football", category: "رياضة", mode: "2D", platform: "متصفح", description: "سجّل الأهداف في مباراة كرة قدم سريعة.", embedUrl: gamesHub + "games/sports/football/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/sports/football", sourceName: "Games Hub", license: "MIT", controls: "لوحة المفاتيح" },
+  { slug: "basketball", title: "Basketball", category: "رياضة", mode: "2D", platform: "متصفح", description: "اضبط زاوية الرمية وقوتها وأسقط الكرة في السلة.", embedUrl: gamesHub + "games/sports/basketball/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/sports/basketball", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو اللمس" },
+  { slug: "bowling", title: "Bowling", category: "رياضة", mode: "2D", platform: "متصفح", description: "صوّب الكرة وأسقط أكبر عدد من القوارير.", embedUrl: gamesHub + "games/sports/bowling/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/sports/bowling", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو اللمس" },
+  { slug: "fruit-merge", title: "Fruit Merge", category: "خفيفة", mode: "2D", platform: "متصفح", description: "أسقط الفواكه المتشابهة وادمجها للحصول على فاكهة أكبر.", embedUrl: gamesHub + "games/casual/fruit-merge/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/casual/fruit-merge", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو اللمس" },
+  { slug: "flappy", title: "Flappy", category: "أركيد", mode: "2D", platform: "متصفح", description: "حلّق بين العوائق وحاول تسجيل أعلى نتيجة.", embedUrl: gamesHub + "games/arcade/flappy/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/arcade/flappy", sourceName: "Games Hub", license: "MIT", controls: "النقر أو مفتاح المسافة" },
+  { slug: "breakoid", title: "Breakoid", category: "أركيد", mode: "2D", platform: "متصفح", description: "اكسر الطوب بالكرة وحافظ عليها داخل الملعب.", embedUrl: gamesHub + "games/arcade/breakoid/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/arcade/breakoid", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو الأسهم" },
+
+  { slug: "car-race-3d", title: "Car Race 3D", category: "سباق 3D", mode: "3D", platform: "متصفح", description: "قد سيارتك في طريق ثلاثي الأبعاد وتفادَ حركة المرور.", embedUrl: gamesHub + "games/racing/car-race/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/racing/car-race", sourceName: "Games Hub", license: "MIT", controls: "الأسهم أو WASD" },
+  { slug: "stack-tower-3d", title: "Stack Tower 3D", category: "أركيد 3D", mode: "3D", platform: "متصفح", description: "ضع المكعبات بدقة وابنِ أعلى برج ثلاثي الأبعاد.", embedUrl: gamesHub + "games/3d/stack-tower/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/3d/stack-tower", sourceName: "Games Hub", license: "MIT", controls: "النقر أو اللمس" },
+  { slug: "cosmic-cleaner-3d", title: "Cosmic Cleaner 3D", category: "فضاء 3D", mode: "3D", platform: "متصفح", description: "نظّف المدار من الحطام في تجربة فضائية ثلاثية الأبعاد.", embedUrl: gamesHub + "games/3d/cosmic-cleaner/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/3d/cosmic-cleaner", sourceName: "Games Hub", license: "MIT", controls: "الأسهم أو لوحة المفاتيح" },
+  { slug: "orbital-outpost-3d", title: "Orbital Outpost 3D", category: "استراتيجية 3D", mode: "3D", platform: "متصفح", description: "احمِ المحطة الفضائية من الهجمات في ساحة ثلاثية الأبعاد.", embedUrl: gamesHub + "games/3d/orbital-outpost/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/3d/orbital-outpost", sourceName: "Games Hub", license: "MIT", controls: "الماوس أو لوحة المفاتيح" },
+  { slug: "planet-visitor-3d", title: "Planet Visitor 3D", category: "استكشاف 3D", mode: "3D", platform: "متصفح", description: "استكشف أسطح كواكب غريبة في رحلة ثلاثية الأبعاد.", embedUrl: gamesHub + "games/3d/planet-visitor/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/3d/planet-visitor", sourceName: "Games Hub", license: "MIT", controls: "WASD والماوس" },
+  { slug: "planet-war-3d", title: "Planet War 3D", category: "تصويب 3D", mode: "3D", platform: "متصفح", description: "دافع عن كوكبك من الغزاة في معركة فضائية ثلاثية الأبعاد.", embedUrl: gamesHub + "games/3d/planet-war/index.html", sourceUrl: gamesHubRepo + "/tree/main/games/3d/planet-war", sourceName: "Games Hub", license: "MIT", controls: "الماوس ولوحة المفاتيح" },
+
+  { slug: "tiny-planet-3d", title: "Tiny Planet — Open World", category: "عالم مفتوح 3D", mode: "3D", platform: "متصفح", description: "عالم مفتوح صغير: قد السيارات، حلّق بالمروحيات واستكشف المدينة والكواكب.", embedUrl: arcadeSite + "tiny-planet.html", sourceUrl: arcadeRepo, sourceName: "Arcade 3D", license: "MIT", controls: "WASD للحركة، F للمركبات، G للطيران، M للخريطة" },
+  { slug: "team-deathmatch-3d", title: "Team Deathmatch 3D", category: "تصويب 3D", mode: "3D", platform: "متصفح", description: "مواجهة فرق 4 ضد 4، مع إمكانية التدريب ضد خصوم آليين.", embedUrl: arcadeSite + "team-deathmatch.html", sourceUrl: arcadeRepo, sourceName: "Arcade 3D", license: "MIT", controls: "WASD، الماوس للتصويب، النقر للإطلاق، R لإعادة التلقيم" },
+  { slug: "battle-royale-3d", title: "Battle Royale 3D", category: "بقاء 3D", mode: "3D", platform: "متصفح", description: "اقفز بالمظلة واجمع المعدات وابقَ داخل المنطقة الآمنة.", embedUrl: arcadeSite + "battle-royale.html", sourceUrl: arcadeRepo, sourceName: "Arcade 3D", license: "MIT", controls: "WASD، المسافة للقفز، الماوس للتصويب" },
+  { slug: "destruction-sandbox-3d", title: "Destruction Sandbox 3D", category: "محاكاة 3D", mode: "3D", platform: "متصفح", description: "ساحة فيزيائية ثلاثية الأبعاد مع مركبات ومبانٍ قابلة للتدمير.", embedUrl: arcadeSite + "destruction.html", sourceUrl: arcadeRepo, sourceName: "Arcade 3D", license: "MIT", controls: "WASD، F للطيران، V للسيارة، النقر لإطلاق الصواريخ" },
+  { slug: "rocket-mission-3d", title: "Rocket Mission 3D", category: "محاكاة 3D", mode: "3D", platform: "متصفح", description: "جهّز الصاروخ وأطلقه إلى المدار وتابع بيانات الرحلة والفيزياء.", embedUrl: arcadeSite + "rocket-mission.html", sourceUrl: arcadeRepo, sourceName: "Arcade 3D", license: "MIT", controls: "الماوس للسحب والتدوير، عجلة الماوس للتقريب" },
 ];
 
 export function getBrowserGame(slug: string) {
