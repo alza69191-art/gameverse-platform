@@ -5,7 +5,9 @@ export type BrowserGame = {
   mode: "2D" | "3D";
   platform: "متصفح";
   description: string;
-  embedUrl: string;
+  embedUrl?: string;
+  externalUrl?: string;
+  playMode?: "embed" | "external";
   sourceUrl: string;
   sourceName: string;
   license: string;
@@ -88,6 +90,16 @@ export const browserGames: BrowserGame[] = [
   { slug: "racing-limits", title: "Racing Limits", category: "سباق طرق سريعة 3D", mode: "3D", platform: "متصفح", description: "اختر سباقات باتجاه واحد أو اتجاهين أو قيادة حرة وتجاوز السيارات.", embedUrl: "https://www.madkidgames.com/full/racing-limits", sourceUrl: "https://www.madkidgames.com/game/racing-limits", sourceName: "MadKidGames", license: "تضمين مجاني وفق تعليمات المصدر؛ يتطلب ads.txt وموافقة النطاق", controls: "لوحة المفاتيح واللمس؛ راجع تعليمات اللعبة" },
   { slug: "bus-simulator-pro-2", title: "Bus Simulator PRO 2", category: "محاكاة حافلات 3D", mode: "3D", platform: "متصفح", description: "قد الحافلات على الطرق والمدن وانقل الركاب ونفّذ مهام المحطات.", embedUrl: "https://www.madkidgames.com/full/bus-simulator-pro-2", sourceUrl: "https://www.madkidgames.com/game/bus-simulator-pro-2", sourceName: "MadKidGames", license: "تضمين مجاني وفق تعليمات المصدر؛ يتطلب ads.txt وموافقة النطاق", controls: "لوحة المفاتيح واللمس؛ راجع تعليمات اللعبة" },
   { slug: "truck-simulator-pro-2", title: "Truck Simulator PRO 2", category: "محاكاة شاحنات 3D", mode: "3D", platform: "متصفح", description: "قد شاحنات النقل وسلّم البضائع واتبع الخرائط ونقاط الملاحة.", embedUrl: "https://www.madkidgames.com/full/truck-simulator-pro-2", sourceUrl: "https://www.madkidgames.com/game/truck-simulator-pro-2", sourceName: "MadKidGames", license: "تضمين مجاني وفق تعليمات المصدر؛ يتطلب ads.txt وموافقة النطاق", controls: "لوحة المفاتيح والماوس؛ اللمس للهاتف" },
+
+  // Free-to-play browser shooters and battle royale titles. These open on the publishers' sites;
+  // GameVerse does not frame or re-host them unless the publisher explicitly permits it.
+  { slug: "remain-battle-royale", title: "Remain — Battle Royale", category: "باتل رويال", mode: "3D", platform: "متصفح", description: "باتل رويال ثلاثي الأبعاد داخل المتصفح: انزل بالمظلة، اجمع الأسلحة والمعدات، وابقَ داخل المنطقة الآمنة حتى النهاية. مجاني للعب على الموقع الرسمي.", externalUrl: "https://remain.games/", playMode: "external", sourceUrl: "https://remain.games/about", sourceName: "Remain", license: "مجاني للعب على الموقع الرسمي؛ لا توجد رخصة إعادة استضافة مؤكدة", controls: "WASD للحركة، الماوس للتصويب والإطلاق، يد تحكم أو لمس الهاتف" },
+  { slug: "suroi-battle-royale", title: "Suroi — 2D Battle Royale", category: "باتل رويال", mode: "2D", platform: "متصفح", description: "باتل رويال ثنائية الأبعاد متعددة اللاعبين: اجمع الأسلحة والدروع والعلاج واهرب من الغاز حتى تكون آخر لاعب. مشروع مفتوح المصدر.", externalUrl: "https://suroi.io/", playMode: "external", sourceUrl: "https://github.com/HasangerGames/suroi", sourceName: "HasangerGames / Suroi", license: "GPL-3.0 للمصدر؛ تراخيص الأصول تُراجع منفصلة؛ اللعب من الموقع الرسمي", controls: "WASD أو الأسهم، الماوس للتصويب والإطلاق، F للتفاعل" },
+  { slug: "blockyard-multiplayer", title: "Blockyard — Multiplayer Shooter", category: "تصويب جماعي", mode: "3D", platform: "متصفح", description: "منصة ألعاب تصويب جماعية ثلاثية الأبعاد داخل المتصفح، تضم أنماطاً مستوحاة من ألعاب الحرب وBed Wars وساحات تعاونية.", externalUrl: "https://blockyard.gg/", playMode: "external", sourceUrl: "https://github.com/Potrock/blockyard", sourceName: "Blockyard", license: "MIT للمستودع؛ اللعب عبر الموقع الرسمي", controls: "لوحة المفاتيح والماوس؛ راجع تعليمات اللعبة" },
+  { slug: "hypersomnia-shooter", title: "Hypersomnia — Online Shooter", category: "تصويب جماعي", mode: "2D", platform: "متصفح", description: "لعبة تصويب جماعية مجانية مفتوحة المصدر، العب ضد أصدقائك أو انضم إلى مواجهات الفرق من المتصفح.", externalUrl: "https://play.hypersomnia.io/", playMode: "external", sourceUrl: "https://github.com/TeamHypersomnia/Hypersomnia", sourceName: "Team Hypersomnia", license: "AGPL-3.0؛ اللعب من الموقع الرسمي", controls: "لوحة المفاتيح والماوس؛ راجع صفحة اللعبة" },
+  { slug: "riposte-frontline", title: "Riposte: Frontline", category: "تصويب منظور أول", mode: "3D", platform: "متصفح", description: "لعبة FPS مجانية تعمل في المتصفح على الكمبيوتر والهواتف، مع دعم اللعب الجماعي والتحكم باللمس.", externalUrl: "https://www.playriposte.com/", playMode: "external", sourceUrl: "https://github.com/BenDBSS/Riposte-Frontline-Source", sourceName: "Riposte: Frontline", license: "MIT للمصدر مع استثناءات موضحة في NOTICE؛ لا نعيد استضافة الأصول", controls: "لوحة المفاتيح والماوس أو أزرار اللمس على الهاتف" },
+  { slug: "gobattle-io", title: "GoBattle.io — Battle Royale", category: "باتل رويال", mode: "2D", platform: "متصفح", description: "قتال جماعي بأسلوب بيكسل مع طور Battle Royale ومواجهات PvP ومغامرات، مجاني في المتصفح.", externalUrl: "https://gobattle.io/", playMode: "external", sourceUrl: "https://gobattle.io/", sourceName: "GoBattle.io", license: "مجاني للعب على الموقع الرسمي؛ لا توجد رخصة إعادة استضافة مؤكدة", controls: "WASD أو الأسهم للحركة، Space للهجوم الأساسي" },
+
 
 ];
 
