@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDbPool } from "@/lib/db";
+import { consumeRateLimit, requestIpKey } from "@/lib/rate-limit";
 import { createSessionToken, sessionCookie, verifyPassword } from "@/lib/auth";
 
 export const runtime = "nodejs";
@@ -11,6 +12,10 @@ export async function POST(request: NextRequest) {
     const password = String(body.password ?? "");
     if (!email || !password || email.length > 255 || password.length > 128)
       return NextResponse.json({ error: "بيانات الدخول غير صحيحة" }, { status: 400 });
+    const ipLimit = await consumeRateLimit("login-ip", requestIpKey(request), 20, 900);
+    const emailLimit = await consumeRateLimit("login-email", email, 10, 900);
+    if (!ipLimit.allowed || !emailLimit.allowed)
+      return NextResponse.json({ error: "محاولات كثيرة. حاول بعد 15 دقيقة." }, { status: 429, headers: { "Retry-After": "900" } });
 
     const pool = getDbPool();
     const [rows] = await pool.execute(
