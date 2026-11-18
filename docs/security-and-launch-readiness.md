@@ -79,7 +79,7 @@ Do not declare the platform production-ready until:
 
 ## Create the first administrator
 
-There is no default administrator account. First register a normal account at the player site and verify that the email is yours. After applying migration 006, run the one-time CLI from a trusted local environment with the TiDB connection string supplied through the shell environment (never commit it):
+There is no default administrator account. First register a normal account at the player site and verify that the email is yours. After applying migration 006 and creating an active player account, open **Actions → Bootstrap first GameVerse administrator**, enter the exact email of that account, and confirm that no active admin exists. The workflow uses the `GAMEVERSE_DATABASE_URL` GitHub secret and does not expose it in the run command. Alternatively, run the one-time CLI from a trusted local environment with the TiDB connection string supplied through the shell environment (never commit it):
 
 ```bash
 BOOTSTRAP_ADMIN_CONFIRM_EMAIL="your-real-email@example.com" DATABASE_URL="your-TiDB-connection-string" node scripts/bootstrap-admin.mjs "your-real-email@example.com"
