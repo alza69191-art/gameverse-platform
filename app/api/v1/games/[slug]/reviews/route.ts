@@ -32,9 +32,9 @@ export async function POST(request: NextRequest, context: { params: Promise<{ sl
     if (!isSameOrigin(request)) return NextResponse.json({ error: "طلب غير مسموح" }, { status: 403 });
     const user = await getAuthenticatedUser(request);
     if (!user) return NextResponse.json({ error: "سجّل الدخول لإضافة تقييم" }, { status: 401 });
+    const { slug } = await context.params;
     const limit = await consumeRateLimit("review", `${user.id}:${slug}`, 3, 3600);
     if (!limit.allowed) return NextResponse.json({ error: "تجاوزت الحد المسموح. حاول لاحقاً." }, { status: 429 });
-    const { slug } = await context.params;
     if (!(await isKnownGameSlug(slug))) return NextResponse.json({ error: "اللعبة غير موجودة" }, { status: 404 });
     const body = await request.json();
     const rating = Number(body.rating);
