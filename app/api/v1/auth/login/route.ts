@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { isSameOrigin } from "@/lib/current-user";
 import { getDbPool } from "@/lib/db";
 import { consumeRateLimit, requestIpKey } from "@/lib/rate-limit";
 import { createSessionToken, sessionCookie, verifyPassword } from "@/lib/auth";
@@ -7,6 +8,7 @@ export const runtime = "nodejs";
 
 export async function POST(request: NextRequest) {
   try {
+    if (!isSameOrigin(request)) return NextResponse.json({ error: "طلب غير مسموح" }, { status: 403 });
     const body = await request.json();
     const email = String(body.email ?? "").trim().toLowerCase();
     const password = String(body.password ?? "");
