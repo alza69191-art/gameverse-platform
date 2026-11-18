@@ -38,6 +38,8 @@ CREATE TABLE IF NOT EXISTS game_uploads (
   reviewed_at TIMESTAMP NULL,
   reviewed_by BIGINT UNSIGNED NULL,
   review_notes TEXT,
+  game_id BIGINT UNSIGNED NULL,
+  CONSTRAINT fk_game_upload_game FOREIGN KEY (game_id) REFERENCES games(id),
   CONSTRAINT fk_game_upload_developer FOREIGN KEY (developer_id) REFERENCES users(id),
   CONSTRAINT fk_game_upload_reviewer FOREIGN KEY (reviewed_by) REFERENCES users(id),
   INDEX idx_game_upload_queue (scan_status, review_status, created_at)
