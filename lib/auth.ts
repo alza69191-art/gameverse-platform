@@ -16,7 +16,7 @@ export async function hashPassword(password: string) {
   const derived = (await scrypt(password, salt, 64, {
     N: SCRYPT_N, r: SCRYPT_R, p: SCRYPT_P, maxmem: SCRYPT_MAXMEM
   })) as Buffer;
-  return `scrypt${SCRYPT_N}${SCRYPT_R}${SCRYPT_P}${salt.toString("base64url")}${derived.toString("base64url")}`;
+  return `scrypt$${SCRYPT_N}$${SCRYPT_R}$${SCRYPT_P}$${salt.toString("base64url")}$${derived.toString("base64url")}`;
 }
 
 export async function verifyPassword(password: string, stored: string) {
