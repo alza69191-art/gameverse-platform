@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
-import {useMemo,useState} from "react";
+import {useEffect,useMemo,useState} from "react";
 import {browserGames} from "@/lib/catalog";
-import candidateData from "@/data/game-candidates.json";
 type Candidate={repository:string;url:string;description:string;language:string|null;stars:number;licenseSpdx:string|null;reviewStatus:string;topics:string[]};
-const candidates=(candidateData.items??[]) as Candidate[];
+
 const categories=["الكل",...Array.from(new Set(browserGames.map(x=>x.category)))];
 export default function GamesPage(){
- const [q,setQ]=useState("");const [cat,setCat]=useState("الكل");
+ const [q,setQ]=useState("");const [cat,setCat]=useState("الكل");const [candidates,setCandidates]=useState<Candidate[]>([]);
+ useEffect(()=>{fetch("/api/v1/games/candidates",{cache:"no-store"}).then(r=>r.ok?r.json():Promise.reject()).then(d=>setCandidates(Array.isArray(d.items)?d.items:[])).catch(()=>setCandidates([]));},[]);
  const results=useMemo(()=>browserGames.filter(x=>(x.title+" "+x.category+" "+x.description).toLowerCase().includes(q.toLowerCase())&&(cat==="الكل"||x.category===cat)),[q,cat]);
  const discovered=useMemo(()=>candidates.filter(x=>(x.repository+" "+x.description+" "+x.topics.join(" ")).toLowerCase().includes(q.toLowerCase())),[q]);
  return <main className="site-shell catalog-page"><header className="topbar"><Link className="brand" href="/">GAME<span>VERSE</span></Link><nav className="main-nav"><Link href="/">الرئيسية</Link><Link className="active" href="/games">مكتبة الألعاب</Link><Link href="/store">المتجر</Link><Link href="/downloads">تنزيلات المطورين</Link><Link href="/libraries">مكتبة المطور</Link><Link href="/account">حسابي</Link></nav><Link className="nav-cta" href="/store">تنزيل الألعاب ←</Link></header>
