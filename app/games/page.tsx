@@ -24,7 +24,7 @@ export default function GamesPage() {
 
   return (
     <main className="site-shell catalog-page">
-      <header className="topbar"><a className="brand" href="/">GAME<span>VERSE</span></a><nav className="main-nav"><a href="/">الرئيسية</a><a className="active" href="/games">الألعاب</a><a href="/libraries">مكتبة المطور</a><a href="/rules">القواعد</a><a href="/account">حسابي</a></nav><a className="nav-cta" href="/libraries">للمطورين ←</a></header>
+      <header className="topbar"><a className="brand" href="/">GAME<span>VERSE</span></a><nav className="main-nav"><a href="/">الرئيسية</a><a className="active" href="/games">ألعاب المتصفح</a><a href="/downloads">تنزيلات</a><a href="/libraries">مكتبة المطور</a><a href="/rules">القواعد</a><a href="/account">حسابي</a></nav><a className="nav-cta" href="/libraries">للمطورين ←</a></header>
       <section className="catalog-hero"><span className="eyebrow"><i /> مكتبة GameVerse · ألعاب قابلة للعب</span><h1>اختر لعبتك،<em> وابدأ الآن.</em></h1><p>ألعاب 2D و3D حقيقية تعمل داخل المتصفح، من الألغاز الكلاسيكية إلى السباقات والعوالم المفتوحة.</p>
         <label className="catalog-search"><span>⌕</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="ابحث عن لعبة أو نوعها..." /><kbd>بحث مباشر</kbd></label>
       </section>
