@@ -1,0 +1,41 @@
+name: Scan quarantined game uploads
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gameverse-upload-scanner
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install scanner and runtime dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clamav clamav-freshclam python3
+          npm install --no-save mysql2 @aws-sdk/client-s3
+
+      - name: Update ClamAV signatures
+        run: sudo freshclam
+
+      - name: Scan pending uploads
+        env:
+          DATABASE_URL: ${{ secrets.GAMEVERSE_DATABASE_URL }}
+          R2_ENDPOINT: ${{ secrets.GAMEVERSE_R2_ENDPOINT }}
+          R2_ACCESS_KEY_ID: ${{ secrets.GAMEVERSE_R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.GAMEVERSE_R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.GAMEVERSE_R2_BUCKET }}
+          GAMEVERSE_SCAN_WEBHOOK_SECRET: ${{ secrets.GAMEVERSE_SCAN_WEBHOOK_SECRET }}
+          GAMEVERSE_API_URL: https://gameverse-platform-drdc.onrender.com
+        run: node scripts/scan-uploads.mjs
