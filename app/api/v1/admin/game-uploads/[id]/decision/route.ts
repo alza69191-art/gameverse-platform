@@ -66,6 +66,14 @@ export async function POST(request: NextRequest, context: { params: Promise<{ id
         [admin.id, notes || "لم تستوفِ اللعبة متطلبات النشر", id]
       );
     }
+    await connection.execute(
+      "INSERT INTO user_notifications (user_id, notification_type, title, body) VALUES (?, 'game_review', ?, ?)",
+      [upload.developer_id, decision === "approve" ? "تم نشر لعبتك" : "تحديث مراجعة اللعبة", decision === "approve" ? `تم اعتماد ونشر اللعبة ${upload.game_title}.` : (notes || `لم تتم الموافقة على اللعبة ${upload.game_title}.`)]
+    );
+    await connection.execute(
+      "INSERT INTO admin_audit_logs (actor_id, action, entity_type, entity_id, details) VALUES (?, ?, 'game_upload', ?, ?)",
+      [admin.id, decision, id, JSON.stringify({ notes, gameId })]
+    );
     await connection.commit();
     return NextResponse.json({ success: true, decision, gameId });
   } catch (error) {
