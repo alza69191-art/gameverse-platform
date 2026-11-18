@@ -57,3 +57,19 @@ The GameVerse Store page links to official Google Play, Apple App Store, and Ste
 | itch.io | It supports HTML5 games embedded through the publisher's project page, but each creator controls the rights and terms. | Add individual titles only after verifying the exact game's licence and whether commercial embedding/rehosting is allowed. |
 | Three.js Resources | It is a discovery/tutorial resource for building browser games, not a blanket licence for every linked game. | Use as a lead source; check each project's repository and licence separately. |
 | GitHub examples | A repository marked MIT can still have incomplete demos, missing asset rights or no working hosted build. | Import only after checking source, complete build, licence, assets, attribution and browser compatibility. The linked basic-3d-car-game repository currently documents a faux-3D CSS game and placeholder demo, so it is not imported as a polished 3D title. |
+
+
+## Free-to-play shooter and battle royale links
+
+The following entries are listed as external official-play links, not embedded games. GameVerse does not mirror their files or imply ownership. Free-to-play status and gameplay are described by each publisher's own site.
+
+| Game | Official play page | Source / licence notes | Handling |
+|---|---|---|---|
+| Remain | https://remain.games/ | Official site describes a free browser battle royale for up to 100 players. No redistribution licence confirmed. | External launch only; no iframe. |
+| Suroi | https://suroi.io/ | Official repository is GPL-3.0; review asset licences separately. | External launch only; no iframe. |
+| Blockyard | https://blockyard.gg/ | Public repository lists MIT licence. | External launch only; no iframe. |
+| Hypersomnia | https://play.hypersomnia.io/ | Official repository lists AGPL-3.0. | External launch only; no iframe. |
+| Riposte: Frontline | https://www.playriposte.com/ | Source repository states MIT with exceptions for certain assets listed in NOTICE.md. | External launch only; no asset copying. |
+| GoBattle.io | https://gobattle.io/ | Official site describes free browser play including Battle Royale mode. No redistribution licence confirmed. | External launch only; no iframe. |
+
+These entries are free-to-play on the publisher's site; GameVerse does not guarantee that all optional cosmetics, passes, in-game purchases, or app-store versions are free.
