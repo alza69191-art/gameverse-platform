@@ -15,10 +15,21 @@ const db = await mysql.createConnection({
   ssl:{minVersion:"TLSv1.2"}
 });
 const sleep = ms => new Promise(resolve=>setTimeout(resolve,ms));
+async function readLimited(response, maxBytes) {
+  if (!response.body) return Buffer.alloc(0);
+  const reader=response.body.getReader(); const chunks=[]; let total=0;
+  while(true) {
+    const {done,value}=await reader.read(); if(done) break;
+    total+=value.byteLength;
+    if(total>maxBytes) { await reader.cancel(); throw new Error("Response exceeds size limit"); }
+    chunks.push(Buffer.from(value));
+  }
+  return Buffer.concat(chunks,total);
+}
 const publicIPv4 = ip => {
   const p=ip.split(".").map(Number); if(p.length!==4||p.some(x=>!Number.isInteger(x)||x<0||x>255))return false;
   const [a,b]=p;
-  return !(a===0||a===10||a===127||a>=224||(a===169&&b===254)||(a===172&&b>=16&&b<=31)||(a===192&&b===168)||(a===100&&b>=64&&b<=127)||(a===198&&(b===18||b===19)));
+  return !(a===0||a===10||a===127||a>=224||(a===169&&b===254)||(a===172&&b>=16&&b<=31)||(a===192&&(b===0||b===2||b===88||b===168))||(a===100&&b>=64&&b<=127)||(a===198&&((b===18||b===19)||(b===51&&p[2]===100)))||(a===203&&b===0&&p[2]===113));
 };
 const publicIPv6 = ip => {
   const v=ip.toLowerCase().split("%")[0];
@@ -65,7 +76,7 @@ async function robotsAllowed(pageUrl) {
     try{
       const {response}=await safeFetch(origin+"/robots.txt",2);
       if(response.ok){
-        const txt=(await response.text()).slice(0,100000);
+        const txt=(await readLimited(response,100000)).toString("utf8");
         let active=false;
         for(const line of txt.split(/\r?\n/)){
           const s=line.split("#")[0].trim(); if(!s)continue;
@@ -106,6 +117,7 @@ async function ensureSite(root){
 async function enqueue(siteId,href){
   await db.execute("INSERT IGNORE INTO web_crawl_queue(site_id,page_url,status) VALUES(?,?,'pending')",[siteId,href]);
 }
+await db.execute("UPDATE web_crawl_queue SET status='pending' WHERE status='processing' AND updated_at<DATE_SUB(CURRENT_TIMESTAMP,INTERVAL 1 HOUR)");
 const seeds=JSON.parse(await fs.readFile("data/web-search-seeds.json","utf8")).seeds;
 for(const value of seeds){const u=normalizeUrl(value);if(!u)continue;try{const siteId=await ensureSite(u);await enqueue(siteId,u.href)}catch(e){console.warn("Seed rejected:",value,String(e).slice(0,180))}}
 let indexed=0,skipped=0,failed=0;
@@ -117,10 +129,11 @@ while(indexed+skipped+failed<maxPages){
     const pageUrl=normalizeUrl(job.page_url); if(!pageUrl)throw new Error("Invalid URL");
     if(!await robotsAllowed(pageUrl)){await db.execute("UPDATE web_crawl_queue SET status='skipped' WHERE id=?",[job.id]);skipped++;continue}
     const {response,url:finalUrl}=await safeFetch(pageUrl.href);
+    if(finalUrl.hostname!==pageUrl.hostname) throw new Error("Cross-host redirect blocked");
     const type=response.headers.get("content-type")||"";
     if(!response.ok||!/(text\/html|application\/xhtml\+xml)/i.test(type)){await db.execute("UPDATE web_crawl_queue SET status='skipped' WHERE id=?",[job.id]);skipped++;continue}
     const declared=Number(response.headers.get("content-length")||0); if(declared>1800000)throw new Error("Page too large");
-    const bytes=Buffer.from(await response.arrayBuffer());if(bytes.length>1800000)throw new Error("Page too large");
+    const bytes=await readLimited(response,1800000);
     const html=bytes.toString("utf8"); const data=extract(html,finalUrl);
     if(data.noindex||!data.body||data.body.length<80){await db.execute("UPDATE web_crawl_queue SET status='skipped' WHERE id=?",[job.id]);skipped++;continue}
     const hash=createHash("sha256").update(data.title+"\n"+data.description+"\n"+data.body).digest("hex");
