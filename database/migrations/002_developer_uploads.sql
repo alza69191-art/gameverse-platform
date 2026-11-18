@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS game_uploads (
   game_type ENUM('download') NOT NULL DEFAULT 'download',
   content_type VARCHAR(120) NOT NULL,
   size_bytes BIGINT UNSIGNED NOT NULL,
+  upload_status ENUM('initiated','uploaded','failed') NOT NULL DEFAULT 'initiated',
   sha256 CHAR(64),
   scan_status ENUM('pending','clean','infected','error') NOT NULL DEFAULT 'pending',
   review_status ENUM('pending','approved','rejected') NOT NULL DEFAULT 'pending',
