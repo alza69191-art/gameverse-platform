@@ -126,3 +126,9 @@ Keep the bucket private. Add a CORS rule allowing only the developer portal orig
 
 Do not add wildcard origins. Keep direct object listing and public bucket access disabled. The browser receives only a short-lived signed PUT URL for the individual quarantine object.
 
+Each portal service also needs these non-secret Render variables:
+- Admin service: `GAMEVERSE_API_URL=https://gameverse-platform-drdc.onrender.com`, `PORTAL_ORIGIN=https://gameverse-admin.onrender.com`.
+- Developer service: `GAMEVERSE_API_URL=https://gameverse-platform-drdc.onrender.com`, `PORTAL_ORIGIN=https://gameverse-developers.onrender.com`.
+
+The portals now proxy `/api/v1/*` server-side and store the central opaque session token in their own HttpOnly cookie. This avoids relying on third-party browser cookies between separate `onrender.com` subdomains.
+
