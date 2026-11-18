@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T12:07:55.025Z",
+  "generatedAt": "2026-11-18T12:11:59.157Z",
   "totalCandidates": 1603,
   "notice": "Discovery candidates only. Never publish or mirror a game until the complete build, demo, source licence, asset licences, trademarks, attribution and security have been reviewed.",
   "items": [
@@ -164,7 +164,7 @@
       "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.",
       "language": "TypeScript",
       "stars": 26395,
-      "pushedAt": "2026-11-18T11:53:35Z",
+      "pushedAt": "2026-11-18T12:08:40Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -311,7 +311,7 @@
       "description": "Open-source web graphics engine built on WebGPU and WebGL2",
       "language": "JavaScript",
       "stars": 17324,
-      "pushedAt": "2026-11-18T12:04:47Z",
+      "pushedAt": "2026-11-18T12:09:45Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -1170,7 +1170,7 @@
       "description": "Online browser-based RTS game",
       "language": "TypeScript",
       "stars": 2913,
-      "pushedAt": "2026-11-18T11:12:37Z",
+      "pushedAt": "2026-11-18T12:10:21Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
       "topics": [
@@ -1294,7 +1294,7 @@
       "url": "https://github.com/NASA-AMMOS/3DTilesRendererJS",
       "description": "Renderer for 3D Tiles in Javascript using three.js, Babylon.js, and r3f",
       "language": "JavaScript",
-      "stars": 2544,
+      "stars": 2545,
       "pushedAt": "2026-11-11T09:50:28Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
@@ -1483,7 +1483,7 @@
       "url": "https://github.com/EL4CTEO/blender-skills",
       "description": "Professional Blender 5.3 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
       "language": "Python",
-      "stars": 2124,
+      "stars": 2125,
       "pushedAt": "2026-11-17T15:20:14Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -1535,7 +1535,7 @@
       "url": "https://github.com/HaD0Yun/CozyClay",
       "description": "Open source previs software in the browser: block a scene, pose characters, author camera moves and cuts, then take the same shots to an AI video model.",
       "language": "JavaScript",
-      "stars": 1989,
+      "stars": 1990,
       "pushedAt": "2026-11-18T07:48:58Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
@@ -2219,7 +2219,7 @@
       "description": "AssetFurnace: the most complete open-source image-to-3D pipeline (Oct 2026). Prompt or picture → textured, rigged, animated game character, locally on Apple Silicon or NVIDIA. Pixal3D, TRELLIS.2, Hunyuan3D, SF3D, auto-rig and 21 moves. For indie game devs and 3D artists. Free, Apache-2.0.",
       "language": "Python",
       "stars": 1209,
-      "pushedAt": "2026-11-18T11:57:03Z",
+      "pushedAt": "2026-11-18T12:06:49Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -2372,7 +2372,7 @@
       "description": "A fast 2D and 3D game engine — TypeScript SDK, C++/WebAssembly core, visual editor. Ship one project to web, desktop, WeChat MiniGames, playable ads, and native Android / iOS.",
       "language": "TypeScript",
       "stars": 1135,
-      "pushedAt": "2026-11-18T11:58:39Z",
+      "pushedAt": "2026-11-18T12:09:27Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -2982,7 +2982,7 @@
       "description": "3D engine that AI agents drive",
       "language": "JavaScript",
       "stars": 760,
-      "pushedAt": "2026-11-18T12:07:04Z",
+      "pushedAt": "2026-11-18T12:09:48Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -3086,7 +3086,7 @@
       "description": "Free, open-source 3D sculpting for Linux, macOS and Windows: dense meshes, remeshing, painting, built-in AI (image/text to 3D), Send to Unreal, game-ready LODs, Gaussian splats and OpenUSD.",
       "language": "C++",
       "stars": 728,
-      "pushedAt": "2026-11-18T12:06:11Z",
+      "pushedAt": "2026-11-18T12:10:15Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -4983,7 +4983,7 @@
       "description": "A rules engine and game client — Rust + WASM + React",
       "language": "Rust",
       "stars": 332,
-      "pushedAt": "2026-11-18T12:04:28Z",
+      "pushedAt": "2026-11-18T12:10:57Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -6960,6 +6960,28 @@
       "discoveredBy": "topic:godot stars:>=10 archived:false"
     },
     {
+      "repository": "SandroMaglione/inkline-town",
+      "url": "https://github.com/SandroMaglione/inkline-town",
+      "description": "A town simulation in pale isometric line art, implemented with Ritmo ECS and PixiJs 3D",
+      "language": "TypeScript",
+      "stars": 184,
+      "pushedAt": "2026-11-16T03:28:54Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "ecs",
+        "entity-component-system",
+        "pixijs",
+        "pixijs-3d",
+        "ritmo",
+        "ritmo-ecs",
+        "ritmo-tools"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:pixijs stars:>=3 archived:false"
+    },
+    {
       "repository": "attogram/games",
       "url": "https://github.com/attogram/games",
       "description": "Your own games website, filled with open source goodness!  Automated installation of a plethora of open source web games.  Fully customizable.",
@@ -7004,28 +7026,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:babylonjs stars:>=3 archived:false"
-    },
-    {
-      "repository": "SandroMaglione/inkline-town",
-      "url": "https://github.com/SandroMaglione/inkline-town",
-      "description": "A town simulation in pale isometric line art, implemented with Ritmo ECS and PixiJs 3D",
-      "language": "TypeScript",
-      "stars": 183,
-      "pushedAt": "2026-11-16T03:28:54Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "ecs",
-        "entity-component-system",
-        "pixijs",
-        "pixijs-3d",
-        "ritmo",
-        "ritmo-ecs",
-        "ritmo-tools"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:pixijs stars:>=3 archived:false"
     },
     {
       "repository": "susam/invaders",
@@ -9980,7 +9980,7 @@
       "description": "Play Diablo II: Lord of Destruction in your browser — the 1.13c engine reimplemented in C++ and compiled to WebAssembly. Bring your own game files.",
       "language": "C++",
       "stars": 82,
-      "pushedAt": "2026-11-18T10:13:55Z",
+      "pushedAt": "2026-11-18T12:10:25Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
       "topics": [
@@ -16170,7 +16170,7 @@
       "description": "A nice and casual place for posting random things.",
       "language": "TypeScript",
       "stars": 25,
-      "pushedAt": "2026-11-18T12:05:28Z",
+      "pushedAt": "2026-11-18T12:10:07Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -16453,7 +16453,7 @@
       "description": "Open source Rage of Mages engine implementation",
       "language": "Go",
       "stars": 24,
-      "pushedAt": "2026-11-18T12:03:01Z",
+      "pushedAt": "2026-11-18T12:10:40Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -17363,6 +17363,41 @@
       "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
+      "repository": "thesupersupersigma/rustyAC",
+      "url": "https://github.com/thesupersupersigma/rustyAC",
+      "description": "Full rust rewrite of Assetto Corsa. Bit-exact physics, AC's own renderer, sound, AI, multiplayer, HUD and launcher, verified against the original game. Runs with your own AC install on Windows, or in the browser via WebAssembly.",
+      "language": "Rust",
+      "stars": 22,
+      "pushedAt": "2026-11-18T04:36:32Z",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://api.github.com/licenses/apache-2.0",
+      "topics": [
+        "assetto-corsa",
+        "direct3d11",
+        "directx11",
+        "game",
+        "game-dev",
+        "game-development",
+        "gamepad",
+        "gamepad-controller",
+        "gamepad-support",
+        "kn5",
+        "physics-engine",
+        "physics-simulation",
+        "racing",
+        "racing-game",
+        "racing-games",
+        "racing-simulator",
+        "rust",
+        "simracing",
+        "tyre-model",
+        "vehicle-dynamics"
+      ],
+      "defaultBranch": "master",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+    },
+    {
       "repository": "i-Roboticist/godot-coop",
       "url": "https://github.com/i-Roboticist/godot-coop",
       "description": "Real-time collaboration for the Godot editor. Edit the same project together, live: scenes, scripts, files and settings sync as you work.",
@@ -17660,41 +17695,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:godot stars:>=10 archived:false"
-    },
-    {
-      "repository": "thesupersupersigma/rustyAC",
-      "url": "https://github.com/thesupersupersigma/rustyAC",
-      "description": "Full rust rewrite of Assetto Corsa. Bit-exact physics, AC's own renderer, sound, AI, multiplayer, HUD and launcher, verified against the original game. Runs with your own AC install on Windows, or in the browser via WebAssembly.",
-      "language": "Rust",
-      "stars": 21,
-      "pushedAt": "2026-11-18T04:36:32Z",
-      "licenseSpdx": "Apache-2.0",
-      "licenseUrl": "https://api.github.com/licenses/apache-2.0",
-      "topics": [
-        "assetto-corsa",
-        "direct3d11",
-        "directx11",
-        "game",
-        "game-dev",
-        "game-development",
-        "gamepad",
-        "gamepad-controller",
-        "gamepad-support",
-        "kn5",
-        "physics-engine",
-        "physics-simulation",
-        "racing",
-        "racing-game",
-        "racing-games",
-        "racing-simulator",
-        "rust",
-        "simracing",
-        "tyre-model",
-        "vehicle-dynamics"
-      ],
-      "defaultBranch": "master",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
       "repository": "s-nems/open-northland",
@@ -18309,28 +18309,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:game-development stars:>=10 archived:false"
-    },
-    {
-      "repository": "AssiduousEngine/AssiduousEngine",
-      "url": "https://github.com/AssiduousEngine/AssiduousEngine",
-      "description": "",
-      "language": "C++",
-      "stars": 19,
-      "pushedAt": "2026-11-18T04:45:30Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "3d",
-        "dx12",
-        "game-development",
-        "game-engine",
-        "gamedev",
-        "vulkan",
-        "webgpu"
-      ],
-      "defaultBranch": "master",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "liyupi/awesome-vibe-coding-websites",
@@ -19085,7 +19063,7 @@
       "description": "Browser-native IFC viewer + local-first ERP kernel. Frictionless. Two DBs. One browser. Zero install.",
       "language": "JavaScript",
       "stars": 17,
-      "pushedAt": "2026-11-18T12:02:32Z",
+      "pushedAt": "2026-11-18T12:06:48Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -19789,6 +19767,24 @@
       "discoveredBy": "topic:threejs stars:>=5 archived:false"
     },
     {
+      "repository": "shaarmander/mobicats-jewels",
+      "url": "https://github.com/shaarmander/mobicats-jewels",
+      "description": "A real-time gemstone and ring viewer for the web.",
+      "language": "JavaScript",
+      "stars": 16,
+      "pushedAt": "2026-11-18T02:49:54Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "jewelry",
+        "threejs",
+        "webgl"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
       "repository": "remarkablegames/phaser-template",
       "url": "https://github.com/remarkablegames/phaser-template",
       "description": "🕹️ Phaser template for making HTML5 games",
@@ -20204,24 +20200,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:godot-engine stars:>=10 archived:false"
-    },
-    {
-      "repository": "shaarmander/mobicats-jewels",
-      "url": "https://github.com/shaarmander/mobicats-jewels",
-      "description": "A real-time gemstone and ring viewer for the web.",
-      "language": "JavaScript",
-      "stars": 15,
-      "pushedAt": "2026-11-18T02:49:54Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "jewelry",
-        "threejs",
-        "webgl"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:threejs stars:>=5 archived:false"
     },
     {
       "repository": "sandbase-lab/awesome-opus-5.5",
@@ -21211,6 +21189,25 @@
       "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
+      "repository": "RustCityRS/rs-majula",
+      "url": "https://github.com/RustCityRS/rs-majula",
+      "description": "The Multi-Revision RuneScape 2 Server, Engine & Website in Rust",
+      "language": "Rust",
+      "stars": 13,
+      "pushedAt": "2026-11-18T11:07:54Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "game-engine",
+        "game-server",
+        "high-performance",
+        "rust"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
+    },
+    {
       "repository": "AiursoftWeb/ChessServer",
       "url": "https://github.com/AiursoftWeb/ChessServer",
       "description": "ChessServer is just a simple web-based chess server. Based on WebSocket. Can be played with sharing link with friends. No sign up required. Source at https://gitlab.aiursoft.com/aiursoft/chessserver",
@@ -21985,7 +21982,7 @@
       "description": "Browser-first parametric CAD: exact B-rep solids on a WebAssembly kernel, replayable feature history, direct on-model editing, STEP in and out. Local-first, with optional cloud projects and live collaboration.",
       "language": "TypeScript",
       "stars": 12,
-      "pushedAt": "2026-11-18T12:01:09Z",
+      "pushedAt": "2026-11-18T12:09:07Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -22666,6 +22663,36 @@
       "discoveredBy": "topic:webgl-game stars:>=3 archived:false"
     },
     {
+      "repository": "Langerz82/landofmana",
+      "url": "https://github.com/Langerz82/landofmana",
+      "description": "Land Of Mana - Online RPG Game",
+      "language": "JavaScript",
+      "stars": 11,
+      "pushedAt": "2026-11-18T12:10:20Z",
+      "licenseSpdx": "NOASSERTION",
+      "licenseUrl": null,
+      "topics": [
+        "browser-game",
+        "browserquest",
+        "game",
+        "game-2d",
+        "game-development",
+        "gamedev",
+        "games",
+        "gameserver",
+        "jrpg",
+        "mmorpg",
+        "multiplayer",
+        "retro",
+        "rogue-like",
+        "rpg",
+        "rpg-game"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:browser-game stars:>=3 archived:false"
+    },
+    {
       "repository": "Pravin-surawase/structural_engineering_lib",
       "url": "https://github.com/Pravin-surawase/structural_engineering_lib",
       "description": "Open-source IS 456 RC design toolkit: Python, FastAPI, React 3D, batch workflows, BBS, DXF, and reports.",
@@ -22858,36 +22885,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:pixijs stars:>=3 archived:false"
-    },
-    {
-      "repository": "Langerz82/landofmana",
-      "url": "https://github.com/Langerz82/landofmana",
-      "description": "Land Of Mana - Online RPG Game",
-      "language": "JavaScript",
-      "stars": 11,
-      "pushedAt": "2026-11-18T01:57:44Z",
-      "licenseSpdx": "NOASSERTION",
-      "licenseUrl": null,
-      "topics": [
-        "browser-game",
-        "browserquest",
-        "game",
-        "game-2d",
-        "game-development",
-        "gamedev",
-        "games",
-        "gameserver",
-        "jrpg",
-        "mmorpg",
-        "multiplayer",
-        "retro",
-        "rogue-like",
-        "rpg",
-        "rpg-game"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:browser-game stars:>=3 archived:false"
     },
     {
       "repository": "Hartwich/Open-Party-Lab",
@@ -25534,7 +25531,7 @@
       "description": "Combat top-down 2D airplane game with fuel management, multiple weapons, multi-level, and adjustable difficulty. Made with Godot 4.",
       "language": "GDScript",
       "stars": 8,
-      "pushedAt": "2026-11-18T12:05:56Z",
+      "pushedAt": "2026-11-18T12:08:01Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
@@ -28042,7 +28039,7 @@
       "description": "A multiplayer simulation where every character is run by its owner's own AI agent. Persistent 3D worlds; bring Claude Code, Codex, Cursor or any MCP agent.",
       "language": "TypeScript",
       "stars": 6,
-      "pushedAt": "2026-11-18T12:06:40Z",
+      "pushedAt": "2026-11-18T12:11:08Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
