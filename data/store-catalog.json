@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T00:00:00.000Z",
+  "generatedAt": "2026-11-18T11:26:14.432Z",
   "sources": [
     "F-Droid",
     "GitHub Releases",
@@ -557,6 +557,549 @@
       "description": "نسخة أندرويد من محاكي النقل مفتوح المصدر.",
       "source": "F-Droid",
       "downloadUrl": "https://f-droid.org/packages/org.openttd.sdl/",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "trackmania",
+      "title": "Trackmania",
+      "category": "سباق احترافي",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "PlayStation",
+        "Xbox"
+      ],
+      "description": "سباقات زمنية تنافسية ومحرر حلبات؛ تتوفر نسخة أساسية مجانية على الكمبيوتر.",
+      "source": "Ubisoft Nadeo",
+      "downloadUrl": "https://www.ubisoft.com/en-us/games/trackmania",
+      "license": "ملكية؛ نسخة Starter مجانية",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "asphalt-legends",
+      "title": "Asphalt Legends Unite",
+      "category": "سباق سيارات",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "Android",
+        "iOS",
+        "PlayStation",
+        "Xbox",
+        "Switch"
+      ],
+      "description": "سباقات أركيد وسيارات مرخصة وتنافس متعدد المنصات.",
+      "source": "Gameloft",
+      "downloadUrl": "https://asphaltlegendsunite.com/",
+      "license": "Free-to-play مع مشتريات",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "gta-v",
+      "title": "Grand Theft Auto V",
+      "category": "عالم مفتوح وأكشن",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "PlayStation",
+        "Xbox"
+      ],
+      "description": "عالم مفتوح وقصة وطور GTA Online؛ لعبة تجارية مدفوعة.",
+      "source": "Rockstar Games",
+      "downloadUrl": "https://www.rockstargames.com/gta-v",
+      "license": "ملكية ومدفوعة",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "rdr2",
+      "title": "Red Dead Redemption 2",
+      "category": "عالم مفتوح ومغامرات",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "PlayStation",
+        "Xbox"
+      ],
+      "description": "مغامرة عالم مفتوح في الغرب الأمريكي؛ لعبة تجارية مدفوعة.",
+      "source": "Rockstar Games",
+      "downloadUrl": "https://www.rockstargames.com/reddeadredemption2",
+      "license": "ملكية ومدفوعة",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "fortnite",
+      "title": "Fortnite",
+      "category": "باتل رويال وتصويب",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "Android",
+        "PlayStation",
+        "Xbox",
+        "Switch"
+      ],
+      "description": "لعبة باتل رويال وأطوار متنوعة من Epic Games.",
+      "source": "Epic Games",
+      "downloadUrl": "https://www.fortnite.com/download",
+      "license": "Free-to-play",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "pubg-battlegrounds",
+      "title": "PUBG: Battlegrounds",
+      "category": "باتل رويال وتصويب",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "PlayStation",
+        "Xbox"
+      ],
+      "description": "لعبة باتل رويال تنافسية من KRAFTON.",
+      "source": "KRAFTON",
+      "downloadUrl": "https://pubg.com/",
+      "license": "Free-to-play",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "war-thunder",
+      "title": "War Thunder",
+      "category": "محاكاة عسكرية",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "PlayStation",
+        "Xbox"
+      ],
+      "description": "قتال بمركبات جوية وبرية وبحرية في معارك جماعية.",
+      "source": "Gaijin Entertainment",
+      "downloadUrl": "https://warthunder.com/",
+      "license": "Free-to-play",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "hedgewars",
+      "title": "Hedgewars",
+      "category": "استراتيجية وأدوار",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "لعبة استراتيجية أدوار مفتوحة المصدر مستوحاة من ألعاب المدفعية.",
+      "source": "Hedgewars Project",
+      "downloadUrl": "https://www.hedgewars.org/download.html",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "teeworlds",
+      "title": "Teeworlds",
+      "category": "أكشن جماعي",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة منصات وتصويب جماعية مفتوحة المصدر.",
+      "source": "Teeworlds Project",
+      "downloadUrl": "https://www.teeworlds.com/?page=downloads",
+      "license": "BSD-3-Clause",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "luanti",
+      "title": "Luanti",
+      "category": "عالم مفتوح وصناعة",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "محرك ومنصة ألعاب voxel مفتوحة المصدر مع عوالم ومجتمع إضافات.",
+      "source": "Luanti Project",
+      "downloadUrl": "https://www.luanti.org/downloads/",
+      "license": "LGPL-2.1-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "openmw",
+      "title": "OpenMW",
+      "category": "RPG وعالم مفتوح",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "محرك مفتوح المصدر لتشغيل ألعاب RPG متوافقة؛ يتطلب ملفات اللعبة الأصلية لبعض المحتويات.",
+      "source": "OpenMW Project",
+      "downloadUrl": "https://openmw.org/downloads/",
+      "license": "GPL-3.0",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "zero-k",
+      "title": "Zero-K",
+      "category": "استراتيجية RTS",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "Linux"
+      ],
+      "description": "لعبة استراتيجية وقت حقيقي مفتوحة المصدر ومعارك جماعية.",
+      "source": "Zero-K Project",
+      "downloadUrl": "https://zero-k.info/Download",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "unciv",
+      "title": "Unciv",
+      "category": "استراتيجية حضارات",
+      "kind": "game",
+      "platform": [
+        "Android",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة استراتيجية بناء حضارات مستوحاة من ألعاب 4X الكلاسيكية.",
+      "source": "Unciv · GitHub",
+      "downloadUrl": "https://github.com/yairm210/Unciv/releases",
+      "license": "MPL-2.0",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "supertux",
+      "title": "SuperTux",
+      "category": "منصات ومغامرات",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة منصات ثنائية الأبعاد مفتوحة المصدر.",
+      "source": "SuperTux Project",
+      "downloadUrl": "https://www.supertux.org/download.html",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "thunderbird-desktop",
+      "title": "Thunderbird",
+      "category": "بريد إلكتروني",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "عميل بريد وتقويم مفتوح المصدر.",
+      "source": "Mozilla",
+      "downloadUrl": "https://www.thunderbird.net/",
+      "license": "MPL-2.0",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "inkscape",
+      "title": "Inkscape",
+      "category": "تصميم ورسوم متجهية",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "محرر رسومات SVG متجهي مفتوح المصدر.",
+      "source": "Inkscape Project",
+      "downloadUrl": "https://inkscape.org/release/",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "vscode",
+      "title": "Visual Studio Code",
+      "category": "تطوير وبرمجة",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "محرر أكواد مع إضافات وأدوات تطوير.",
+      "source": "Microsoft",
+      "downloadUrl": "https://code.visualstudio.com/download",
+      "license": "Freeware؛ شروط Microsoft",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "github-desktop",
+      "title": "GitHub Desktop",
+      "category": "تطوير وبرمجة",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS"
+      ],
+      "description": "واجهة رسومية لإدارة مستودعات GitHub وGit.",
+      "source": "GitHub",
+      "downloadUrl": "https://desktop.github.com/",
+      "license": "MIT",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "qbittorrent",
+      "title": "qBittorrent",
+      "category": "أدوات وتنزيل",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "عميل BitTorrent مجاني ومفتوح المصدر.",
+      "source": "qBittorrent Project",
+      "downloadUrl": "https://www.qbittorrent.org/download",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "keepassxc",
+      "title": "KeePassXC",
+      "category": "إدارة كلمات المرور",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "مدير كلمات مرور محلي مفتوح المصدر.",
+      "source": "KeePassXC Project",
+      "downloadUrl": "https://keepassxc.org/download/",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "joplin",
+      "title": "Joplin",
+      "category": "ملاحظات وإنتاجية",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "iOS",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "تطبيق ملاحظات ودفاتر ومزامنة مفتوح المصدر.",
+      "source": "Joplin",
+      "downloadUrl": "https://joplinapp.org/help/install/",
+      "license": "AGPL-3.0",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "kde-connect",
+      "title": "KDE Connect",
+      "category": "اتصال ومزامنة",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "ربط الهاتف بالكمبيوتر ومزامنة الإشعارات والملفات.",
+      "source": "KDE",
+      "downloadUrl": "https://kdeconnect.kde.org/download.html",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "bitwarden",
+      "title": "Bitwarden",
+      "category": "إدارة كلمات المرور",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "iOS",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "مدير كلمات مرور متعدد الأجهزة.",
+      "source": "Bitwarden",
+      "downloadUrl": "https://bitwarden.com/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "brave",
+      "title": "Brave Browser",
+      "category": "إنترنت ومتصفحات",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "iOS",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "متصفح ويب يركز على الخصوصية.",
+      "source": "Brave Software",
+      "downloadUrl": "https://brave.com/download/",
+      "license": "MPL-2.0؛ بعض المكونات بشروط مختلفة",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "vscodium",
+      "title": "VSCodium",
+      "category": "تطوير وبرمجة",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "توزيعة محرر VS Code مبنية من المصدر المفتوح دون العلامة التجارية الرسمية.",
+      "source": "VSCodium",
+      "downloadUrl": "https://vscodium.com/",
+      "license": "MIT",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "handbrake",
+      "title": "HandBrake",
+      "category": "تحرير وتحويل فيديو",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "تحويل وضغط ملفات الفيديو مفتوح المصدر.",
+      "source": "HandBrake Project",
+      "downloadUrl": "https://handbrake.fr/downloads.php",
+      "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "shotcut",
+      "title": "Shotcut",
+      "category": "تحرير فيديو",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "محرر فيديو مجاني ومفتوح المصدر.",
+      "source": "Shotcut Project",
+      "downloadUrl": "https://shotcut.org/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "kdenlive",
+      "title": "Kdenlive",
+      "category": "تحرير فيديو",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "محرر فيديو احترافي مفتوح المصدر.",
+      "source": "KDE",
+      "downloadUrl": "https://kdenlive.org/en/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "darktable",
+      "title": "darktable",
+      "category": "تحرير صور RAW",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "تطوير ومعالجة الصور الفوتوغرافية وملفات RAW.",
+      "source": "darktable Project",
+      "downloadUrl": "https://www.darktable.org/install/",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "calibre",
+      "title": "Calibre",
+      "category": "كتب إلكترونية",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "إدارة وتحويل وتنظيم الكتب الإلكترونية.",
+      "source": "calibre",
+      "downloadUrl": "https://calibre-ebook.com/download",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "official_source_link_not_independently_audited"
+    },
+    {
+      "id": "filezilla",
+      "title": "FileZilla",
+      "category": "نقل ملفات",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "عميل FTP وSFTP لنقل الملفات.",
+      "source": "FileZilla Project",
+      "downloadUrl": "https://filezilla-project.org/download.php",
       "license": "GPL-2.0-or-later",
       "verified": false,
       "status": "official_source_link_not_independently_audited"
