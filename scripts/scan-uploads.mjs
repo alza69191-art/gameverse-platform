@@ -75,7 +75,7 @@ async function main() {
       try {
         await execFile("clamscan", [
           "--no-summary", "--alert-exceeds-max", "--alert-encrypted",
-          "--max-filesize=256M", "--max-scansize=1G", "--max-recursion=10",
+          "--max-filesize=256M", "--max-scansize=2G", "--max-recursion=10",
           "--max-files=10000", "--max-scantime=300000", path
         ], { timeout: 360000, maxBuffer: 2 * 1024 * 1024 });
         verdict = "clean";
