@@ -10,7 +10,22 @@ const queries = [
   "topic:threejs stars:>=5 archived:false",
   "topic:webgl-game stars:>=3 archived:false",
   "topic:godot stars:>=10 archived:false",
-  "topic:open-source-game stars:>=3 archived:false"
+  "topic:open-source-game stars:>=3 archived:false",
+  "topic:html5-games stars:>=3 archived:false",
+  "topic:javascript-game stars:>=3 archived:false",
+  "topic:canvas-game stars:>=3 archived:false",
+  "topic:arcade-game stars:>=3 archived:false",
+  "topic:babylonjs stars:>=3 archived:false",
+  "topic:pixijs stars:>=3 archived:false",
+  "topic:playcanvas stars:>=3 archived:false",
+  "topic:web-game stars:>=3 archived:false",
+  "topic:game-engine stars:>=5 archived:false",
+  "topic:godot-engine stars:>=10 archived:false",
+  "topic:open-source-games stars:>=3 archived:false",
+  "topic:multiplayer-game stars:>=5 archived:false",
+  "topic:threejs-game stars:>=3 archived:false",
+  "topic:phaser-game stars:>=3 archived:false",
+  "topic:game-development stars:>=10 archived:false"
 ];
 const headers = {
   "Accept": "application/vnd.github+json",
