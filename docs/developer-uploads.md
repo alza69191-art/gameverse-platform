@@ -2,7 +2,7 @@
 
 ## Database
 
-Apply `database/migrations/002_developer_uploads.sql` once in the TiDB SQL Editor, using the existing `gameverse` database. Back up the database first. The migration adds developer applications and a quarantine table; it does not replace the eight original tables.
+Apply `database/migrations/002_developer_uploads.sql` once in the TiDB SQL Editor, using the existing `gameverse` database. Back up the database first. The migration adds developer applications and a quarantine table; it does not replace the eight original tables. Also apply `database/migrations/003_rate_limits.sql` to enable authentication rate limiting.
 
 ## Cloudflare R2 configuration
 
@@ -14,6 +14,20 @@ Create a **private** R2 bucket. Create an API token scoped to that bucket with O
 - `R2_BUCKET`
 
 Do not make the quarantine bucket public. The app issues short-lived presigned PUT URLs; uploaded archives remain private. R2 supports the S3 API, and its free monthly allowance is limited, not unlimited. Check current billing and usage before launch.
+Configure bucket CORS to allow the developer portal to upload directly. Example policy (replace the origin if the Render URL changes):
+
+```json
+[
+  {
+    "AllowedOrigins": ["https://gameverse-developers.onrender.com"],
+    "AllowedMethods": ["PUT", "HEAD"],
+    "AllowedHeaders": ["Content-Type", "x-amz-*", "authorization"],
+    "ExposeHeaders": ["ETag"],
+    "MaxAgeSeconds": 3600
+  }
+]
+```
+
 
 ## Current upload contract
 
@@ -51,3 +65,16 @@ An administrator can approve only an uploaded archive whose scan status is `clea
 - Add rate limiting, email verification, password reset, audit logging, and alerting before opening registration broadly.
 - Test with benign archives and the EICAR test file in a controlled environment before accepting public uploads.
 - Add abuse reporting, takedown, copyright review, and developer terms before public marketplace launch.
+
+## First administrator bootstrap
+
+Create a normal player account through the developer portal registration screen first. Then, in TiDB SQL Editor, promote only that verified account:
+
+```sql
+UPDATE users
+SET role = 'admin'
+WHERE email = 'YOUR_VERIFIED_ADMIN_EMAIL'
+  AND status = 'active';
+```
+
+Do not expose an admin registration endpoint. Sign in again at the admin portal after running the update.
