@@ -1,6 +1,6 @@
 import mysql from "mysql2/promise";
 
-const email = String(process.argv[2] ?? "").trim().toLowerCase();
+const email = String(process.env.BOOTSTRAP_ADMIN_EMAIL ?? process.argv[2] ?? "").trim().toLowerCase();
 const confirm = String(process.env.BOOTSTRAP_ADMIN_CONFIRM_EMAIL ?? "").trim().toLowerCase();
 const raw = process.env.DATABASE_URL;
 if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
