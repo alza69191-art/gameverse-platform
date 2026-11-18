@@ -116,3 +116,27 @@ These are complete game projects or substantial playable builds, not generated t
 | SuperTuxKart | https://github.com/supertuxkart/stk-code | https://supertuxkart.net/Download | GPL code; inspect the individual media/data asset licences before reuse. |
 
 These six titles are registered as official download destinations, not embedded browser games. GameVerse does not mirror their installers or claim ownership of the games.
+
+## Third-party HTML5 game publisher platforms (integration candidates)
+
+These providers are approved as **research/onboarding leads only**. They are not yet connected to GameVerse, and no provider has approved the GameVerse production property in this record. Do not bulk-import games, copy game files, or enable monetization until the provider account, property/domain and applicable publisher terms are approved.
+
+| Provider | Official publisher entry | Integration options / published terms | GameVerse status |
+|---|---|---|---|
+| GameDistribution | https://gamedistribution.com/publishers/embedded-links/ | Offers Direct Game Integration using provider-hosted games in an iframe after publisher onboarding. Its publisher agreement licenses display on registered Publisher Properties and provides a publisher revenue share. Its developer upload workflow is separate and requires SDK/ad integration and QA; do not confuse it with publisher iframe access. | Pending publisher application, production-property approval and written confirmation of domain eligibility, revenue share, payment method and regional availability. |
+| GameMonetize | https://gamemonetize.com/ | Offers a publisher portal, an arcade script/catalog and embedded HTML5 games. Its FAQ states a 45% publisher revenue share and lists PayPal or USDT ERC20 payout; these terms and eligibility must be reconfirmed in the account agreement before relying on them. | Pending publisher registration and property approval. Confirm whether a free GitHub Pages/Render subdomain is accepted, payout eligibility in the operator's country, thresholds, tax/KYC requirements and exact embed/API rules. |
+| Gamezop Business | https://business.gamezop.com/ | Offers a partner integration, including a unique link, API/SDK options and iframe. Its published guide warns that a plain copied iframe does not itself qualify the publisher to monetize traffic; use the partner-provided integration and credentials. | Pending partner enquiry and approval. Confirm domain eligibility, available integration method, revenue share, payout method and regional onboarding. |
+
+### Provider onboarding checklist
+
+1. Apply using the official publisher/partner page linked above and provide the actual GameVerse production URL.
+2. Ask each provider to confirm in writing that the exact free subdomain is eligible. Do not assume that free hosting or a GitHub Pages URL is accepted.
+3. Confirm the operator's country is eligible, and verify KYC, tax forms, payout minimums, supported payout rails and whether a usable payout method is available before investing in integration.
+4. Obtain the approved embed URL, API key or SDK instructions from the provider dashboard. Never invent iframe URLs or scrape a provider's catalogue.
+5. Add games only through the approved integration method. Keep provider-hosted games on provider infrastructure unless a separate written redistribution licence permits self-hosting.
+6. Record provider, property approval date, terms version, revenue share, payout rules, game IDs, embed method and contact/support details in the GameVerse admin records.
+7. Test on desktop and mobile, check CSP/frame restrictions, loading performance, privacy/cookie disclosures and ad behaviour. Do not manipulate ad impressions or clicks.
+8. If approval is denied or terms do not permit the intended use, do not embed the content.
+
+**Important:** The presence of a provider in this table is not evidence that GameVerse has been accepted, that its domain is approved, that revenue will be earned, or that payouts to Palestine are supported. Those points require direct provider confirmation.
+
