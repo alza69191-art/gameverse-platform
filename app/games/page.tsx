@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Game = { title: string; category: string; platform: string; mode: string; description: string; source: string; sourceName: string; featured?: boolean };
 const games: Game[] = [
@@ -21,6 +21,7 @@ export default function GamesPage() {
   const [category, setCategory] = useState("الكل");
   const [platform, setPlatform] = useState("الكل");
   const [mode, setMode] = useState("الكل");
+  useEffect(() => { const params = new URLSearchParams(window.location.search); setQuery(params.get("q") || ""); setCategory(params.get("category") || "الكل"); setPlatform(params.get("platform") || "الكل"); }, []);
   const filtered = useMemo(() => games.filter((game) => {
     const text = (game.title + " " + game.category + " " + game.description).toLowerCase();
     return text.includes(query.trim().toLowerCase()) && (category === "الكل" || game.category === category) && (platform === "الكل" || game.platform === platform) && (mode === "الكل" || game.mode === mode);
