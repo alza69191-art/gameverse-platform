@@ -9,7 +9,7 @@ const REQUIRED_TABLES = [
   "game_category_map", "catalog_sources", "asset_resources", "developer_applications",
   "game_uploads", "rate_limit_buckets", "user_sessions", "user_favorites",
   "game_reviews", "game_comments", "game_reports", "game_play_history",
-  "user_notifications", "admin_audit_logs"
+  "user_notifications", "admin_audit_logs", "admin_bootstrap_events"
 ];
 
 export async function GET() {
