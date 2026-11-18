@@ -73,3 +73,32 @@ The following entries are listed as external official-play links, not embedded g
 | GoBattle.io | https://gobattle.io/ | Official site describes free browser play including Battle Royale mode. No redistribution licence confirmed. | External launch only; no iframe. |
 
 These entries are free-to-play on the publisher's site; GameVerse does not guarantee that all optional cosmetics, passes, in-game purchases, or app-store versions are free.
+
+
+## Open-source full-game projects reviewed (2026-11-18)
+
+These are complete game projects or substantial playable builds, not generated toy demos. GameVerse currently links to the projects' official hosted instances where available; the source repositories are credited on each game detail page. Linking to an upstream demo is not the same as self-hosting or incorporating its source code.
+
+| Game | Source repository | Code licence | Integration status | Notes |
+|---|---|---|---|---|
+| OpenFront.io | https://github.com/openfrontio/OpenFrontIO | AGPL-3.0 | Official browser game linked | Assets are separately CC BY-SA 4.0. Public network modifications must offer corresponding source and retain notices. |
+| LibreHold | https://github.com/librehold-game/librehold | AGPL-3.0 | Official browser game linked | Alpha; Go/Postgres/Valkey server stack. Hosting needs a separate backend and persistent services. |
+| Ancient Beast | https://github.com/FreezingMoon/AncientBeast | AGPL-3.0 | Official browser game linked | Verify individual art/audio asset terms before copying assets. |
+| Freeciv-web | https://github.com/freeciv/freeciv-web | Mixed GPL/AGPL components | Community live instance linked | Multi-component Java/Tomcat/nginx/C server/proxy stack; not a simple static embed. |
+| pmndrs Racing | https://github.com/pmndrs/racing-game | MIT | Official demo linked | README describes CC0 assets; preserve MIT notice. |
+| Suroi | https://github.com/HasangerGames/suroi | GPL-3.0 | Official browser game linked | 2D battle royale; work in progress; review asset terms separately. |
+
+### Reviewed but not yet deployed as GameVerse-hosted games
+
+- https://github.com/tombuildsstuff/web-shooter-game — MIT source; full Go + WebSocket + Three.js multiplayer FPS, bots, maps and mobile controls. No verified public official hosted instance was found in this review. It needs a dedicated Go service and multiplayer testing before listing as playable.
+- https://github.com/glashoff/WebGame — AGPL-3.0 source; browser/Electron Counter-Strike-style FPS with authoritative server and map editor. Assets have separate terms (ambientCG CC0; Mixamo content not included/not covered). Requires separate deployment and AGPL source-offer compliance.
+- https://github.com/iiegor/slither — MIT server implementation only; README says it needs a compatible client, so it is not a complete standalone game.
+- https://github.com/agreedturtle/slither-clone — MIT full-stack Slither-style project with authoritative simulation and bot AI, but very new/low adoption; do not promote as production-ready until independent security, load and gameplay testing.
+- https://github.com/pmndrs/racing-game — complete demo is available, but it is a community showcase rather than a large commercial-grade racing title.
+
+### Reuse rules
+
+1. A public repository is not automatically a blanket licence for every included asset, trademark, music track, model or character.
+2. Preserve each repository's copyright and licence notices; provide the source-code offer required by AGPL/GPL when distributing or operating modified versions.
+3. Do not copy proprietary game assets, original commercial-game clients, brand marks or paid content into GameVerse.
+4. Upstream external links are catalog entries only. Self-hosting requires a separate deployment, storage, networking, security and capacity review.
