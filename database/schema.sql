@@ -45,3 +45,51 @@ CREATE TABLE IF NOT EXISTS review_events (
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT fk_review_game FOREIGN KEY (game_id) REFERENCES games(id)
 );
+
+
+-- Public game categories and the many-to-many relation to games.
+CREATE TABLE IF NOT EXISTS game_categories (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name_ar VARCHAR(80) NOT NULL,
+  slug VARCHAR(100) NOT NULL UNIQUE,
+  sort_order INT NOT NULL DEFAULT 0,
+  is_active BOOLEAN NOT NULL DEFAULT TRUE
+);
+
+CREATE TABLE IF NOT EXISTS game_category_map (
+  game_id BIGINT UNSIGNED NOT NULL,
+  category_id BIGINT UNSIGNED NOT NULL,
+  PRIMARY KEY (game_id, category_id),
+  CONSTRAINT fk_game_category_game FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE,
+  CONSTRAINT fk_game_category_category FOREIGN KEY (category_id) REFERENCES game_categories(id) ON DELETE CASCADE
+);
+
+-- External game listings are discovery links until GameVerse has redistribution rights.
+CREATE TABLE IF NOT EXISTS catalog_sources (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  source_name VARCHAR(180) NOT NULL,
+  source_url VARCHAR(2048) NOT NULL,
+  content_kind ENUM('game','asset','engine','library') NOT NULL,
+  license_name VARCHAR(120),
+  license_url VARCHAR(2048),
+  redistribution_allowed BOOLEAN NOT NULL DEFAULT FALSE,
+  verification_status ENUM('unverified','verified','restricted','rejected') NOT NULL DEFAULT 'unverified',
+  verified_at TIMESTAMP NULL,
+  notes TEXT,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS asset_resources (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  source_id BIGINT UNSIGNED NOT NULL,
+  title VARCHAR(180) NOT NULL,
+  asset_type ENUM('2d','3d','audio','ui','font','other') NOT NULL,
+  resource_url VARCHAR(2048) NOT NULL,
+  license_name VARCHAR(120),
+  license_url VARCHAR(2048),
+  attribution TEXT,
+  redistribution_allowed BOOLEAN NOT NULL DEFAULT FALSE,
+  review_status ENUM('pending','approved','rejected') NOT NULL DEFAULT 'pending',
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_asset_source FOREIGN KEY (source_id) REFERENCES catalog_sources(id)
+);
