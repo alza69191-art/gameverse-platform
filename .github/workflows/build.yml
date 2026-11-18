@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: 22
       - run: npm install
+      - name: Check crawler syntax
+        run: node --check scripts/crawl-web-index.mjs
       - name: Summarize dependency advisories
         run: |
           npm audit --json > npm-audit.json || true
