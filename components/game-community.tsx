@@ -34,6 +34,24 @@ export default function GameCommunity({slug}:{slug:string}){
     else setFavorite(false);
   }
   useEffect(()=>{refresh().catch(()=>setMessage("تعذر تحميل التفاعل المجتمعي"));},[slug]);
+  useEffect(()=>{
+    if(!signedIn)return;
+    let activeSince:number|null=document.visibilityState==="visible"?Date.now():null;
+    let accumulated=0;
+    const flush=()=>{
+      if(activeSince!==null){accumulated+=Math.floor((Date.now()-activeSince)/1000);activeSince=document.visibilityState==="visible"?Date.now():null;}
+      if(accumulated>=10){
+        const durationSeconds=Math.min(accumulated,7200);accumulated=0;
+        fetch(`/api/v1/games/${slug}/play`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({durationSeconds}),keepalive:true}).catch(()=>{});
+      }
+    };
+    const onVisibility=()=>{if(document.visibilityState==="hidden")flush();else if(activeSince===null)activeSince=Date.now();};
+    const timer=window.setInterval(flush,300000);
+    document.addEventListener("visibilitychange",onVisibility);
+    window.addEventListener("pagehide",flush);
+    return()=>{flush();window.clearInterval(timer);document.removeEventListener("visibilitychange",onVisibility);window.removeEventListener("pagehide",flush);};
+  },[signedIn,slug]);
+
 
   async function send(url:string,body:unknown,success:string){
     setMessage("");
