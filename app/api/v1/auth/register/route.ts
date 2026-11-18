@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
     );
     const userId = String((result as { insertId: number | bigint }).insertId);
     const response = NextResponse.json({ user: { id: userId, email, displayName, role: "player" } }, { status: 201 });
-    response.headers.set("Set-Cookie", sessionCookie(createSessionToken(userId)));
+    response.headers.set("Set-Cookie", sessionCookie(await createSessionToken(userId)));
     response.headers.set("Cache-Control", "no-store");
     return response;
   } catch (error) {
