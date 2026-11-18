@@ -1,0 +1,532 @@
+{
+  "generatedAt": "2026-11-18T00:00:00.000Z",
+  "sources": [
+    "F-Droid",
+    "GitHub Releases",
+    "Official publisher stores"
+  ],
+  "items": [
+    {
+      "id": "f-droid-client",
+      "title": "F-Droid",
+      "category": "متجر تطبيقات",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "متجر مفتوح المصدر لتطبيقات أندرويد الحرة.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/org.fdroid.fdroid/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "newpipe",
+      "title": "NewPipe",
+      "category": "وسائط",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "مشغل وسائط مفتوح المصدر.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/org.schabi.newpipe/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "vlc-android",
+      "title": "VLC for Android",
+      "category": "وسائط",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "مشغل وسائط متعدد الصيغ.",
+      "source": "F-Droid / VideoLAN",
+      "downloadUrl": "https://www.videolan.org/vlc/",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "k-9-mail",
+      "title": "Thunderbird for Android (K-9)",
+      "category": "إنتاجية",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "بريد إلكتروني مفتوح المصدر.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/com.fsck.k9/",
+      "license": "Apache-2.0",
+      "verified": true
+    },
+    {
+      "id": "librera",
+      "title": "Librera Reader",
+      "category": "كتب وقراءة",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "قارئ كتب ومستندات إلكترونية.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/com.foobnix.pro.pdf.reader/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "antennapod",
+      "title": "AntennaPod",
+      "category": "وسائط",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "مدير بودكاست مفتوح المصدر.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/de.danoeh.antennapod/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "osmand",
+      "title": "OsmAnd",
+      "category": "خرائط",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "خرائط وملاحة تعمل دون اتصال.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/net.osmand.plus/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "keepassdx",
+      "title": "KeePassDX",
+      "category": "أدوات",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "مدير كلمات مرور محلي مفتوح المصدر.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/com.kunzisoft.keepass.libre/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "organic-maps",
+      "title": "Organic Maps",
+      "category": "خرائط",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "iOS"
+      ],
+      "description": "خرائط وملاحة مجانية ومفتوحة المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://organicmaps.app/",
+      "license": "Apache-2.0",
+      "verified": true
+    },
+    {
+      "id": "syncthing",
+      "title": "Syncthing",
+      "category": "أدوات",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "مزامنة ملفات مباشرة بين أجهزتك.",
+      "source": "Official project",
+      "downloadUrl": "https://syncthing.net/downloads/",
+      "license": "MPL-2.0",
+      "verified": true
+    },
+    {
+      "id": "blender",
+      "title": "Blender",
+      "category": "إبداع وتصميم",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "إنشاء ونمذجة وتحريك ثلاثي الأبعاد.",
+      "source": "Official project",
+      "downloadUrl": "https://www.blender.org/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "krita",
+      "title": "Krita",
+      "category": "إبداع وتصميم",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "الرسم الرقمي والتوضيح الفني.",
+      "source": "Official project",
+      "downloadUrl": "https://krita.org/en/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "gimp",
+      "title": "GIMP",
+      "category": "إبداع وتصميم",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "تحرير الصور ومعالجتها.",
+      "source": "Official project",
+      "downloadUrl": "https://www.gimp.org/downloads/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "audacity",
+      "title": "Audacity",
+      "category": "وسائط",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "تسجيل الصوت وتحريره.",
+      "source": "Official project",
+      "downloadUrl": "https://www.audacityteam.org/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "obs-studio",
+      "title": "OBS Studio",
+      "category": "وسائط",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "تسجيل الشاشة والبث المباشر.",
+      "source": "Official project",
+      "downloadUrl": "https://obsproject.com/download",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "godot",
+      "title": "Godot Engine",
+      "category": "تطوير",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "محرك ألعاب مفتوح المصدر ثنائي وثلاثي الأبعاد.",
+      "source": "Official project",
+      "downloadUrl": "https://godotengine.org/download/",
+      "license": "MIT",
+      "verified": true
+    },
+    {
+      "id": "libreoffice",
+      "title": "LibreOffice",
+      "category": "إنتاجية",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "حزمة مكتبية مفتوحة المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://www.libreoffice.org/download/download-libreoffice/",
+      "license": "MPL-2.0",
+      "verified": true
+    },
+    {
+      "id": "7zip",
+      "title": "7-Zip",
+      "category": "أدوات",
+      "kind": "app",
+      "platform": [
+        "Windows",
+        "Linux"
+      ],
+      "description": "ضغط وفك ضغط الملفات.",
+      "source": "Official project",
+      "downloadUrl": "https://www.7-zip.org/download.html",
+      "license": "LGPL-2.1-or-later",
+      "verified": true
+    },
+    {
+      "id": "firefox",
+      "title": "Firefox",
+      "category": "إنترنت",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "iOS",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "متصفح ويب مفتوح المصدر.",
+      "source": "Mozilla",
+      "downloadUrl": "https://www.mozilla.org/firefox/new/",
+      "license": "MPL-2.0",
+      "verified": true
+    },
+    {
+      "id": "signal",
+      "title": "Signal",
+      "category": "اتصال",
+      "kind": "app",
+      "platform": [
+        "Android",
+        "iOS",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "مراسلة ومكالمات مشفرة.",
+      "source": "Signal",
+      "downloadUrl": "https://signal.org/download/",
+      "license": "AGPL-3.0",
+      "verified": true
+    },
+    {
+      "id": "0ad",
+      "title": "0 A.D.",
+      "category": "استراتيجية",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة استراتيجية تاريخية مفتوحة المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://play0ad.com/download/",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "xonotic",
+      "title": "Xonotic",
+      "category": "تصويب",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة تصويب سريعة مفتوحة المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://www.xonotic.org/download/",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "veloren",
+      "title": "Veloren",
+      "category": "مغامرات",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة تقمص أدوار واستكشاف جماعية مفتوحة المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://veloren.net/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "wesnoth",
+      "title": "The Battle for Wesnoth",
+      "category": "استراتيجية",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة استراتيجية تكتيكية خيالية مفتوحة المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://www.wesnoth.org/#download",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "warzone2100",
+      "title": "Warzone 2100",
+      "category": "استراتيجية",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "استراتيجية في الوقت الحقيقي بعالم ما بعد الكارثة.",
+      "source": "Official project",
+      "downloadUrl": "https://wz2100.net/",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "supertuxkart",
+      "title": "SuperTuxKart",
+      "category": "سباق",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "سباق كارت ثلاثي الأبعاد مفتوح المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://supertuxkart.net/Download",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "openra",
+      "title": "OpenRA",
+      "category": "استراتيجية",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "محرك واستعادة ألعاب استراتيجية كلاسيكية.",
+      "source": "Official project",
+      "downloadUrl": "https://www.openra.net/download/",
+      "license": "GPL-3.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "freeciv",
+      "title": "Freeciv",
+      "category": "استراتيجية",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "لعبة استراتيجية بناء حضارات مفتوحة المصدر.",
+      "source": "Official project",
+      "downloadUrl": "https://www.freeciv.org/download/",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "openttd",
+      "title": "OpenTTD",
+      "category": "محاكاة",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "محاكاة إدارة النقل والسكك الحديدية.",
+      "source": "Official project",
+      "downloadUrl": "https://www.openttd.org/downloads/openttd-releases/latest.html",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    },
+    {
+      "id": "mindustry",
+      "title": "Mindustry",
+      "category": "استراتيجية",
+      "kind": "game",
+      "platform": [
+        "Android",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "دفاع أبراج وبناء مصانع وإدارة موارد.",
+      "source": "GitHub Releases",
+      "downloadUrl": "https://github.com/Anuken/Mindustry/releases",
+      "license": "GPL-3.0",
+      "verified": true
+    },
+    {
+      "id": "shattered-pixel-dungeon",
+      "title": "Shattered Pixel Dungeon",
+      "category": "مغامرات",
+      "kind": "game",
+      "platform": [
+        "Android",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "لعبة تقمص أدوار واستكشاف زنزانات مفتوحة المصدر.",
+      "source": "GitHub Releases",
+      "downloadUrl": "https://github.com/00-Evan/shattered-pixel-dungeon/releases",
+      "license": "GPL-3.0",
+      "verified": true
+    },
+    {
+      "id": "endless-sky",
+      "title": "Endless Sky",
+      "category": "محاكاة",
+      "kind": "game",
+      "platform": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "استكشاف فضائي وتجارة وقتال في عالم مفتوح.",
+      "source": "GitHub Releases",
+      "downloadUrl": "https://github.com/endless-sky/endless-sky/releases",
+      "license": "GPL-3.0",
+      "verified": true
+    },
+    {
+      "id": "openttd-android",
+      "title": "OpenTTD Android",
+      "category": "محاكاة",
+      "kind": "game",
+      "platform": [
+        "Android"
+      ],
+      "description": "نسخة أندرويد من محاكي النقل مفتوح المصدر.",
+      "source": "F-Droid",
+      "downloadUrl": "https://f-droid.org/packages/org.openttd.sdl/",
+      "license": "GPL-2.0-or-later",
+      "verified": true
+    }
+  ]
+}
