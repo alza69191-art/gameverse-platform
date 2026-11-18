@@ -95,12 +95,12 @@ export async function revokeSession(token?: string | null) {
 
 export function sessionCookie(token: string) {
   const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
-  return `${SESSION_COOKIE}=${token}; Path=/; HttpOnly; SameSite=None; Max-Age=${SESSION_SECONDS}${secure}`;
+  return `${SESSION_COOKIE}=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${SESSION_SECONDS}${secure}`;
 }
 
 export function clearSessionCookie() {
   const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
-  return `${SESSION_COOKIE}=; Path=/; HttpOnly; SameSite=None; Max-Age=0${secure}`;
+  return `${SESSION_COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure}`;
 }
 
 export function sessionCookieName() {
