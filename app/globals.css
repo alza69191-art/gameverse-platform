@@ -62,3 +62,10 @@
 .report-box{margin-top:22px;border-top:1px solid #ffffff18;padding-top:16px;color:#fb923c}
 .report-box summary{cursor:pointer;font-weight:700}.report-box form{margin-top:14px}
 @media(max-width:700px){.community{padding:17px}.community-head{align-items:flex-start;flex-direction:column}.community-forms,.community-lists{grid-template-columns:1fr}}
+
+
+.downloads-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:0 0 70px}
+.download-card{padding:24px;background:linear-gradient(145deg,#151f33,#0d1626);border:1px solid #ffffff1b;border-radius:16px}
+.download-card h2{font-size:23px;margin:14px 0 8px}.download-card p{color:#aeb9cb;line-height:1.8;min-height:58px}
+.download-meta{display:flex;justify-content:space-between;color:#aeb9cb;font-size:12px;border-top:1px solid #ffffff17;padding:13px 0;margin-top:14px}
+.download-button{display:block;text-align:center;background:#fb923c;color:#201308;text-decoration:none;padding:12px;border-radius:9px;font-weight:800}
