@@ -12,6 +12,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 4 * * 1"
+concurrency:
+  group: gameverse-catalogue-refresh
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -50,4 +53,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/fdroid-catalog.json data/openuse-catalog.json data/game-catalog.json data/site-catalog.json data/game-candidates.json
-          git diff --cached --quiet || (git commit -m "Refresh expanded GameVerse app and game catalogues" && git push)
+          git diff --cached --quiet || (git commit -m "Refresh expanded GameVerse app and game catalogues" && git pull --rebase origin main && git push)
