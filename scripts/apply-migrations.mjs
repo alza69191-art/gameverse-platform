@@ -9,7 +9,7 @@ const connection = await mysql.createConnection({
   port: Number(url.port || 4000),
   user: decodeURIComponent(url.username),
   password: decodeURIComponent(url.password),
-  database: decodeURIComponent(url.pathname.replace(/^\//, "")),
+  database: decodeURIComponent(url.pathname.replace(/^\\//, "")),
   ssl: { minVersion: "TLSv1.2" },
   multipleStatements: true
 });
@@ -19,7 +19,8 @@ const files = [
   "database/migrations/003_rate_limits.sql",
   "database/migrations/004_community_moderation.sql",
   "database/migrations/005_revocable_sessions.sql",
-  "database/migrations/006_admin_bootstrap_audit.sql"
+  "database/migrations/006_admin_bootstrap_audit.sql",
+  "database/migrations/007_web_search_index.sql"
 ];
 try {
   for (const file of files) {
@@ -40,7 +41,8 @@ try {
     "game_category_map", "catalog_sources", "asset_resources", "developer_applications",
     "game_uploads", "rate_limit_buckets", "user_sessions", "user_favorites",
     "game_reviews", "game_comments", "game_reports", "game_play_history",
-    "user_notifications", "admin_audit_logs", "admin_bootstrap_events"
+    "user_notifications", "admin_audit_logs", "admin_bootstrap_events",
+    "web_sites", "web_pages", "web_crawl_queue"
   ];
   const [rows] = await connection.query(
     "SELECT table_name FROM information_schema.tables WHERE table_schema = DATABASE()"
