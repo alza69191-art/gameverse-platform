@@ -18,10 +18,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "حساب المطوّر غير معتمد" }, { status: 403 });
 
     const body = await request.json();
-    const filename = String(body.filename ?? "").split(/[\\/]/).pop()?.trim() ?? "";
+    const filename = String(body.filename ?? "").split(/[\\\\/]/).pop()?.trim() ?? "";
+    const title = String(body.title ?? "").trim();
+    const slug = String(body.slug ?? "").trim().toLowerCase();
+    const description = String(body.description ?? "").trim();
     const size = Number(body.size);
     const contentType = String(body.contentType ?? "").toLowerCase();
-    if (!filename || filename.length > 255 || /[\u0000-\u001f]/.test(filename))
+
+    if (title.length < 3 || title.length > 180 || description.length < 30 || description.length > 10000)
+      return NextResponse.json({ error: "أدخل عنواناً ووصفاً صالحين للعبة" }, { status: 400 });
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || slug.length > 200)
+      return NextResponse.json({ error: "معرّف اللعبة يجب أن يكون بالإنجليزية وأرقاماً وشرطات فقط" }, { status: 400 });
+    if (!filename || filename.length > 255 || /[\\u0000-\\u001f]/.test(filename))
       return NextResponse.json({ error: "اسم الملف غير صالح" }, { status: 400 });
     if (!Number.isSafeInteger(size) || size < 1 || size > MAX_BYTES)
       return NextResponse.json({ error: "حجم الملف يجب ألا يتجاوز 200 ميغابايت" }, { status: 400 });
@@ -32,27 +40,19 @@ export async function POST(request: NextRequest) {
     const id = randomUUID();
     const objectKey = `quarantine/${user.id}/${id}.zip`;
     const command = new PutObjectCommand({
-      Bucket: bucket,
-      Key: objectKey,
-      ContentType: "application/zip",
-      ContentLength: size,
+      Bucket: bucket, Key: objectKey, ContentType: "application/zip", ContentLength: size,
       Metadata: { "upload-id": id, "owner-id": user.id }
     });
     const uploadUrl = await getSignedUrl(client, command, { expiresIn: 600 });
     const pool = getDbPool();
     await pool.execute(
-      "INSERT INTO game_uploads (id, developer_id, object_key, original_filename, content_type, size_bytes, scan_status, review_status) VALUES (?, ?, ?, ?, 'application/zip', ?, 'pending', 'pending')",
-      [id, user.id, objectKey, filename, size]
+      "INSERT INTO game_uploads (id, developer_id, object_key, original_filename, game_title, game_slug, game_description, game_type, content_type, size_bytes, scan_status, review_status) VALUES (?, ?, ?, ?, ?, ?, ?, 'download', 'application/zip', ?, 'pending', 'pending')",
+      [id, user.id, objectKey, filename, title, slug, description, size]
     );
 
     return NextResponse.json({
-      uploadId: id,
-      uploadUrl,
-      method: "PUT",
-      headers: { "Content-Type": "application/zip" },
-      expiresInSeconds: 600,
-      maxBytes: MAX_BYTES,
-      state: "pending_scan"
+      uploadId: id, uploadUrl, method: "PUT", headers: { "Content-Type": "application/zip" },
+      expiresInSeconds: 600, maxBytes: MAX_BYTES, state: "pending_scan"
     }, { status: 201, headers: { "Cache-Control": "no-store" } });
   } catch (error) {
     console.error("Upload initialization failed:", error);
