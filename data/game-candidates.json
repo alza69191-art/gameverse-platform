@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-18T11:52:47.333Z",
-  "totalCandidates": 1602,
+  "generatedAt": "2026-11-18T12:07:55.025Z",
+  "totalCandidates": 1603,
   "notice": "Discovery candidates only. Never publish or mirror a game until the complete build, demo, source licence, asset licences, trademarks, attribution and security have been reviewed.",
   "items": [
     {
@@ -79,7 +79,7 @@
       "url": "https://github.com/phaserjs/phaser",
       "description": "Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering.",
       "language": "JavaScript",
-      "stars": 40742,
+      "stars": 40741,
       "pushedAt": "2026-08-21T06:56:13Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -107,7 +107,7 @@
       "url": "https://github.com/emilk/egui",
       "description": "egui: an easy-to-use immediate mode GUI in Rust that runs on both web and native",
       "language": "Rust",
-      "stars": 32362,
+      "stars": 32361,
       "pushedAt": "2026-11-18T10:50:00Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
@@ -129,7 +129,7 @@
       "url": "https://github.com/4ian/GDevelop",
       "description": "🎮 Open-source, cross-platform 2D/3D/multiplayer game engine designed for everyone.",
       "language": "JavaScript",
-      "stars": 29032,
+      "stars": 29033,
       "pushedAt": "2026-11-18T10:23:58Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
@@ -163,8 +163,8 @@
       "url": "https://github.com/BabylonJS/Babylon.js",
       "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.",
       "language": "TypeScript",
-      "stars": 26396,
-      "pushedAt": "2026-11-18T11:25:06Z",
+      "stars": 26395,
+      "pushedAt": "2026-11-18T11:53:35Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -190,7 +190,7 @@
       "url": "https://github.com/pascalorg/editor",
       "description": "Open-source 3D architecture software for AECO, scan-to-BIM. Agent-friendly, browser-first, MCP, CLI.",
       "language": "TypeScript",
-      "stars": 25597,
+      "stars": 25598,
       "pushedAt": "2026-11-17T22:01:29Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -311,7 +311,7 @@
       "description": "Open-source web graphics engine built on WebGPU and WebGL2",
       "language": "JavaScript",
       "stars": 17324,
-      "pushedAt": "2026-11-18T11:48:29Z",
+      "pushedAt": "2026-11-18T12:04:47Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -342,7 +342,7 @@
       "url": "https://github.com/heroiclabs/nakama",
       "description": "Scalable open-source game backend server: multiplayer, matchmaking, leaderboards, chat, and social features for games.",
       "language": "Go",
-      "stars": 13746,
+      "stars": 13745,
       "pushedAt": "2026-11-17T17:29:09Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
@@ -377,8 +377,8 @@
       "url": "https://github.com/horizon-rust/horizon",
       "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.",
       "language": "Rust",
-      "stars": 11212,
-      "pushedAt": "2026-11-18T11:51:14Z",
+      "stars": 11218,
+      "pushedAt": "2026-11-18T12:05:24Z",
       "licenseSpdx": "LGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/lgpl-3.0",
       "topics": [
@@ -458,7 +458,7 @@
       "url": "https://github.com/flame-engine/flame",
       "description": "A Flutter based game engine.",
       "language": "Dart",
-      "stars": 10822,
+      "stars": 10821,
       "pushedAt": "2026-11-18T08:26:21Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -757,12 +757,47 @@
       "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
+      "repository": "melonjs/melonJS",
+      "url": "https://github.com/melonjs/melonJS",
+      "description": "A modern & fully featured HTML5 game engine (2D & 3D) for JavaScript/TypeScript, with WebGL/WebGPU rendering, built-in physics, Tiled map & glTF support and WebAudio.",
+      "language": "JavaScript",
+      "stars": 6509,
+      "pushedAt": "2026-11-18T08:48:38Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "2d",
+        "3d",
+        "agent-skills",
+        "canvas",
+        "contributions-welcome",
+        "game-development",
+        "game-engine",
+        "game-framework",
+        "gamedev",
+        "gltf",
+        "html5",
+        "html5-game-engine",
+        "javascript",
+        "javascript-game-engine",
+        "physics-engine",
+        "tiled",
+        "typescript",
+        "webaudio",
+        "webgl",
+        "webgpu"
+      ],
+      "defaultBranch": "master",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+    },
+    {
       "repository": "defold/defold",
       "url": "https://github.com/defold/defold",
       "description": "Defold is a completely free to use game engine for development of desktop, console, mobile and web games.",
       "language": "C++",
-      "stars": 6468,
-      "pushedAt": "2026-11-18T11:46:24Z",
+      "stars": 6467,
+      "pushedAt": "2026-11-18T11:54:56Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
@@ -808,7 +843,7 @@
       "url": "https://github.com/godotengine/godot-docs",
       "description": "Godot Engine official documentation",
       "language": "reStructuredText",
-      "stars": 5920,
+      "stars": 5919,
       "pushedAt": "2026-11-18T01:54:42Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
@@ -935,7 +970,7 @@
       ],
       "defaultBranch": "develop",
       "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "Revolutionary-Games/Thrive",
@@ -1044,7 +1079,7 @@
       "url": "https://github.com/hi-godot/godot-ai",
       "description": "Production-grade MCP server and AI tools for the Godot engine. A Snap to install. Totally free and fun.",
       "language": "GDScript",
-      "stars": 3594,
+      "stars": 3595,
       "pushedAt": "2026-11-18T06:54:36Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -1216,7 +1251,7 @@
       "description": "Building a Neural Network-Native Engine (3N). Python authoring, C++ runtime, Vulkan/WebGPU. Windows, Linux, Android and Web.",
       "language": "Python",
       "stars": 2665,
-      "pushedAt": "2026-11-18T11:32:10Z",
+      "pushedAt": "2026-11-18T11:57:08Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -1448,7 +1483,7 @@
       "url": "https://github.com/EL4CTEO/blender-skills",
       "description": "Professional Blender 5.3 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
       "language": "Python",
-      "stars": 2120,
+      "stars": 2124,
       "pushedAt": "2026-11-17T15:20:14Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -1500,7 +1535,7 @@
       "url": "https://github.com/HaD0Yun/CozyClay",
       "description": "Open source previs software in the browser: block a scene, pose characters, author camera moves and cuts, then take the same shots to an AI video model.",
       "language": "JavaScript",
-      "stars": 1986,
+      "stars": 1989,
       "pushedAt": "2026-11-18T07:48:58Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
@@ -1569,7 +1604,7 @@
       "url": "https://github.com/FreezingMoon/AncientBeast",
       "description": "The Turn Based Strategy Game/eSport. Master your beasts! 🐺",
       "language": "TypeScript",
-      "stars": 1892,
+      "stars": 1893,
       "pushedAt": "2026-11-10T09:48:13Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
@@ -1639,7 +1674,7 @@
       "url": "https://github.com/Maaack/Godot-Game-Template",
       "description": "Godot template with a main menu, options menus, pause menu, credits, scene loader, extra tools, and an example game scene.",
       "language": "GDScript",
-      "stars": 1740,
+      "stars": 1739,
       "pushedAt": "2026-11-17T21:23:33Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -1901,7 +1936,7 @@
       ],
       "defaultBranch": "dev",
       "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "fegennari/3DWorld",
@@ -2184,7 +2219,7 @@
       "description": "AssetFurnace: the most complete open-source image-to-3D pipeline (Oct 2026). Prompt or picture → textured, rigged, animated game character, locally on Apple Silicon or NVIDIA. Pixal3D, TRELLIS.2, Hunyuan3D, SF3D, auto-rig and 21 moves. For indie game devs and 3D artists. Free, Apache-2.0.",
       "language": "Python",
       "stars": 1209,
-      "pushedAt": "2026-11-18T08:37:36Z",
+      "pushedAt": "2026-11-18T11:57:03Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -2282,7 +2317,7 @@
       "url": "https://github.com/SECHAK-AG/capptivo",
       "description": "Give your demos the spotlight they deserve ( Mac/Windows/Linux ).",
       "language": "TypeScript",
-      "stars": 1150,
+      "stars": 1151,
       "pushedAt": "2026-10-13T00:24:24Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -2332,32 +2367,12 @@
       "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
-      "repository": "foxssake/netfox",
-      "url": "https://github.com/foxssake/netfox",
-      "description": "Addons for building multiplayer games with Godot",
-      "language": "GDScript",
-      "stars": 1134,
-      "pushedAt": "2026-11-11T19:37:02Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "godot",
-        "godot-engine",
-        "multiplayer",
-        "netcode",
-        "online-game"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:godot-engine stars:>=10 archived:false"
-    },
-    {
       "repository": "esengine/estella",
       "url": "https://github.com/esengine/estella",
       "description": "A fast 2D and 3D game engine — TypeScript SDK, C++/WebAssembly core, visual editor. Ship one project to web, desktop, WeChat MiniGames, playable ads, and native Android / iOS.",
       "language": "TypeScript",
-      "stars": 1133,
-      "pushedAt": "2026-11-18T11:51:55Z",
+      "stars": 1135,
+      "pushedAt": "2026-11-18T11:58:39Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -2382,12 +2397,32 @@
       "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
+      "repository": "foxssake/netfox",
+      "url": "https://github.com/foxssake/netfox",
+      "description": "Addons for building multiplayer games with Godot",
+      "language": "GDScript",
+      "stars": 1135,
+      "pushedAt": "2026-11-11T19:37:02Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "godot",
+        "godot-engine",
+        "multiplayer",
+        "netcode",
+        "online-game"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:godot-engine stars:>=10 archived:false"
+    },
+    {
       "repository": "Unvanquished/Unvanquished",
       "url": "https://github.com/Unvanquished/Unvanquished",
       "description": "Unvanquished is a free and open source FPS/RTS hybrid game powered by the Daemon game engine. Historically based on Tremulous as a continuation with decades of work over it.",
       "language": "C++",
       "stars": 1131,
-      "pushedAt": "2026-11-17T22:14:22Z",
+      "pushedAt": "2026-11-18T12:02:03Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
@@ -2595,7 +2630,7 @@
       ],
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+      "discoveredBy": "topic:godot-engine stars:>=10 archived:false"
     },
     {
       "repository": "jame581/GodotPrompter",
@@ -2699,7 +2734,7 @@
       "description": "Desktop app for game dev with AI: make games in Unreal Engine, Unity, Godot or the browser. The agent sets up the engine, builds your game and play-tests it by itself.",
       "language": "TypeScript",
       "stars": 882,
-      "pushedAt": "2026-11-18T11:48:45Z",
+      "pushedAt": "2026-11-18T11:57:12Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -2947,7 +2982,7 @@
       "description": "3D engine that AI agents drive",
       "language": "JavaScript",
       "stars": 760,
-      "pushedAt": "2026-11-18T11:51:29Z",
+      "pushedAt": "2026-11-18T12:07:04Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -3017,7 +3052,7 @@
       "description": "ET: Legacy is an open source project based on the code of Wolfenstein: Enemy Territory which was released in 2010 under the terms of the GPLv3 license.",
       "language": "C",
       "stars": 739,
-      "pushedAt": "2026-11-18T10:37:28Z",
+      "pushedAt": "2026-11-18T11:57:26Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -3051,7 +3086,7 @@
       "description": "Free, open-source 3D sculpting for Linux, macOS and Windows: dense meshes, remeshing, painting, built-in AI (image/text to 3D), Send to Unreal, game-ready LODs, Gaussian splats and OpenUSD.",
       "language": "C++",
       "stars": 728,
-      "pushedAt": "2026-11-18T11:50:13Z",
+      "pushedAt": "2026-11-18T12:06:11Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -3107,7 +3142,7 @@
       "description": "PokerTH is a poker game written in C++/Qt.",
       "language": "C++",
       "stars": 705,
-      "pushedAt": "2026-11-18T10:59:23Z",
+      "pushedAt": "2026-11-18T12:02:25Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
       "topics": [
@@ -3317,7 +3352,7 @@
       "description": "The Chickensoft Game Demo — a fully tested, third-person 3D game built with Godot and C#. Now with saving and loading!",
       "language": "C#",
       "stars": 639,
-      "pushedAt": "2026-11-18T02:42:17Z",
+      "pushedAt": "2026-11-18T12:01:24Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -3517,6 +3552,35 @@
       "discoveredBy": "topic:godot-engine stars:>=10 archived:false"
     },
     {
+      "repository": "meshy-dev/ThreeRT",
+      "url": "https://github.com/meshy-dev/ThreeRT",
+      "description": "Hardware ray-traced three.js: a real-time path tracer behind a three.js-style API. Rust + wgpu engine, TypeScript scene and gameplay packages.",
+      "language": "TypeScript",
+      "stars": 580,
+      "pushedAt": "2026-11-18T12:02:10Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "game-engine",
+        "global-illumination",
+        "graphics",
+        "metal",
+        "path-tracing",
+        "ray-tracing",
+        "real-time-rendering",
+        "rendering",
+        "rust",
+        "threejs",
+        "typescript",
+        "voxel",
+        "webgpu",
+        "wgpu"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
+    },
+    {
       "repository": "ZSeven-W/dsh-game-studio",
       "url": "https://github.com/ZSeven-W/dsh-game-studio",
       "description": "Describe a small game in one sentence, play it in the DeepSeek Harness sidebar, swap in AI art, and publish to GitHub Pages or Cloudflare in one click.",
@@ -3540,35 +3604,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:html5-games stars:>=3 archived:false"
-    },
-    {
-      "repository": "meshy-dev/ThreeRT",
-      "url": "https://github.com/meshy-dev/ThreeRT",
-      "description": "Hardware ray-traced three.js: a real-time path tracer behind a three.js-style API. Rust + wgpu engine, TypeScript scene and gameplay packages.",
-      "language": "TypeScript",
-      "stars": 579,
-      "pushedAt": "2026-11-18T10:59:00Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "game-engine",
-        "global-illumination",
-        "graphics",
-        "metal",
-        "path-tracing",
-        "ray-tracing",
-        "real-time-rendering",
-        "rendering",
-        "rust",
-        "threejs",
-        "typescript",
-        "voxel",
-        "webgpu",
-        "wgpu"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "codergautam/worldguessr",
@@ -3692,7 +3727,7 @@
       "description": "Mixed reality experience for interacting with your smart home in a new dimension.",
       "language": "GDScript",
       "stars": 556,
-      "pushedAt": "2026-11-18T11:17:49Z",
+      "pushedAt": "2026-11-18T12:06:21Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -3919,7 +3954,7 @@
       "description": "Stable repository of the modernized X-Ray 1.6 game engine",
       "language": "C++",
       "stars": 504,
-      "pushedAt": "2026-11-18T11:30:53Z",
+      "pushedAt": "2026-11-18T12:03:41Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
@@ -4167,7 +4202,7 @@
       "description": "Open-source rewrite of Skyrim, built with Bevy in Rust",
       "language": "Rust",
       "stars": 464,
-      "pushedAt": "2026-11-18T11:12:02Z",
+      "pushedAt": "2026-11-18T12:02:58Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -4948,7 +4983,7 @@
       "description": "A rules engine and game client — Rust + WASM + React",
       "language": "Rust",
       "stars": 332,
-      "pushedAt": "2026-11-18T10:50:20Z",
+      "pushedAt": "2026-11-18T12:04:28Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -4971,7 +5006,7 @@
       "description": "Fallout: New Vegas rebuilt in Rust from the original game's code. Windows preview out now; needs your own copy of the game.",
       "language": "Rust",
       "stars": 331,
-      "pushedAt": "2026-11-18T11:43:07Z",
+      "pushedAt": "2026-11-18T12:05:36Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -5094,7 +5129,7 @@
       "url": "https://github.com/he-is-talha/html-css-javascript-games",
       "description": "This repo contains 👉🏻👉🏻***CODE***👈🏻👈🏻 and 👉🏻👉🏻***DEMO***👈🏻👈🏻 of 50 different games. 🤑🤑🤑💸💸💸🎮🎮🎮🎯🎯🎯🕹🕹🕹",
       "language": "JavaScript",
-      "stars": 308,
+      "stars": 309,
       "pushedAt": "2026-10-16T19:26:06Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -5424,6 +5459,34 @@
       "discoveredBy": "topic:godot-engine stars:>=10 archived:false"
     },
     {
+      "repository": "terryHu7/homecraft",
+      "url": "https://github.com/terryHu7/homecraft",
+      "description": "Build your own Minecraft-inspired 3D personal website. 打造“我的世界”风格3D个人网站",
+      "language": "JavaScript",
+      "stars": 278,
+      "pushedAt": "2026-11-18T09:49:01Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "3d-portfolio",
+        "3d-portfolio-website",
+        "blog-template",
+        "homepage",
+        "interactive-visualizations",
+        "minecraft",
+        "personal-website",
+        "portfolio",
+        "template",
+        "threejs",
+        "vibe-coding",
+        "voxel",
+        "webgl"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
       "repository": "tailuge/billiards",
       "url": "https://github.com/tailuge/billiards",
       "description": "billiards physics in the browser",
@@ -5452,34 +5515,6 @@
       "defaultBranch": "master",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:webgl-game stars:>=3 archived:false"
-    },
-    {
-      "repository": "terryHu7/homecraft",
-      "url": "https://github.com/terryHu7/homecraft",
-      "description": "Build your own Minecraft-inspired 3D personal website. 打造“我的世界”风格3D个人网站",
-      "language": "JavaScript",
-      "stars": 277,
-      "pushedAt": "2026-11-18T09:49:01Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "3d-portfolio",
-        "3d-portfolio-website",
-        "blog-template",
-        "homepage",
-        "interactive-visualizations",
-        "minecraft",
-        "personal-website",
-        "portfolio",
-        "template",
-        "threejs",
-        "vibe-coding",
-        "voxel",
-        "webgl"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:threejs stars:>=5 archived:false"
     },
     {
       "repository": "HaD0Yun/Doyunha-Gopeak",
@@ -5925,7 +5960,7 @@
       "description": "2dog is Godot in .NET 🦴",
       "language": "C#",
       "stars": 241,
-      "pushedAt": "2026-11-18T00:05:44Z",
+      "pushedAt": "2026-11-18T11:53:38Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -6764,7 +6799,7 @@
       "description": "Share is a browser-based BIM & CAD viewer and collaboration platform.  Supports IFC, STEP, STL, OBJ, GLTF",
       "language": "JavaScript",
       "stars": 193,
-      "pushedAt": "2026-11-18T11:45:42Z",
+      "pushedAt": "2026-11-18T11:54:55Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
       "topics": [
@@ -6975,7 +7010,7 @@
       "url": "https://github.com/SandroMaglione/inkline-town",
       "description": "A town simulation in pale isometric line art, implemented with Ritmo ECS and PixiJs 3D",
       "language": "TypeScript",
-      "stars": 182,
+      "stars": 183,
       "pushedAt": "2026-11-16T03:28:54Z",
       "licenseSpdx": null,
       "licenseUrl": null,
@@ -7427,7 +7462,7 @@
       "description": "Scala library for cross-platform game development",
       "language": "Scala",
       "stars": 159,
-      "pushedAt": "2026-11-18T11:21:41Z",
+      "pushedAt": "2026-11-18T12:00:47Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -7568,7 +7603,7 @@
       "url": "https://github.com/Blurck1/g2g-fast-game",
       "description": "G2G Fast Game: Bunny Hop and Surf Timer Maps for Speed Runs",
       "language": "HTML",
-      "stars": 153,
+      "stars": 154,
       "pushedAt": "2026-11-18T09:59:16Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -8604,6 +8639,51 @@
       "discoveredBy": "topic:canvas-game stars:>=3 archived:false"
     },
     {
+      "repository": "ForgeAX/forgeax-engine",
+      "url": "https://github.com/ForgeAX/forgeax-engine",
+      "description": "AI-native TypeScript game engine for AI agents, targeting all major platforms. WebGPU rendering, ECS, procedural assets, and a CLI-first development workflow.",
+      "language": "TypeScript",
+      "stars": 113,
+      "pushedAt": "2026-11-18T10:52:38Z",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://api.github.com/licenses/apache-2.0",
+      "topics": [
+        "ai-agents",
+        "ai-native",
+        "cross-platform",
+        "ecs",
+        "entity-component-system",
+        "game-development",
+        "game-engine",
+        "procedural-generation",
+        "typescript",
+        "webgpu"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+    },
+    {
+      "repository": "wquguru/fable52-fps-repro",
+      "url": "https://github.com/wquguru/fable52-fps-repro",
+      "description": "Fable 5.2 一句话生成 3D FPS 复现：4 个单文件演示、提示词与缓存账单 / One-prompt 3D FPS repro with demos, prompts & cost data",
+      "language": "HTML",
+      "stars": 113,
+      "pushedAt": "2026-11-11T07:22:50Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "claude-code",
+        "procedural-generation",
+        "prompt-caching",
+        "threejs",
+        "webgl-game"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:webgl-game stars:>=3 archived:false"
+    },
+    {
       "repository": "Xrysnow/LuaSTG-x",
       "url": "https://github.com/Xrysnow/LuaSTG-x",
       "description": "LuaSTG-x is a multi-platform game engine.",
@@ -8642,26 +8722,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:godot stars:>=10 archived:false"
-    },
-    {
-      "repository": "wquguru/fable52-fps-repro",
-      "url": "https://github.com/wquguru/fable52-fps-repro",
-      "description": "Fable 5.2 一句话生成 3D FPS 复现：4 个单文件演示、提示词与缓存账单 / One-prompt 3D FPS repro with demos, prompts & cost data",
-      "language": "HTML",
-      "stars": 112,
-      "pushedAt": "2026-11-11T07:22:50Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "claude-code",
-        "procedural-generation",
-        "prompt-caching",
-        "threejs",
-        "webgl-game"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:webgl-game stars:>=3 archived:false"
     },
     {
       "repository": "sidhant947/ArrowEscape",
@@ -10246,6 +10306,41 @@
       "discoveredBy": "topic:babylonjs stars:>=3 archived:false"
     },
     {
+      "repository": "AallamR/RobloxForge-Intelligence",
+      "url": "https://github.com/AallamR/RobloxForge-Intelligence",
+      "description": "RobloxForge Docs 2026: Official MCP Vertical Slice Verification Layer for Studio",
+      "language": "HTML",
+      "stars": 75,
+      "pushedAt": "2026-11-18T11:00:26Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "ai-agents",
+        "ai-tools",
+        "claude-code",
+        "cli",
+        "codex",
+        "developer-tools",
+        "docs-search",
+        "game-development",
+        "gamedev",
+        "grok",
+        "hermes-agent",
+        "luau",
+        "mcp",
+        "model-context-protocol",
+        "obby",
+        "python",
+        "roblox",
+        "roblox-studio",
+        "verification",
+        "windows"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+    },
+    {
       "repository": "pmndrs/klipp",
       "url": "https://github.com/pmndrs/klipp",
       "description": "📹 A camera toolkit for the web, inspired by Unity Cinemachine.",
@@ -10299,6 +10394,40 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:threejs-game stars:>=3 archived:false"
+    },
+    {
+      "repository": "yarik-contr/mcp-forge-studio-bridge",
+      "url": "https://github.com/yarik-contr/mcp-forge-studio-bridge",
+      "description": "AI-Powered Roblox Studio MCP Server 2026: Script, Terrain, Asset, Lighting & Two-Way Sync Assistant",
+      "language": "HTML",
+      "stars": 74,
+      "pushedAt": "2026-11-18T10:59:36Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "antigravity",
+        "claude",
+        "claude-code",
+        "codex",
+        "cursor",
+        "game-development",
+        "gemini",
+        "luau",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "plugin",
+        "roblox",
+        "roblox-plugin",
+        "roblox-studio",
+        "typescript",
+        "weppy-roblox-mcp"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
       "repository": "coniieq/luau-guardrail",
@@ -10608,6 +10737,24 @@
       "discoveredBy": "topic:canvas-game stars:>=3 archived:false"
     },
     {
+      "repository": "supportxauusdgobler-art/pulse-timeline-runtime",
+      "url": "https://github.com/supportxauusdgobler-art/pulse-timeline-runtime",
+      "description": "Open Source Roblox VFX Timeline Engine 2026: Sequence Playback Runtime for Skill Cutscenes",
+      "language": "HTML",
+      "stars": 71,
+      "pushedAt": "2026-11-18T11:01:56Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "game-development",
+        "luau",
+        "roblox"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+    },
+    {
       "repository": "shivamthe-coder/roblox-luau-atelier",
       "url": "https://github.com/shivamthe-coder/roblox-luau-atelier",
       "description": "2026 Roblox Luau AI Agent Skill Suite for Production-Grade Scripts and Official Docs Guidance",
@@ -10676,20 +10823,16 @@
       "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
-      "repository": "ayan682/roblox-engine-api-surface",
-      "url": "https://github.com/ayan682/roblox-engine-api-surface",
-      "description": "Roblox Engine API Guide 2026: Independent Developer Reference and Integration Tips",
+      "repository": "AJAY94633/signal-run-relay",
+      "url": "https://github.com/AJAY94633/signal-run-relay",
+      "description": "Cooperative Luau Relay Game Framework for Cubacadabra Worlds 2026",
       "language": "HTML",
-      "stars": 71,
-      "pushedAt": "2026-11-18T03:30:51Z",
+      "stars": 70,
+      "pushedAt": "2026-11-18T10:59:42Z",
       "licenseSpdx": null,
       "licenseUrl": null,
       "topics": [
-        "apis-json",
         "game-development",
-        "gaming",
-        "metaverse",
-        "open-cloud",
         "roblox"
       ],
       "defaultBranch": "main",
@@ -10840,24 +10983,6 @@
       "discoveredBy": "topic:browser-game stars:>=3 archived:false"
     },
     {
-      "repository": "abrhamadbirhanu-cyber/cubacadabra-forge",
-      "url": "https://github.com/abrhamadbirhanu-cyber/cubacadabra-forge",
-      "description": "Best Open Source Cubacadabra Game Dev CLI Tools 2026: Starter Projects and Portable Luau Packaging",
-      "language": "HTML",
-      "stars": 70,
-      "pushedAt": "2026-11-18T03:31:41Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "game-development",
-        "roblox",
-        "tools"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
-    },
-    {
       "repository": "bearlikelion/cooties",
       "url": "https://github.com/bearlikelion/cooties",
       "description": "An open source Godot 4 multiplayer tutorial",
@@ -10986,6 +11111,28 @@
       "defaultBranch": "master",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:babylonjs stars:>=3 archived:false"
+    },
+    {
+      "repository": "jaycash619/interactive-systems-lab",
+      "url": "https://github.com/jaycash619/interactive-systems-lab",
+      "description": "Charlie Barra Portfolio 2026: Game Design, Programming and Interactive Systems Showcase",
+      "language": "HTML",
+      "stars": 68,
+      "pushedAt": "2026-11-18T11:06:08Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "game-design",
+        "game-development",
+        "interactive-media",
+        "portfolio",
+        "python",
+        "roblox",
+        "systems-design"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
       "repository": "skWarehouse904/avatar-musical-chairs",
@@ -11156,44 +11303,6 @@
         "roblox-studio",
         "studio-plugin",
         "testing"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
-    },
-    {
-      "repository": "camillusshyere-sudo/Luau-Craft-Notes",
-      "url": "https://github.com/camillusshyere-sudo/Luau-Craft-Notes",
-      "description": "Luau Scripting Mastery 2026: Ultimate Roblox Game Dev Practice Guide",
-      "language": "HTML",
-      "stars": 68,
-      "pushedAt": "2026-11-18T03:57:04Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "game-development",
-        "lua-programming",
-        "roblox",
-        "roblox-studio"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
-    },
-    {
-      "repository": "pingknamawuntu13-bot/bridge-runner-realtime",
-      "url": "https://github.com/pingknamawuntu13-bot/bridge-runner-realtime",
-      "description": "BridgeRun 2026 Multiplayer Roblox Bridge Builder with Luau Leaderboard Guide",
-      "language": "HTML",
-      "stars": 68,
-      "pushedAt": "2026-11-18T03:34:01Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "game-development",
-        "gamedev",
-        "luau",
-        "roblox"
       ],
       "defaultBranch": "main",
       "reviewStatus": "license_missing",
@@ -11976,7 +12085,7 @@
       "description": "A real-time spectral ocean and tropical island in Three.js, WebGPU and TSL: FFT waves, water optics, shore break, foam, caustics, buoyancy, wakes, underwater transitions and a volumetric sky, with a WebGL2 fallback.",
       "language": "TypeScript",
       "stars": 54,
-      "pushedAt": "2026-11-18T11:48:45Z",
+      "pushedAt": "2026-11-18T12:03:55Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
@@ -12005,7 +12114,7 @@
       "description": "Browser-based MMORPG based around the COVID pandemic. PWA supported.",
       "language": "CSS",
       "stars": 54,
-      "pushedAt": "2026-11-18T03:29:37Z",
+      "pushedAt": "2026-11-18T12:02:31Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -12123,6 +12232,31 @@
       "discoveredBy": "topic:canvas-game stars:>=3 archived:false"
     },
     {
+      "repository": "seluce/Layer8Problem",
+      "url": "https://github.com/seluce/Layer8Problem",
+      "description": "A satirical sysadmin simulator. You are GlobalCorp's IT department - one person, for everyone. Browser and Steam, German and English.",
+      "language": "HTML",
+      "stars": 53,
+      "pushedAt": "2026-11-18T11:52:09Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "browser-game",
+        "electron",
+        "game",
+        "javascript",
+        "satire",
+        "simulation",
+        "steam",
+        "svelte",
+        "sysadmin",
+        "tailwindcss"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:browser-game stars:>=3 archived:false"
+    },
+    {
       "repository": "tart-dash-2006/unity-pro-desktop",
       "url": "https://github.com/tart-dash-2006/unity-pro-desktop",
       "description": "Unity Pro",
@@ -12156,31 +12290,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:game-development stars:>=10 archived:false"
-    },
-    {
-      "repository": "seluce/Layer8Problem",
-      "url": "https://github.com/seluce/Layer8Problem",
-      "description": "A satirical sysadmin simulator. You are GlobalCorp's IT department - one person, for everyone. Browser and Steam, German and English.",
-      "language": "HTML",
-      "stars": 53,
-      "pushedAt": "2026-11-18T07:05:35Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "browser-game",
-        "electron",
-        "game",
-        "javascript",
-        "satire",
-        "simulation",
-        "steam",
-        "svelte",
-        "sysadmin",
-        "tailwindcss"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:browser-game stars:>=3 archived:false"
     },
     {
       "repository": "tendertiger92/unreal-5-6-desktop",
@@ -12484,6 +12593,29 @@
       "discoveredBy": "topic:babylonjs stars:>=3 archived:false"
     },
     {
+      "repository": "DasCondor/kubefactory",
+      "url": "https://github.com/DasCondor/kubefactory",
+      "description": "A first-person factory game that views and manages your Kubernetes clusters and Docker containers",
+      "language": "GDScript",
+      "stars": 48,
+      "pushedAt": "2026-11-17T14:22:25Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "cluster-management",
+        "devops",
+        "docker",
+        "game",
+        "godot",
+        "kubernetes",
+        "portainer",
+        "visualization"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:godot stars:>=10 archived:false"
+    },
+    {
       "repository": "Yuu6883/Cytos",
       "url": "https://github.com/Yuu6883/Cytos",
       "description": "Optimized ogar project with WebGL rendering and native C++ parallelization.",
@@ -12502,29 +12634,6 @@
       "defaultBranch": "main",
       "reviewStatus": "license_missing",
       "discoveredBy": "topic:webgl-game stars:>=3 archived:false"
-    },
-    {
-      "repository": "DasCondor/kubefactory",
-      "url": "https://github.com/DasCondor/kubefactory",
-      "description": "A first-person factory game that views and manages your Kubernetes clusters and Docker containers",
-      "language": "GDScript",
-      "stars": 47,
-      "pushedAt": "2026-11-17T14:22:25Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "cluster-management",
-        "devops",
-        "docker",
-        "game",
-        "godot",
-        "kubernetes",
-        "portainer",
-        "visualization"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:godot stars:>=10 archived:false"
     },
     {
       "repository": "figurophobia/gore",
@@ -12995,6 +13104,28 @@
       "discoveredBy": "topic:babylonjs stars:>=3 archived:false"
     },
     {
+      "repository": "matiaszanolli/ByroRedux",
+      "url": "https://github.com/matiaszanolli/ByroRedux",
+      "description": "Clean rebuild of the Gamebryo/Creation engine lineage in Rust + C++ with Vulkan",
+      "language": "Rust",
+      "stars": 42,
+      "pushedAt": "2026-11-18T11:58:33Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "creation-engine",
+        "ecs",
+        "game-engine",
+        "gamebryo",
+        "linux",
+        "rust",
+        "vulkan"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
+    },
+    {
       "repository": "ufna/VaCuus",
       "url": "https://github.com/ufna/VaCuus",
       "description": "Game UI in HTML/CSS for Unreal Engine, rendered off the game thread — RmlUi + QuickJS on a dedicated UI thread. Windows, macOS, Linux, Android and iOS.",
@@ -13058,28 +13189,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:multiplayer-game stars:>=5 archived:false"
-    },
-    {
-      "repository": "matiaszanolli/ByroRedux",
-      "url": "https://github.com/matiaszanolli/ByroRedux",
-      "description": "Clean rebuild of the Gamebryo/Creation engine lineage in Rust + C++ with Vulkan",
-      "language": "Rust",
-      "stars": 42,
-      "pushedAt": "2026-11-18T03:57:16Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "creation-engine",
-        "ecs",
-        "game-engine",
-        "gamebryo",
-        "linux",
-        "rust",
-        "vulkan"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "marty-mcgee/threed-garden",
@@ -16061,7 +16170,7 @@
       "description": "A nice and casual place for posting random things.",
       "language": "TypeScript",
       "stars": 25,
-      "pushedAt": "2026-11-18T11:51:26Z",
+      "pushedAt": "2026-11-18T12:05:28Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -16344,7 +16453,7 @@
       "description": "Open source Rage of Mages engine implementation",
       "language": "Go",
       "stars": 24,
-      "pushedAt": "2026-11-18T11:47:16Z",
+      "pushedAt": "2026-11-18T12:03:01Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -16373,7 +16482,7 @@
       "description": "Poker without the casino. Texas Hold'em with friends or against AI. Play money only, no ads.",
       "language": "TypeScript",
       "stars": 24,
-      "pushedAt": "2026-11-18T11:45:33Z",
+      "pushedAt": "2026-11-18T11:53:37Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -17019,7 +17128,7 @@
       "description": "Curated directory of game decompilations, recompilations, PC ports, mods, fan games and preservation projects. Built with Hugo.",
       "language": "HTML",
       "stars": 22,
-      "pushedAt": "2026-11-18T11:47:43Z",
+      "pushedAt": "2026-11-18T12:00:43Z",
       "licenseSpdx": null,
       "licenseUrl": null,
       "topics": [
@@ -18503,31 +18612,22 @@
       "discoveredBy": "topic:open-source-games stars:>=3 archived:false"
     },
     {
-      "repository": "XgeniaORG/XGENIA",
-      "url": "https://github.com/XgeniaORG/XGENIA",
-      "description": "Deploy an army of agents or architect an immersive game world in minutes. The barrier between your imagination and code is now gone",
-      "language": "TypeScript",
+      "repository": "drsnuggles8/OloEngineBase",
+      "url": "https://github.com/drsnuggles8/OloEngineBase",
+      "description": "A game engine based on Hazel",
+      "language": "C++",
       "stars": 18,
-      "pushedAt": "2026-11-18T11:42:09Z",
+      "pushedAt": "2026-11-18T12:05:27Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
-        "ai-agents",
-        "ai-editor",
-        "ai-game-generator",
-        "casino-games",
-        "game-development",
-        "game-engine",
-        "html5-games",
-        "igaming-software",
-        "low-code",
-        "pixijs",
-        "slot-game",
-        "visual-programming"
+        "cmake",
+        "cpp",
+        "game-engine"
       ],
-      "defaultBranch": "main",
+      "defaultBranch": "master",
       "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "JohannesHoppe/SolarTournament",
@@ -18535,7 +18635,7 @@
       "description": "3D-Browser Game, Space-Shooter, Multiplayer, Open-Source, 100% WebGL",
       "language": "TypeScript",
       "stars": 18,
-      "pushedAt": "2026-11-18T11:38:08Z",
+      "pushedAt": "2026-11-18T11:54:20Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
       "topics": [
@@ -18551,30 +18651,12 @@
       "discoveredBy": "topic:threejs stars:>=5 archived:false"
     },
     {
-      "repository": "drsnuggles8/OloEngineBase",
-      "url": "https://github.com/drsnuggles8/OloEngineBase",
-      "description": "A game engine based on Hazel",
-      "language": "C++",
-      "stars": 18,
-      "pushedAt": "2026-11-18T11:16:27Z",
-      "licenseSpdx": "NOASSERTION",
-      "licenseUrl": null,
-      "topics": [
-        "cmake",
-        "cpp",
-        "game-engine"
-      ],
-      "defaultBranch": "master",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
-    },
-    {
       "repository": "Sara-Managed-Projects/space-radar",
       "url": "https://github.com/Sara-Managed-Projects/space-radar",
       "description": "A live 3D map of space in your browser: satellite tracker, planetarium and narrated trips. Free, open source (MIT), no account, no build step, works offline.",
       "language": "JavaScript",
       "stars": 18,
-      "pushedAt": "2026-11-18T08:54:38Z",
+      "pushedAt": "2026-11-18T11:52:50Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -18601,6 +18683,33 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
+      "repository": "XgeniaORG/XGENIA",
+      "url": "https://github.com/XgeniaORG/XGENIA",
+      "description": "Deploy an army of agents or architect an immersive game world in minutes. The barrier between your imagination and code is now gone",
+      "language": "TypeScript",
+      "stars": 18,
+      "pushedAt": "2026-11-18T11:42:09Z",
+      "licenseSpdx": "NOASSERTION",
+      "licenseUrl": null,
+      "topics": [
+        "ai-agents",
+        "ai-editor",
+        "ai-game-generator",
+        "casino-games",
+        "game-development",
+        "game-engine",
+        "html5-games",
+        "igaming-software",
+        "low-code",
+        "pixijs",
+        "slot-game",
+        "visual-programming"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
       "repository": "AaronCWacker/AI-UI-UX-JS",
@@ -18976,7 +19085,7 @@
       "description": "Browser-native IFC viewer + local-first ERP kernel. Frictionless. Two DBs. One browser. Zero install.",
       "language": "JavaScript",
       "stars": 17,
-      "pushedAt": "2026-11-18T11:49:52Z",
+      "pushedAt": "2026-11-18T12:02:32Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -20489,6 +20598,36 @@
       "discoveredBy": "topic:multiplayer-game stars:>=5 archived:false"
     },
     {
+      "repository": "timoncool/godot-strudel",
+      "url": "https://github.com/timoncool/godot-strudel",
+      "description": "Strudel live-coding music engine ported to GDScript — patterns, mini-notation, tonal functions, sampler, synths, effects and a sample-accurate scheduler, all inside Godot. Paste browser code unchanged. Pure GDScript, no native code, no network.",
+      "language": "GDScript",
+      "stars": 14,
+      "pushedAt": "2026-11-18T11:54:42Z",
+      "licenseSpdx": "AGPL-3.0",
+      "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
+      "topics": [
+        "audio",
+        "game-audio",
+        "gdscript",
+        "generative-music",
+        "godot",
+        "godot-addon",
+        "godot-plugin",
+        "live-coding",
+        "livecoding",
+        "music",
+        "procedural-music",
+        "sequencer",
+        "strudel",
+        "synthesizer",
+        "tidalcycles"
+      ],
+      "defaultBranch": "master",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:godot stars:>=10 archived:false"
+    },
+    {
       "repository": "ov-studio/Vital.sandbox",
       "url": "https://github.com/ov-studio/Vital.sandbox",
       "description": "An open-source, high-performance sandbox built on Godot and powered by C++17 and Lua.",
@@ -20577,36 +20716,6 @@
       ],
       "defaultBranch": "main",
       "reviewStatus": "license_missing",
-      "discoveredBy": "topic:godot stars:>=10 archived:false"
-    },
-    {
-      "repository": "timoncool/godot-strudel",
-      "url": "https://github.com/timoncool/godot-strudel",
-      "description": "Strudel live-coding music engine ported to GDScript — patterns, mini-notation, tonal functions, sampler, synths, effects and a sample-accurate scheduler, all inside Godot. Paste browser code unchanged. Pure GDScript, no native code, no network.",
-      "language": "GDScript",
-      "stars": 14,
-      "pushedAt": "2026-11-17T12:03:21Z",
-      "licenseSpdx": "AGPL-3.0",
-      "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
-      "topics": [
-        "audio",
-        "game-audio",
-        "gdscript",
-        "generative-music",
-        "godot",
-        "godot-addon",
-        "godot-plugin",
-        "live-coding",
-        "livecoding",
-        "music",
-        "procedural-music",
-        "sequencer",
-        "strudel",
-        "synthesizer",
-        "tidalcycles"
-      ],
-      "defaultBranch": "master",
-      "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:godot stars:>=10 archived:false"
     },
     {
@@ -21876,7 +21985,7 @@
       "description": "Browser-first parametric CAD: exact B-rep solids on a WebAssembly kernel, replayable feature history, direct on-model editing, STEP in and out. Local-first, with optional cloud projects and live collaboration.",
       "language": "TypeScript",
       "stars": 12,
-      "pushedAt": "2026-11-18T11:46:18Z",
+      "pushedAt": "2026-11-18T12:01:09Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -24270,7 +24379,7 @@
       "description": "The open, local-first BIM workspace that runs in your browser. IFC & DWG/DXF, modeling, clash detection, sheets & PDF issue - your files stay on your device.",
       "language": "JavaScript",
       "stars": 9,
-      "pushedAt": "2026-11-18T11:34:55Z",
+      "pushedAt": "2026-11-18T12:06:04Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -25425,7 +25534,7 @@
       "description": "Combat top-down 2D airplane game with fuel management, multiple weapons, multi-level, and adjustable difficulty. Made with Godot 4.",
       "language": "GDScript",
       "stars": 8,
-      "pushedAt": "2026-11-18T11:48:20Z",
+      "pushedAt": "2026-11-18T12:05:56Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
@@ -26754,35 +26863,6 @@
       "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
-      "repository": "aram-devdocs/GoudEngine",
-      "url": "https://github.com/aram-devdocs/GoudEngine",
-      "description": "ALPHA: OpenGL Game Engine built using Rust with SDK compiled for C/C#, Typescript, Python, Lua, Swift, Kotlin, C/C++, Go and Rust. Desktop / Web",
-      "language": "Rust",
-      "stars": 7,
-      "pushedAt": "2026-11-18T03:02:43Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "c",
-        "cpp",
-        "csharp",
-        "game",
-        "game-development",
-        "game-engine",
-        "game-engine-framework",
-        "gamedev",
-        "go",
-        "kotlin",
-        "lua",
-        "python",
-        "swift",
-        "typescript"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
-    },
-    {
       "repository": "Ludo-AI/ludo-cli",
       "url": "https://github.com/Ludo-AI/ludo-cli",
       "description": "Ludo AI CLI for humans and coding agents: generate game sprites, animations, 3D models, video and audio, plus 32 free offline tools for spritesheets, pivots, colliders, Godot/Unity/Phaser export and audio checks. Works with Claude Code, Codex, Cursor and Gemini CLI.",
@@ -27962,7 +28042,7 @@
       "description": "A multiplayer simulation where every character is run by its owner's own AI agent. Persistent 3D worlds; bring Claude Code, Codex, Cursor or any MCP agent.",
       "language": "TypeScript",
       "stars": 6,
-      "pushedAt": "2026-11-18T11:51:43Z",
+      "pushedAt": "2026-11-18T12:06:40Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -27989,12 +28069,55 @@
       "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
+      "repository": "Virtual-Graphics/VulcalEngine",
+      "url": "https://github.com/Virtual-Graphics/VulcalEngine",
+      "description": "A game engine, it does not have AI slop.",
+      "language": "C++",
+      "stars": 6,
+      "pushedAt": "2026-11-18T12:03:20Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "game-engine",
+        "graphics",
+        "opengl",
+        "renderer",
+        "renderering"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
+    },
+    {
+      "repository": "Resaki1/stellar-nomad",
+      "url": "https://github.com/Resaki1/stellar-nomad",
+      "description": "Stellar Nomad: An open-source, browser-based space exploration game where players pilot a spaceship, mine resources, and venture through a procedurally generated universe.",
+      "language": "TypeScript",
+      "stars": 6,
+      "pushedAt": "2026-11-18T12:00:22Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "browser-game",
+        "multiplayer",
+        "open-source",
+        "react-three-drei",
+        "react-three-fiber",
+        "resource-management",
+        "space-exploration",
+        "threejs"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:browser-game stars:>=3 archived:false"
+    },
+    {
       "repository": "PatrickVonMassow/Heart-of-Africa-Remake",
       "url": "https://github.com/PatrickVonMassow/Heart-of-Africa-Remake",
       "description": "Remake of the C64 classic Heart of Africa (follow-up to Seven Cities of Gold), browser game, with real ~1890 geography, wildlife simulation, deductive communitaction with peoples, etc.",
       "language": "JavaScript",
       "stars": 6,
-      "pushedAt": "2026-11-18T11:51:20Z",
+      "pushedAt": "2026-11-18T12:00:14Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -28316,29 +28439,6 @@
       "discoveredBy": "topic:threejs stars:>=5 archived:false"
     },
     {
-      "repository": "Resaki1/stellar-nomad",
-      "url": "https://github.com/Resaki1/stellar-nomad",
-      "description": "Stellar Nomad: An open-source, browser-based space exploration game where players pilot a spaceship, mine resources, and venture through a procedurally generated universe.",
-      "language": "TypeScript",
-      "stars": 6,
-      "pushedAt": "2026-11-18T05:18:23Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "browser-game",
-        "multiplayer",
-        "open-source",
-        "react-three-drei",
-        "react-three-fiber",
-        "resource-management",
-        "space-exploration",
-        "threejs"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:browser-game stars:>=3 archived:false"
-    },
-    {
       "repository": "highsierralabs/Synthwave_City",
       "url": "https://github.com/highsierralabs/Synthwave_City",
       "description": "An endless 80s synthwave megacity you fly through in your browser.",
@@ -28450,26 +28550,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:threejs stars:>=5 archived:false"
-    },
-    {
-      "repository": "Virtual-Graphics/VulcalEngine",
-      "url": "https://github.com/Virtual-Graphics/VulcalEngine",
-      "description": "A game engine, it does not have AI slop.",
-      "language": "C++",
-      "stars": 6,
-      "pushedAt": "2026-11-18T03:52:56Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "game-engine",
-        "graphics",
-        "opengl",
-        "renderer",
-        "renderering"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "larszu/lz-multicam-planner",
@@ -30268,7 +30348,7 @@
       "description": "Open-source Ultima Online client for macOS and Windows. Built in Rust with a headless core for AI agents, a WebAssembly browser renderer, and a Tauri desktop app.",
       "language": "Rust",
       "stars": 5,
-      "pushedAt": "2026-11-18T11:13:42Z",
+      "pushedAt": "2026-11-18T12:07:12Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -30290,6 +30370,54 @@
       "discoveredBy": "topic:pixijs stars:>=3 archived:false"
     },
     {
+      "repository": "1273984347/xiyouji",
+      "url": "https://github.com/1273984347/xiyouji",
+      "description": "《西游记》100 回逐回解读 + 主题专题 + 可视化交互页 —— 一源多形的数字人文经典解读（在线可读 · 桌面版可离线读）",
+      "language": "Python",
+      "stars": 5,
+      "pushedAt": "2026-11-18T12:06:19Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "chinese-classics",
+        "d3js",
+        "data-visualization",
+        "digital-humanities",
+        "javascript",
+        "nlp",
+        "python",
+        "static-site",
+        "threejs",
+        "visualization"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
+      "repository": "VictorZakharov/last-stand",
+      "url": "https://github.com/VictorZakharov/last-stand",
+      "description": "A 3D wave-survival action RPG in the browser. Bank your spoils or risk it all. Fully procedural, Three.js + TypeScript.",
+      "language": "TypeScript",
+      "stars": 5,
+      "pushedAt": "2026-11-18T12:05:32Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "arpg",
+        "browser-game",
+        "cloth-simulation",
+        "game",
+        "procedural-generation",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
       "repository": "dzhng/battlesim",
       "url": "https://github.com/dzhng/battlesim",
       "description": "Armata is a browser real-time tactics game built with Rust, WebAssembly, and WebGPU.",
@@ -30309,31 +30437,6 @@
       "defaultBranch": "staging",
       "reviewStatus": "license_missing",
       "discoveredBy": "topic:browser-game stars:>=3 archived:false"
-    },
-    {
-      "repository": "1273984347/xiyouji",
-      "url": "https://github.com/1273984347/xiyouji",
-      "description": "《西游记》100 回逐回解读 + 主题专题 + 可视化交互页 —— 一源多形的数字人文经典解读（在线可读 · 桌面版可离线读）",
-      "language": "Python",
-      "stars": 5,
-      "pushedAt": "2026-11-18T10:02:21Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "chinese-classics",
-        "d3js",
-        "data-visualization",
-        "digital-humanities",
-        "javascript",
-        "nlp",
-        "python",
-        "static-site",
-        "threejs",
-        "visualization"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:threejs stars:>=5 archived:false"
     },
     {
       "repository": "luizbizzio/luizbizzio.com",
@@ -30446,49 +30549,6 @@
         "lovelace",
         "smart-home",
         "threejs"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:threejs stars:>=5 archived:false"
-    },
-    {
-      "repository": "tomast1337/RCT3PlusPlus",
-      "url": "https://github.com/tomast1337/RCT3PlusPlus",
-      "description": "An open source reimplementation of RollerCoaster Tycoon 3 tooling and engine in C++26 (GPL-3.0-or-later)",
-      "language": "C++",
-      "stars": 5,
-      "pushedAt": "2026-11-18T03:04:00Z",
-      "licenseSpdx": "GPL-3.0",
-      "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
-      "topics": [
-        "cpp26",
-        "game-engine",
-        "rct3",
-        "rollercoaster-tycoon",
-        "vulkan"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
-    },
-    {
-      "repository": "VictorZakharov/last-stand",
-      "url": "https://github.com/VictorZakharov/last-stand",
-      "description": "A 3D wave-survival action RPG in the browser. Bank your spoils or risk it all. Fully procedural, Three.js + TypeScript.",
-      "language": "TypeScript",
-      "stars": 5,
-      "pushedAt": "2026-11-18T01:46:09Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "arpg",
-        "browser-game",
-        "cloth-simulation",
-        "game",
-        "procedural-generation",
-        "threejs",
-        "typescript",
-        "webgl"
       ],
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
@@ -33124,7 +33184,7 @@
       "description": "Free, open-source GameMaker-style IDE for making 2D games in Python — visual blocks, no coding required. Exports to Windows/macOS/Linux, HTML5, and mobile. 9 languages.",
       "language": "Python",
       "stars": 4,
-      "pushedAt": "2026-11-18T11:27:05Z",
+      "pushedAt": "2026-11-18T11:53:56Z",
       "licenseSpdx": "NOASSERTION",
       "licenseUrl": null,
       "topics": [
@@ -38410,30 +38470,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:web-game stars:>=3 archived:false"
-    },
-    {
-      "repository": "codexanjan/nitrorivalsracinggame",
-      "url": "https://github.com/codexanjan/nitrorivalsracinggame",
-      "description": "Nitro Rivals: playable 3D browser racing with 5 AI rivals, 3 worlds, 4 cars, 6 drivers, nitro, jumps, cockpit view and original music. Built with Three.js.",
-      "language": "JavaScript",
-      "stars": 3,
-      "pushedAt": "2026-10-06T10:16:59Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "arcade-game",
-        "browser-game",
-        "game-development",
-        "javascript",
-        "racing-game",
-        "single-player",
-        "threejs",
-        "vercel",
-        "webgl"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:arcade-game stars:>=3 archived:false"
     }
   ]
 }
