@@ -45,3 +45,20 @@
 .notification.read{opacity:.65}
 .notification button{flex:none;background:#29364a;color:#e2e8f0;border:0;border-radius:8px;padding:8px 11px;cursor:pointer}
 @media(max-width:700px){.profile-grid{grid-template-columns:1fr}.profile-panel.wide{grid-column:auto}.account-shell,.profile-shell{padding:0 16px}.account-card{padding:22px;margin:5vh auto}.profile-row{flex-direction:column}.notification{flex-direction:column}}
+
+
+.community{margin:44px 0 55px;padding:26px;background:#101a2b;border:1px solid #ffffff1c;border-radius:18px}
+.community-head{display:flex;align-items:center;justify-content:space-between;gap:20px}.community-head h2{font-size:27px;margin:10px 0}.community-head p,.community-muted{color:#9eabc0;font-size:13px}
+.favorite-button{border:1px solid #fb923c;background:transparent;color:#fb923c;padding:11px 16px;border-radius:9px;cursor:pointer;font-weight:700}
+.community-message{padding:10px 13px;background:#152c2a;color:#a7f3d0;border-radius:8px;font-size:13px}.community-login{color:#aeb9cb}.community-login a{color:#fb923c}
+.community-forms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0}
+.community-forms form,.report-box form{display:grid;gap:11px;padding:17px;background:#0b1423;border:1px solid #ffffff16;border-radius:12px}
+.community-forms h3,.community-lists h3{margin:0 0 6px;font-size:17px}
+.community select,.community textarea{width:100%;background:#0a1220;color:#f7f8fc;border:1px solid #33425a;border-radius:8px;padding:11px;font:inherit}
+.community textarea{min-height:85px;resize:vertical}
+.community-forms button,.report-box button{background:#fb923c;color:#211307;border:0;border-radius:8px;padding:10px 14px;font-weight:800;cursor:pointer}
+.community-lists{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:25px}
+.community-item{border-top:1px solid #ffffff17;padding:13px 0;display:grid;gap:7px;font-size:13px}.community-item b{color:#e8edf6}.community-item span{color:#fb923c}.community-item p{color:#c3cede;line-height:1.7;margin:0}
+.report-box{margin-top:22px;border-top:1px solid #ffffff18;padding-top:16px;color:#fb923c}
+.report-box summary{cursor:pointer;font-weight:700}.report-box form{margin-top:14px}
+@media(max-width:700px){.community{padding:17px}.community-head{align-items:flex-start;flex-direction:column}.community-forms,.community-lists{grid-template-columns:1fr}}
