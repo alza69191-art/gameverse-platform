@@ -86,3 +86,43 @@ BOOTSTRAP_ADMIN_CONFIRM_EMAIL="your-real-email@example.com" DATABASE_URL="your-T
 ```
 
 The script only works when there is no active administrator, requires the confirmation email to match exactly, and upgrades an existing active player account. It does not create a password or a new account. After the first administrator signs in, additional role changes should be made from the admin portal and are recorded in the audit log.
+
+## Configure private upload storage and malware scanning
+
+Developer ZIP uploads are disabled until private R2-compatible object storage and the scanner workflow are configured.
+
+### Render environment variables (player API service)
+
+Set these in Render → GameVerse platform → Environment. Do not paste values into GitHub or chat.
+
+- `R2_ENDPOINT`
+- `R2_ACCESS_KEY_ID`
+- `R2_SECRET_ACCESS_KEY`
+- `R2_BUCKET`
+- `SCAN_WEBHOOK_SECRET` (generate a separate random secret of at least 32 characters)
+- `DATABASE_URL` (existing TiDB connection string; retain TLS)
+
+### GitHub Actions repository secrets
+
+In GitHub → gameverse-platform → Settings → Secrets and variables → Actions, add:
+
+- `GAMEVERSE_DATABASE_URL`
+- `GAMEVERSE_R2_ENDPOINT`
+- `GAMEVERSE_R2_ACCESS_KEY_ID`
+- `GAMEVERSE_R2_SECRET_ACCESS_KEY`
+- `GAMEVERSE_R2_BUCKET`
+- `GAMEVERSE_SCAN_WEBHOOK_SECRET` — must exactly match Render's `SCAN_WEBHOOK_SECRET`.
+
+The scheduled scanner uses ClamAV and archive validation. Run the workflow manually once after all secrets exist, then confirm the job completes and the callback updates the upload's scan status.
+
+### R2 bucket CORS
+
+Keep the bucket private. Add a CORS rule allowing only the developer portal origin:
+- Allowed origin: `https://gameverse-developers.onrender.com`
+- Allowed method: `PUT`
+- Allowed header: `Content-Type`
+- Expose header: `ETag`
+- Max age: 3600 seconds
+
+Do not add wildcard origins. Keep direct object listing and public bucket access disabled. The browser receives only a short-lived signed PUT URL for the individual quarantine object.
+
