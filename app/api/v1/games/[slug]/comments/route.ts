@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getAuthenticatedUser, isSameOrigin } from "@/lib/current-user";
 import { isKnownGameSlug } from "@/lib/game-validation";
 import { getDbPool } from "@/lib/db";
+import { consumeRateLimit } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -26,6 +27,8 @@ export async function POST(request: NextRequest, context: { params: Promise<{ sl
     if (!isSameOrigin(request)) return NextResponse.json({ error: "طلب غير مسموح" }, { status: 403 });
     const user = await getAuthenticatedUser(request);
     if (!user) return NextResponse.json({ error: "سجّل الدخول لإضافة تعليق" }, { status: 401 });
+    const limit = await consumeRateLimit("comment", `${user.id}:${slug}`, 8, 3600);
+    if (!limit.allowed) return NextResponse.json({ error: "تجاوزت الحد المسموح. حاول لاحقاً." }, { status: 429 });
     const { slug } = await context.params;
     if (!(await isKnownGameSlug(slug))) return NextResponse.json({ error: "اللعبة غير موجودة" }, { status: 404 });
     const body = await request.json();
