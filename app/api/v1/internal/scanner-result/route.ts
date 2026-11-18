@@ -7,8 +7,10 @@ export const runtime = "nodejs";
 export async function POST(request: NextRequest) {
   const secret = process.env.SCAN_WEBHOOK_SECRET;
   const supplied = request.headers.get("x-scanner-token") ?? "";
-  if (!secret || secret.length < 32 || supplied.length !== secret.length ||
-      !timingSafeEqual(Buffer.from(supplied), Buffer.from(secret))) {
+  const suppliedBytes = Buffer.from(supplied);
+  const secretBytes = Buffer.from(secret ?? "");
+  if (!secret || secretBytes.length < 32 || suppliedBytes.length !== secretBytes.length ||
+      !timingSafeEqual(suppliedBytes, secretBytes)) {
     return NextResponse.json({ error: "غير مصرح" }, { status: 401 });
   }
 
@@ -20,7 +22,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "نتيجة الفحص غير صالحة" }, { status: 400 });
     const pool = getDbPool();
     const [result] = await pool.execute(
-      "UPDATE game_uploads SET scan_status = ?, scanned_at = CURRENT_TIMESTAMP WHERE id = ? AND upload_status = 'uploaded' AND scan_status = 'scanning'",
+      "UPDATE game_uploads SET scan_status = ?, scanned_at = CURRENT_TIMESTAMP, scan_started_at = NULL WHERE id = ? AND upload_status = 'uploaded' AND scan_status = 'scanning'",
       [status, id]
     );
     if ((result as {affectedRows:number}).affectedRows !== 1)
