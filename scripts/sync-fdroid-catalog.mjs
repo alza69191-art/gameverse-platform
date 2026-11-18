@@ -38,5 +38,5 @@ if(!apps.length){
 const unique=new Map(apps.map(app=>[app.packageName,app]));
 const items=[...unique.values()].sort((a,b)=>a.title.localeCompare(b.title));
 const output={generatedAt:new Date().toISOString(),source:"F-Droid official repository index",total:items.length,items,notice:"Discovery metadata only. Links lead to official F-Droid package pages. No APK binaries are mirrored. Verify signed indexes and signer fingerprints before any binary distribution."};
-await fs.writeFile(outputPath,JSON.stringify(output,null,2)+"\\n");
+await fs.writeFile(outputPath,JSON.stringify(output,null,2)+"\n");
 console.log("Indexed "+items.length+" F-Droid packages.");
