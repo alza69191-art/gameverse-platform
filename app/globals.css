@@ -80,3 +80,12 @@
 .store-disclaimer{color:#8795aa;font-size:11px;line-height:2;margin:12px 0 50px}
 @media(max-width:900px){.store-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.store-grid{grid-template-columns:1fr}}
+
+
+.external-game-launch{min-height:390px}
+.external-game-content{min-height:300px;padding:38px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;background:radial-gradient(circle at 50% 0,#273a5c 0,transparent 65%),#0d1728}
+.external-game-icon{width:76px;height:76px;display:grid;place-items:center;border-radius:22px;background:#fb923c;color:#211307;font-size:36px}
+.external-game-content h2{margin:6px 0 0;font-size:clamp(20px,3vw,28px)}
+.external-game-content p{max-width:620px;margin:0;color:#aeb9cb;line-height:1.9}
+.external-game-content .game-play-button{display:inline-block;min-width:220px;text-align:center;text-decoration:none;background:#fb923c;color:#201308;padding:13px 20px;border-radius:10px;font-weight:900;margin:8px 0}
+.external-game-content small{color:#8795aa;font-size:12px}
