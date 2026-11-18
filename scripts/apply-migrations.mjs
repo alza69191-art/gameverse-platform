@@ -27,6 +27,14 @@ try {
     await connection.query(sql);
     console.log("Applied:", file);
   }
+  const [sessionColumns] = await connection.query(
+    "SELECT column_name FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'user_sessions' AND column_name = 'last_seen_at'"
+  );
+  if (!sessionColumns.length) {
+    await connection.query("ALTER TABLE user_sessions ADD COLUMN last_seen_at TIMESTAMP NULL AFTER revoked_at");
+    console.log("Added missing column: user_sessions.last_seen_at");
+  }
+
   const required = [
     "users", "games", "game_versions", "review_events", "game_categories",
     "game_category_map", "catalog_sources", "asset_resources", "developer_applications",
