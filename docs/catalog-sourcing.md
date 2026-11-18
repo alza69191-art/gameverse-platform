@@ -102,3 +102,17 @@ These are complete game projects or substantial playable builds, not generated t
 2. Preserve each repository's copyright and licence notices; provide the source-code offer required by AGPL/GPL when distributing or operating modified versions.
 3. Do not copy proprietary game assets, original commercial-game clients, brand marks or paid content into GameVerse.
 4. Upstream external links are catalog entries only. Self-hosting requires a separate deployment, storage, networking, security and capacity review.
+
+
+## Additional full open-source PC games reviewed and listed
+
+| Game | GitHub repository | Official download | Licence notes |
+|---|---|---|---|
+| OpenRA | https://github.com/OpenRA/OpenRA | https://www.openra.net/download/ | GPL-3.0 code; inspect mod/data asset terms. It is a community reimplementation, not an EA product. |
+| Xonotic | https://github.com/xonotic/xonotic | https://xonotic.org/download/ | GPL-3.0-or-later; source package documents component-specific terms. |
+| Veloren | https://github.com/veloren/veloren | https://veloren.net/download/ | GPL-3.0; GitHub repo is a mirror, primary development is on GitLab. |
+| The Battle for Wesnoth | https://github.com/wesnoth/wesnoth | https://www.wesnoth.org/downloads/ | GPL-2.0 repository; check data/add-on content terms separately. |
+| Warzone 2100 | https://github.com/Warzone2100/warzone2100 | https://wz2100.net/ | GPL-2.0-or-later with separate non-GPL exception notices. |
+| SuperTuxKart | https://github.com/supertuxkart/stk-code | https://supertuxkart.net/Download | GPL code; inspect the individual media/data asset licences before reuse. |
+
+These six titles are registered as official download destinations, not embedded browser games. GameVerse does not mirror their installers or claim ownership of the games.
