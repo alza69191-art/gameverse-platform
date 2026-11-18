@@ -32,7 +32,7 @@ For each GameVerse service (player, admin, developer):
 
 ## Database migrations that must be applied to TiDB
 
-Run these SQL files against the `gameverse` database, in order, before enabling account/admin workflows:
+Run these SQL files against the `gameverse` database, in order, before enabling account/admin workflows. A manual GitHub Actions workflow is available at **Actions → Apply GameVerse database migrations**. Add the GitHub Actions secret `GAMEVERSE_DATABASE_URL`, take a TiDB backup, then run the workflow and confirm its `backup_confirmed` checkbox. It applies the same files in order and verifies the required tables:
 
 1. `database/schema.sql`
 2. `database/migrations/002_developer_uploads.sql`
