@@ -34,6 +34,7 @@ const headers = {
   "User-Agent": "GameVerse-Catalog-Discovery"
 };
 const candidates = new Map();
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 for (const query of queries) {
   const url = "https://api.github.com/search/repositories?q=" + encodeURIComponent(query) + "&per_page=100&sort=updated&order=desc";
   const response = await fetch(url, { headers });
@@ -56,6 +57,7 @@ for (const query of queries) {
       discoveredBy: query
     });
   }
+  await sleep(1300);
 }
 const output = {
   generatedAt: new Date().toISOString(), totalCandidates: candidates.size,
