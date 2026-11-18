@@ -12,7 +12,7 @@ export function getDbPool() {
       port: Number(url.port || 4000),
       user: decodeURIComponent(url.username),
       password: decodeURIComponent(url.password),
-      database: url.pathname.replace(/^\\//, ""),
+      database: decodeURIComponent(url.pathname.replace(/^\//, "")),
       waitForConnections: true,
       connectionLimit: 8,
       queueLimit: 0,
