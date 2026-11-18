@@ -2,8 +2,9 @@
 import Link from "next/link";
 import {useMemo,useState} from "react";
 import catalog from "@/data/store-catalog.json";
+import fdroidCatalog from "@/data/fdroid-catalog.json";
 type Item={id:string;title:string;category:string;kind:"app"|"game";platform:string[];description:string;source:string;downloadUrl:string;license:string;verified:boolean};
-const items=catalog.items as Item[];
+const items=[...(catalog.items as Item[]),...((fdroidCatalog.items ?? []) as Item[])];
 const categories=["الكل",...Array.from(new Set(items.map(x=>x.category)))];
 const platforms=["الكل","Android","iOS","Windows","macOS","Linux"];
 export default function StorePage(){
