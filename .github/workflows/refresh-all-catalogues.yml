@@ -7,6 +7,7 @@ on:
       - "scripts/sync-openuse-catalog.mjs"
       - "scripts/sync-game-catalog.mjs"
       - "scripts/sync-curlie-directory.mjs"
+      - "scripts/sync-homebrew-catalog.mjs"
       - "scripts/discover-open-source-games.mjs"
       - ".github/workflows/refresh-all-catalogues.yml"
   workflow_dispatch:
@@ -34,6 +35,9 @@ jobs:
       - name: Import open-source and free-to-play game catalogues
         continue-on-error: true
         run: node scripts/sync-game-catalog.mjs
+      - name: Import Homebrew formulae and casks
+        continue-on-error: true
+        run: node scripts/sync-homebrew-catalog.mjs
       - name: Import Curlie global website directory
         continue-on-error: true
         env:
@@ -47,10 +51,10 @@ jobs:
       - name: Validate generated catalogues
         run: |
           node --check scripts/sync-game-catalog.mjs
-          node -e "for (const f of ['data/fdroid-catalog.json','data/openuse-catalog.json','data/game-catalog.json','data/site-catalog.json']) { const d=JSON.parse(require('fs').readFileSync(f,'utf8')); console.log(f, d.total ?? d.items?.length ?? 0); }"
+          node -e "for (const f of ['data/fdroid-catalog.json','data/openuse-catalog.json','data/game-catalog.json','data/site-catalog.json','data/homebrew-catalog.json']) { const d=JSON.parse(require('fs').readFileSync(f,'utf8')); console.log(f, d.total ?? d.items?.length ?? 0); }"
       - name: Commit refreshed catalogues
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/fdroid-catalog.json data/openuse-catalog.json data/game-catalog.json data/site-catalog.json data/game-candidates.json
+          git add data/fdroid-catalog.json data/openuse-catalog.json data/game-catalog.json data/site-catalog.json data/homebrew-catalog.json data/game-candidates.json
           git diff --cached --quiet || (git commit -m "Refresh expanded GameVerse app and game catalogues" && git pull --rebase origin main && git push)
