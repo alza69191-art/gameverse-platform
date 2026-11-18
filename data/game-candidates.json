@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T11:41:18.910Z",
+  "generatedAt": "2026-11-18T11:44:03.113Z",
   "totalCandidates": 1602,
   "notice": "Discovery candidates only. Never publish or mirror a game until the complete build, demo, source licence, asset licences, trademarks, attribution and security have been reviewed.",
   "items": [
@@ -377,8 +377,8 @@
       "url": "https://github.com/horizon-rust/horizon",
       "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.",
       "language": "Rust",
-      "stars": 11209,
-      "pushedAt": "2026-11-18T11:37:34Z",
+      "stars": 11210,
+      "pushedAt": "2026-11-18T11:42:52Z",
       "licenseSpdx": "LGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/lgpl-3.0",
       "topics": [
@@ -504,7 +504,7 @@
       "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
       "description": "Make games with your AI coding agent: 79 game-dev skills and a router for Godot, Unity, Unreal, Roblox, three.js, Phaser and 6 more engines. Checked on the real engines.",
       "language": "Python",
-      "stars": 9377,
+      "stars": 9378,
       "pushedAt": "2026-11-12T07:38:53Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
@@ -2082,7 +2082,7 @@
       "url": "https://github.com/Mastershort/neonplan3d",
       "description": "The original 3D floor plan for Home Assistant: draw your home in the built-in editor and see and control lights, covers, climate, media, sensors and cameras live in neon 3D – panel and dashboard card, runs on old wall tablets too.",
       "language": "TypeScript",
-      "stars": 1237,
+      "stars": 1238,
       "pushedAt": "2026-11-17T21:34:27Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
@@ -2947,7 +2947,7 @@
       "description": "3D engine that AI agents drive",
       "language": "JavaScript",
       "stars": 760,
-      "pushedAt": "2026-11-18T11:40:44Z",
+      "pushedAt": "2026-11-18T11:42:05Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -3051,7 +3051,7 @@
       "description": "Free, open-source 3D sculpting for Linux, macOS and Windows: dense meshes, remeshing, painting, built-in AI (image/text to 3D), Send to Unreal, game-ready LODs, Gaussian splats and OpenUSD.",
       "language": "C++",
       "stars": 728,
-      "pushedAt": "2026-11-18T11:36:47Z",
+      "pushedAt": "2026-11-18T11:43:49Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -4971,7 +4971,7 @@
       "description": "Fallout: New Vegas rebuilt in Rust from the original game's code. Windows preview out now; needs your own copy of the game.",
       "language": "Rust",
       "stars": 331,
-      "pushedAt": "2026-11-18T11:31:55Z",
+      "pushedAt": "2026-11-18T11:43:07Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -16039,7 +16039,7 @@
       "description": "A nice and casual place for posting random things.",
       "language": "TypeScript",
       "stars": 25,
-      "pushedAt": "2026-11-18T11:39:12Z",
+      "pushedAt": "2026-11-18T11:41:21Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -16317,6 +16317,35 @@
       "discoveredBy": "topic:phaser-game stars:>=3 archived:false"
     },
     {
+      "repository": "againrom/againrom-engine",
+      "url": "https://github.com/againrom/againrom-engine",
+      "description": "Open source Rage of Mages engine implementation",
+      "language": "Go",
+      "stars": 24,
+      "pushedAt": "2026-11-18T11:43:31Z",
+      "licenseSpdx": "GPL-3.0",
+      "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
+      "topics": [
+        "ai-assisted-development",
+        "allods",
+        "cross-platform",
+        "ebitengine",
+        "game-engine",
+        "game-preservation",
+        "game-reimplementation",
+        "golang",
+        "map-editor",
+        "modding",
+        "rage-of-mages",
+        "retro-gaming",
+        "reverse-engineering",
+        "rpg"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
+    },
+    {
       "repository": "playpip/pip-web",
       "url": "https://github.com/playpip/pip-web",
       "description": "Poker without the casino. Texas Hold'em with friends or against AI. Play money only, no ads.",
@@ -16346,35 +16375,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:open-source-game stars:>=3 archived:false"
-    },
-    {
-      "repository": "againrom/againrom-engine",
-      "url": "https://github.com/againrom/againrom-engine",
-      "description": "Open source Rage of Mages engine implementation",
-      "language": "Go",
-      "stars": 24,
-      "pushedAt": "2026-11-18T11:27:51Z",
-      "licenseSpdx": "GPL-3.0",
-      "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
-      "topics": [
-        "ai-assisted-development",
-        "allods",
-        "cross-platform",
-        "ebitengine",
-        "game-engine",
-        "game-preservation",
-        "game-reimplementation",
-        "golang",
-        "map-editor",
-        "modding",
-        "rage-of-mages",
-        "retro-gaming",
-        "reverse-engineering",
-        "rpg"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "JittoJoseph/TinyFloor",
@@ -16992,36 +16992,12 @@
       "discoveredBy": "topic:multiplayer-game stars:>=5 archived:false"
     },
     {
-      "repository": "openkumite/openkumite",
-      "url": "https://github.com/openkumite/openkumite",
-      "description": "🥋 Open-source 3D fighting game engine in Rust 🦀 that plays game data converted by kumite_converter, 1:1 as the original. Native (wgpu) and browser (WebAssembly) builds, local versus and online rollback netplay.",
-      "language": "Rust",
-      "stars": 22,
-      "pushedAt": "2026-11-18T11:39:26Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "fighting-game",
-        "game-engine",
-        "ggrs",
-        "gltf",
-        "rollback-netcode",
-        "rust",
-        "webassembly",
-        "webrtc",
-        "wgpu"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
-    },
-    {
       "repository": "7g3n/phase-viz",
       "url": "https://github.com/7g3n/phase-viz",
       "description": "Open-source audio-reactive 3D visualizer for musicians, built with Three.js, WebGL, the Web Audio API, and browser-based MP4 export.",
       "language": "TypeScript",
       "stars": 22,
-      "pushedAt": "2026-11-18T11:38:28Z",
+      "pushedAt": "2026-11-18T11:42:19Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -17049,6 +17025,30 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
+      "repository": "openkumite/openkumite",
+      "url": "https://github.com/openkumite/openkumite",
+      "description": "🥋 Open-source 3D fighting game engine in Rust 🦀 that plays game data converted by kumite_converter, 1:1 as the original. Native (wgpu) and browser (WebAssembly) builds, local versus and online rollback netplay.",
+      "language": "Rust",
+      "stars": 22,
+      "pushedAt": "2026-11-18T11:39:26Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "fighting-game",
+        "game-engine",
+        "ggrs",
+        "gltf",
+        "rollback-netcode",
+        "rust",
+        "webassembly",
+        "webrtc",
+        "wgpu"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-engine stars:>=5 archived:false"
     },
     {
       "repository": "crspytopgn/openmcm2",
@@ -18481,6 +18481,33 @@
       "discoveredBy": "topic:open-source-games stars:>=3 archived:false"
     },
     {
+      "repository": "XgeniaORG/XGENIA",
+      "url": "https://github.com/XgeniaORG/XGENIA",
+      "description": "Deploy an army of agents or architect an immersive game world in minutes. The barrier between your imagination and code is now gone",
+      "language": "TypeScript",
+      "stars": 18,
+      "pushedAt": "2026-11-18T11:42:09Z",
+      "licenseSpdx": "NOASSERTION",
+      "licenseUrl": null,
+      "topics": [
+        "ai-agents",
+        "ai-editor",
+        "ai-game-generator",
+        "casino-games",
+        "game-development",
+        "game-engine",
+        "html5-games",
+        "igaming-software",
+        "low-code",
+        "pixijs",
+        "slot-game",
+        "visual-programming"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+    },
+    {
       "repository": "JohannesHoppe/SolarTournament",
       "url": "https://github.com/JohannesHoppe/SolarTournament",
       "description": "3D-Browser Game, Space-Shooter, Multiplayer, Open-Source, 100% WebGL",
@@ -18518,33 +18545,6 @@
       "defaultBranch": "master",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:game-engine stars:>=5 archived:false"
-    },
-    {
-      "repository": "XgeniaORG/XGENIA",
-      "url": "https://github.com/XgeniaORG/XGENIA",
-      "description": "Deploy an army of agents or architect an immersive game world in minutes. The barrier between your imagination and code is now gone",
-      "language": "TypeScript",
-      "stars": 18,
-      "pushedAt": "2026-11-18T10:15:40Z",
-      "licenseSpdx": "NOASSERTION",
-      "licenseUrl": null,
-      "topics": [
-        "ai-agents",
-        "ai-editor",
-        "ai-game-generator",
-        "casino-games",
-        "game-development",
-        "game-engine",
-        "html5-games",
-        "igaming-software",
-        "low-code",
-        "pixijs",
-        "slot-game",
-        "visual-programming"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
     },
     {
       "repository": "Sara-Managed-Projects/space-radar",
@@ -21849,6 +21849,33 @@
       "discoveredBy": "topic:phaser-game stars:>=3 archived:false"
     },
     {
+      "repository": "esaueng/OpenZCAD",
+      "url": "https://github.com/esaueng/OpenZCAD",
+      "description": "Browser-first parametric CAD: exact B-rep solids on a WebAssembly kernel, replayable feature history, direct on-model editing, STEP in and out. Local-first, with optional cloud projects and live collaboration.",
+      "language": "TypeScript",
+      "stars": 12,
+      "pushedAt": "2026-11-18T11:41:00Z",
+      "licenseSpdx": "Apache-2.0",
+      "licenseUrl": "https://api.github.com/licenses/apache-2.0",
+      "topics": [
+        "3d-modeling",
+        "b-rep",
+        "cad",
+        "cloudflare-workers",
+        "parametric-cad",
+        "react",
+        "step",
+        "stl",
+        "tauri",
+        "threejs",
+        "typescript",
+        "webassembly"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
       "repository": "wowemulation-dev/recast-rs",
       "url": "https://github.com/wowemulation-dev/recast-rs",
       "description": "An enhanced Rust port of Recast Navigation with support for dynamic mesh generation, navigation mesh construction, and pathfinding for games.",
@@ -21870,33 +21897,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:game-development stars:>=10 archived:false"
-    },
-    {
-      "repository": "esaueng/OpenZCAD",
-      "url": "https://github.com/esaueng/OpenZCAD",
-      "description": "Browser-first parametric CAD: exact B-rep solids on a WebAssembly kernel, replayable feature history, direct on-model editing, STEP in and out. Local-first, with optional cloud projects and live collaboration.",
-      "language": "TypeScript",
-      "stars": 12,
-      "pushedAt": "2026-11-18T11:30:08Z",
-      "licenseSpdx": "Apache-2.0",
-      "licenseUrl": "https://api.github.com/licenses/apache-2.0",
-      "topics": [
-        "3d-modeling",
-        "b-rep",
-        "cad",
-        "cloudflare-workers",
-        "parametric-cad",
-        "react",
-        "step",
-        "stl",
-        "tauri",
-        "threejs",
-        "typescript",
-        "webassembly"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:threejs stars:>=5 archived:false"
     },
     {
       "repository": "imweb-project/ImWeb",
@@ -27960,7 +27960,7 @@
       "description": "A multiplayer simulation where every character is run by its owner's own AI agent. Persistent 3D worlds; bring Claude Code, Codex, Cursor or any MCP agent.",
       "language": "TypeScript",
       "stars": 6,
-      "pushedAt": "2026-11-18T11:40:36Z",
+      "pushedAt": "2026-11-18T11:43:11Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -27992,7 +27992,7 @@
       "description": "Remake of the C64 classic Heart of Africa (follow-up to Seven Cities of Gold), browser game, with real ~1890 geography, wildlife simulation, deductive communitaction with peoples, etc.",
       "language": "JavaScript",
       "stars": 6,
-      "pushedAt": "2026-11-18T11:21:03Z",
+      "pushedAt": "2026-11-18T11:41:53Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
