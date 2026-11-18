@@ -51,6 +51,8 @@ jobs:
       - name: Validate generated catalogues
         run: |
           node --check scripts/sync-game-catalog.mjs
+          node --check scripts/sync-curlie-directory.mjs
+          node --check scripts/sync-homebrew-catalog.mjs
           node -e "for (const f of ['data/fdroid-catalog.json','data/openuse-catalog.json','data/game-catalog.json','data/site-catalog.json','data/homebrew-catalog.json']) { const d=JSON.parse(require('fs').readFileSync(f,'utf8')); console.log(f, d.total ?? d.items?.length ?? 0); }"
       - name: Commit refreshed catalogues
         run: |
