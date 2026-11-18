@@ -1,0 +1,28 @@
+name: Crawl and index public web pages
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 3 * * *"
+permissions:
+  contents: read
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install database client
+        run: npm install --no-save mysql2
+      - name: Crawl a limited batch of public pages
+        env:
+          GAMEVERSE_DATABASE_URL: ${{ secrets.GAMEVERSE_DATABASE_URL }}
+          CRAWL_MAX_PAGES: "80"
+        run: |
+          if [ -z "$GAMEVERSE_DATABASE_URL" ]; then
+            echo "Skipping crawl: configure the GAMEVERSE_DATABASE_URL repository secret."
+            exit 0
+          fi
+          node scripts/crawl-web-index.mjs
