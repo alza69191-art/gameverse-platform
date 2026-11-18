@@ -6,6 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "lint": "next lint",
     "discover:games": "node scripts/discover-open-source-games.mjs",
     "crawl:web": "node scripts/crawl-web-index.mjs",
@@ -21,6 +25,8 @@
     "@aws-sdk/s3-request-presigner": "^3.850.0"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "1.20.17",
+    "wrangler": "4.164.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
