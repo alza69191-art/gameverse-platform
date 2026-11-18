@@ -1,46 +1,14 @@
 "use client";
-
-import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { browserGames } from "@/lib/catalog";
-
-type SubmittedGame = { id: number; title: string; slug: string; description: string; official_url: string; game_type: string };
-const categories = ["الكل", ...Array.from(new Set(browserGames.map((game) => game.category)))];
-
-export default function GamesPage() {
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("الكل");
-  const [submittedGames, setSubmittedGames] = useState<SubmittedGame[]>([]);
-  useEffect(() => {
-    fetch("/api/v1/games")
-      .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data) => setSubmittedGames(Array.isArray(data.games) ? data.games : []))
-      .catch(() => setSubmittedGames([]));
-  }, []);
-  const filtered = useMemo(() => browserGames.filter((game) => {
-    const matchesText = (game.title + " " + game.category + " " + game.description).toLowerCase().includes(query.trim().toLowerCase());
-    return matchesText && (category === "الكل" || game.category === category);
-  }), [query, category]);
-
-  return (
-    <main className="site-shell catalog-page">
-      <header className="topbar"><a className="brand" href="/">GAME<span>VERSE</span></a><nav className="main-nav"><a href="/">الرئيسية</a><a className="active" href="/games">مكتبة الألعاب</a><a href="/downloads">تنزيلات</a><a href="/libraries">مكتبة المطور</a><a href="/rules">القواعد</a><a href="/account">حسابي</a></nav><a className="nav-cta" href="/libraries">للمطورين ←</a></header>
-      <section className="catalog-hero"><span className="eyebrow"><i /> مكتبة GameVerse · ألعاب قابلة للعب</span><h1>اختر لعبتك،<em> وابدأ الآن.</em></h1><p>ألعاب متصفح أصلية، وألعاب شركات عالمية للكمبيوتر والهاتف والمنصات؛ افتح اللعبة أو انتقل إلى متجرها الرسمي.</p>
-        <label className="catalog-search"><span>⌕</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="ابحث عن لعبة أو نوعها..." /><kbd>بحث مباشر</kbd></label>
-      </section>
-      <section className="catalog-layout">
-        <aside className="filters"><h3>التصنيفات</h3><div className="filter-list">{categories.map((item) => <button key={item} className={category === item ? "selected" : ""} onClick={() => setCategory(item)}>{item}<span>{item === "الكل" ? browserGames.length : browserGames.filter((g) => g.category === item).length}</span></button>)}</div>
-          <h3 className="filter-subtitle">نوع اللعبة</h3><div className="filter-list"><button className="selected">ألعاب متصفح وروابط رسمية</button><button onClick={() => setCategory("الكل")}>عرض الكل</button></div>
-        </aside>
-        <div className="catalog-results"><div className="results-head"><div><span className="eyebrow">ألعاب مجانية · 2D + 3D</span><h2>{category === "الكل" ? "جميع الألعاب" : category}</h2></div><span className="result-count">{filtered.length + submittedGames.length} لعبة</span></div>
-          {(filtered.length || submittedGames.length) ? <div className="game-grid">
-            {submittedGames.map((game) => <article className="game-card" key={"submitted-" + game.id}><div className="game-art art-2"><span className="game-art-label">لعبة مطور · {game.game_type}</span><span className="game-glyph">✧</span><span className="game-category">من المجتمع</span></div><div className="game-info"><h3>{game.title}</h3><p>{game.description}</p><div className="game-card-foot"><span>لعبة معتمدة من GameVerse</span><span>مراجعة إدارية</span></div><Link className="game-play-button" href={"/play/submitted/" + encodeURIComponent(game.slug)}>▶ العب الآن</Link></div></article>)}
-            {filtered.map((game, index) => <article className="game-card" key={game.slug}><div className={"game-art " + (game.mode === "3D" ? "art-3d" : "art-" + (index % 6))}><span className="game-art-label">{game.playMode === "external" ? (game.externalAccess === "store" ? "تنزيل رسمي · متجر الناشر" : "لعب مجاني · موقع رسمي") : "HTML5 · " + game.mode}</span><span className="game-glyph">{["✦", "◈", "⌁", "⬡", "✧", "◉"][index % 6]}</span><span className="game-category">{game.category}</span></div><div className="game-info"><h3>{game.title}</h3><p>{game.description}</p><div className="game-card-foot"><span>{game.sourceName} · {game.license}</span><a href={game.sourceUrl} target="_blank" rel="noopener noreferrer">المصدر ↗</a></div><Link className="game-play-button" href={"/play/" + game.slug}>{game.playMode === "external" ? (game.externalAccess === "store" ? "↗ صفحة اللعبة الرسمية" : "▶ افتح اللعبة الرسمية") : "▶ العب الآن"}</Link></div></article>)}
-          </div> : <div className="empty-state"><span>⌕</span><h3>لا توجد نتائج مطابقة</h3><p>جرّب كلمة بحث أخرى أو غيّر التصنيف.</p><button onClick={() => { setQuery(""); setCategory("الكل"); }}>إعادة ضبط الفلاتر</button></div>}
-          <p className="catalog-note">تضم المكتبة ألعاب متصفح وألعاباً تجارية من ناشرين مثل Rockstar وUbisoft وGameloft وInnoGames وGameforge. ألعاب اللعب الخارجي تفتح على مواقع ناشريها ولا تُضمّن داخل GameVerse ما لم يسمح الناشر بذلك. تضمينات MadKidGames مشروطة بإضافة ads.txt وموافقة النطاق. نعرض المصدر وشروط الاستخدام لكل لعبة.</p>
-        </div>
-      </section>
-      <footer className="footer"><a className="brand" href="/">GAME<span>VERSE</span></a><p>نحترم حقوق المطورين ونراجع مصدر وترخيص كل لعبة.</p><span>© {new Date().getFullYear()} GameVerse</span></footer>
-    </main>
-  );
+import {useMemo,useState} from "react";
+import {browserGames} from "@/lib/catalog";
+const categories=["الكل",...Array.from(new Set(browserGames.map(x=>x.category)))];
+export default function GamesPage(){
+ const [q,setQ]=useState("");const [cat,setCat]=useState("الكل");
+ const results=useMemo(()=>browserGames.filter(x=>(x.title+" "+x.category+" "+x.description).toLowerCase().includes(q.toLowerCase())&&(cat==="الكل"||x.category===cat)),[q,cat]);
+ return <main className="site-shell catalog-page"><header className="topbar"><Link className="brand" href="/">GAME<span>VERSE</span></Link><nav className="main-nav"><Link href="/">الرئيسية</Link><Link className="active" href="/games">مكتبة الألعاب</Link><Link href="/store">المتجر</Link><Link href="/downloads">تنزيلات المطورين</Link><Link href="/libraries">مكتبة المطور</Link><Link href="/account">حسابي</Link></nav><Link className="nav-cta" href="/store">تنزيل الألعاب ←</Link></header>
+ <section className="catalog-hero"><span className="eyebrow"><i/> مكتبة GameVerse · فهرس الألعاب</span><h1>اكتشف الألعاب<em> من كل مكان.</em></h1><p>فهرس ألعاب ومشاريع من مصادرها. أزلنا جميع أزرار وروابط تشغيل الألعاب؛ استخدم المتجر للعثور على إصدارات التنزيل الرسمية.</p><label className="catalog-search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="ابحث عن لعبة أو نوعها..."/><kbd>{results.length} لعبة</kbd></label></section>
+ <section className="catalog-layout"><aside className="filters"><h3>التصنيفات</h3><div className="filter-list">{categories.map(v=><button key={v} className={cat===v?"selected":""} onClick={()=>setCat(v)}>{v}<span>{v==="الكل"?browserGames.length:browserGames.filter(x=>x.category===v).length}</span></button>)}</div><h3 className="filter-subtitle">التنزيل</h3><div className="filter-list"><Link href="/store">متجر التنزيلات ←</Link></div></aside><div className="catalog-results"><div className="results-head"><div><span className="eyebrow">ألعاب من مصادر موثقة</span><h2>{cat==="الكل"?"فهرس الألعاب":cat}</h2></div><span className="result-count">{results.length} لعبة</span></div>
+ {results.length?<div className="game-grid">{results.map((g,i)=><article className="game-card" key={g.slug}><div className={"game-art "+(g.mode==="3D"?"art-3d":"art-"+(i%6))}><span className="game-art-label">فهرس · {g.mode}</span><span className="game-glyph">{["✦","◈","⌁","⬡","✧","◉"][i%6]}</span><span className="game-category">{g.category}</span></div><div className="game-info"><h3>{g.title}</h3><p>{g.description}</p><div className="game-card-foot"><span>{g.sourceName} · {g.license}</span><a href={g.sourceUrl} target="_blank" rel="noopener noreferrer">مستودع المصدر ↗</a></div><Link className="game-play-button" href={"/store?q="+encodeURIComponent(g.title)}>اعثر على تنزيل رسمي</Link></div></article>)}</div>:<div className="empty-state"><h3>لا توجد نتائج مطابقة</h3><button onClick={()=>{setQ("");setCat("الكل")}}>إعادة ضبط الفلاتر</button></div>}
+ <p className="catalog-note">لا توفر هذه الصفحة تشغيل الألعاب. وجود مشروع في GitHub لا يثبت وحده حقوق إعادة توزيع كل الرسومات والموسيقى والأصول؛ لذلك نوجّه التنزيل إلى المصدر الرسمي.</p></div></section><footer className="footer"><Link className="brand" href="/">GAME<span>VERSE</span></Link><p>نحترم حقوق المطورين ونوضح مصادر البرامج.</p><span>© {new Date().getFullYear()} GameVerse</span></footer></main>;
 }
