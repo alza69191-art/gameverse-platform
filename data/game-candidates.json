@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T12:16:52.654Z",
+  "generatedAt": "2026-11-18T12:19:35.432Z",
   "totalCandidates": 1603,
   "notice": "Discovery candidates only. Never publish or mirror a game until the complete build, demo, source licence, asset licences, trademarks, attribution and security have been reviewed.",
   "items": [
@@ -107,7 +107,7 @@
       "url": "https://github.com/emilk/egui",
       "description": "egui: an easy-to-use immediate mode GUI in Rust that runs on both web and native",
       "language": "Rust",
-      "stars": 32361,
+      "stars": 32362,
       "pushedAt": "2026-11-18T10:50:00Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
@@ -378,7 +378,7 @@
       "description": "Minecraft: Java Edition 26.3 rewritten from scratch in Rust, checked against vanilla with 281 differential harnesses. Get it with the Horizon launcher.",
       "language": "Rust",
       "stars": 11219,
-      "pushedAt": "2026-11-18T12:05:24Z",
+      "pushedAt": "2026-11-18T12:17:49Z",
       "licenseSpdx": "LGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/lgpl-3.0",
       "topics": [
@@ -1356,7 +1356,7 @@
       "description": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.",
       "language": "TypeScript",
       "stars": 2403,
-      "pushedAt": "2026-11-18T11:02:24Z",
+      "pushedAt": "2026-11-18T12:19:21Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -1535,7 +1535,7 @@
       "url": "https://github.com/HaD0Yun/CozyClay",
       "description": "Open source previs software in the browser: block a scene, pose characters, author camera moves and cuts, then take the same shots to an AI video model.",
       "language": "JavaScript",
-      "stars": 1991,
+      "stars": 1992,
       "pushedAt": "2026-11-18T07:48:58Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
@@ -2982,7 +2982,7 @@
       "description": "3D engine that AI agents drive",
       "language": "JavaScript",
       "stars": 760,
-      "pushedAt": "2026-11-18T12:15:59Z",
+      "pushedAt": "2026-11-18T12:19:06Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -3086,7 +3086,7 @@
       "description": "Free, open-source 3D sculpting for Linux, macOS and Windows: dense meshes, remeshing, painting, built-in AI (image/text to 3D), Send to Unreal, game-ready LODs, Gaussian splats and OpenUSD.",
       "language": "C++",
       "stars": 728,
-      "pushedAt": "2026-11-18T12:16:42Z",
+      "pushedAt": "2026-11-18T12:17:12Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -3573,6 +3573,31 @@
       "discoveredBy": "topic:godot-engine stars:>=10 archived:false"
     },
     {
+      "repository": "ZSeven-W/dsh-game-studio",
+      "url": "https://github.com/ZSeven-W/dsh-game-studio",
+      "description": "Describe a small game in one sentence, play it in the DeepSeek Harness sidebar, swap in AI art, and publish to GitHub Pages or Cloudflare in one click.",
+      "language": "TypeScript",
+      "stars": 581,
+      "pushedAt": "2026-11-09T09:05:20Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "ai-agent",
+        "ai-game-generator",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "game",
+        "gamedev",
+        "github-pages",
+        "html5-games",
+        "threejs"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:html5-games stars:>=3 archived:false"
+    },
+    {
       "repository": "meshy-dev/ThreeRT",
       "url": "https://github.com/meshy-dev/ThreeRT",
       "description": "Hardware ray-traced three.js: a real-time path tracer behind a three.js-style API. Rust + wgpu engine, TypeScript scene and gameplay packages.",
@@ -3600,31 +3625,6 @@
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
       "discoveredBy": "topic:game-engine stars:>=5 archived:false"
-    },
-    {
-      "repository": "ZSeven-W/dsh-game-studio",
-      "url": "https://github.com/ZSeven-W/dsh-game-studio",
-      "description": "Describe a small game in one sentence, play it in the DeepSeek Harness sidebar, swap in AI art, and publish to GitHub Pages or Cloudflare in one click.",
-      "language": "TypeScript",
-      "stars": 580,
-      "pushedAt": "2026-11-09T09:05:20Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "ai-agent",
-        "ai-game-generator",
-        "deepseek-harness",
-        "dsh",
-        "dsh-plugin",
-        "game",
-        "gamedev",
-        "github-pages",
-        "html5-games",
-        "threejs"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:html5-games stars:>=3 archived:false"
     },
     {
       "repository": "codergautam/worldguessr",
@@ -4566,7 +4566,7 @@
       "url": "https://github.com/fengyiqicoder/awesome-fable-5.2",
       "description": "Games, 3D worlds and web pages built with Claude Fable 5.2 that you can actually open — 195 live works (every link checked) + 140 video demos, each with a GIF preview and creator credit. Updated daily.",
       "language": null,
-      "stars": 408,
+      "stars": 409,
       "pushedAt": "2026-11-18T02:56:36Z",
       "licenseSpdx": "CC0-1.0",
       "licenseUrl": "https://api.github.com/licenses/cc0-1.0",
@@ -5027,7 +5027,7 @@
       "description": "Fallout: New Vegas rebuilt in Rust from the original game's code. Windows preview out now; needs your own copy of the game.",
       "language": "Rust",
       "stars": 331,
-      "pushedAt": "2026-11-18T12:05:36Z",
+      "pushedAt": "2026-11-18T12:19:06Z",
       "licenseSpdx": "GPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/gpl-3.0",
       "topics": [
@@ -8896,7 +8896,7 @@
       "description": "🏯 Silkroad Online v1.150 rebuilt end to end: a WebGPU browser client 🎮, a Go game server ⚔️ and the asset pipeline 🧰 that ties them together. Play in your browser.",
       "language": "Go",
       "stars": 105,
-      "pushedAt": "2026-11-18T11:43:48Z",
+      "pushedAt": "2026-11-18T12:18:08Z",
       "licenseSpdx": "AGPL-3.0",
       "licenseUrl": "https://api.github.com/licenses/agpl-3.0",
       "topics": [
@@ -10619,32 +10619,6 @@
       "discoveredBy": "topic:phaser stars:>=5 archived:false"
     },
     {
-      "repository": "arad01486-hash/studio-pulse-relay",
-      "url": "https://github.com/arad01486-hash/studio-pulse-relay",
-      "description": "Roblox Studio Live Sync 2026: Open Cloud WebSocket Agent for Real-Time Playtest Hot-Reloading",
-      "language": "HTML",
-      "stars": 72,
-      "pushedAt": "2026-11-18T03:57:28Z",
-      "licenseSpdx": null,
-      "licenseUrl": null,
-      "topics": [
-        "ai-agents",
-        "claude-code",
-        "codex",
-        "cursor",
-        "game-development",
-        "luau",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "roblox",
-        "roblox-studio"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "license_missing",
-      "discoveredBy": "topic:game-development stars:>=10 archived:false"
-    },
-    {
       "repository": "zerospades/zerospades",
       "url": "https://github.com/zerospades/zerospades",
       "description": "OpenSpades modified to some extent",
@@ -10838,6 +10812,29 @@
         "stem",
         "typescript",
         "visual-programming"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "license_missing",
+      "discoveredBy": "topic:game-development stars:>=10 archived:false"
+    },
+    {
+      "repository": "RubenSanJuan/roblox-arcade-lab",
+      "url": "https://github.com/RubenSanJuan/roblox-arcade-lab",
+      "description": "Roblox Luau Architecture, Security & Performance Mastery 2026",
+      "language": "HTML",
+      "stars": 70,
+      "pushedAt": "2026-11-18T11:16:44Z",
+      "licenseSpdx": null,
+      "licenseUrl": null,
+      "topics": [
+        "ai-skills",
+        "antigravity-ide",
+        "claude-code",
+        "game-development",
+        "luau",
+        "mcp",
+        "roblox",
+        "roblox-studio"
       ],
       "defaultBranch": "main",
       "reviewStatus": "license_missing",
@@ -22003,7 +22000,7 @@
       "description": "Browser-first parametric CAD: exact B-rep solids on a WebAssembly kernel, replayable feature history, direct on-model editing, STEP in and out. Local-first, with optional cloud projects and live collaboration.",
       "language": "TypeScript",
       "stars": 12,
-      "pushedAt": "2026-11-18T12:14:17Z",
+      "pushedAt": "2026-11-18T12:17:12Z",
       "licenseSpdx": "Apache-2.0",
       "licenseUrl": "https://api.github.com/licenses/apache-2.0",
       "topics": [
@@ -28035,7 +28032,7 @@
       "description": "A multiplayer simulation where every character is run by its owner's own AI agent. Persistent 3D worlds; bring Claude Code, Codex, Cursor or any MCP agent.",
       "language": "TypeScript",
       "stars": 6,
-      "pushedAt": "2026-11-18T12:16:05Z",
+      "pushedAt": "2026-11-18T12:18:20Z",
       "licenseSpdx": "MIT",
       "licenseUrl": "https://api.github.com/licenses/mit",
       "topics": [
@@ -30336,6 +30333,29 @@
       "discoveredBy": "topic:phaser-game stars:>=3 archived:false"
     },
     {
+      "repository": "VictorZakharov/last-stand",
+      "url": "https://github.com/VictorZakharov/last-stand",
+      "description": "A 3D wave-survival action RPG in the browser. Bank your spoils or risk it all. Fully procedural, Three.js + TypeScript.",
+      "language": "TypeScript",
+      "stars": 5,
+      "pushedAt": "2026-11-18T12:17:29Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "arpg",
+        "browser-game",
+        "cloth-simulation",
+        "game",
+        "procedural-generation",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:threejs stars:>=5 archived:false"
+    },
+    {
       "repository": "uotavern/anima-client",
       "url": "https://github.com/uotavern/anima-client",
       "description": "Open-source Ultima Online client for macOS and Windows. Built in Rust with a headless core for AI agents, a WebAssembly browser renderer, and a Tauri desktop app.",
@@ -30382,29 +30402,6 @@
         "static-site",
         "threejs",
         "visualization"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:threejs stars:>=5 archived:false"
-    },
-    {
-      "repository": "VictorZakharov/last-stand",
-      "url": "https://github.com/VictorZakharov/last-stand",
-      "description": "A 3D wave-survival action RPG in the browser. Bank your spoils or risk it all. Fully procedural, Three.js + TypeScript.",
-      "language": "TypeScript",
-      "stars": 5,
-      "pushedAt": "2026-11-18T12:05:32Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "arpg",
-        "browser-game",
-        "cloth-simulation",
-        "game",
-        "procedural-generation",
-        "threejs",
-        "typescript",
-        "webgl"
       ],
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
@@ -33172,6 +33169,30 @@
       "discoveredBy": "topic:phaser-game stars:>=3 archived:false"
     },
     {
+      "repository": "technicalnihilist-lgtm/Voxel-Racing",
+      "url": "https://github.com/technicalnihilist-lgtm/Voxel-Racing",
+      "description": "Single-file 3D racing game — dynamic weather, day/night cycle, PBR graphics and an Android APK. No build step.",
+      "language": "HTML",
+      "stars": 4,
+      "pushedAt": "2026-11-18T12:16:26Z",
+      "licenseSpdx": "MIT",
+      "licenseUrl": "https://api.github.com/licenses/mit",
+      "topics": [
+        "3d",
+        "android",
+        "apk",
+        "game",
+        "html5-game",
+        "javascript",
+        "no-build",
+        "racing",
+        "webgl"
+      ],
+      "defaultBranch": "main",
+      "reviewStatus": "needs_asset_and_build_review",
+      "discoveredBy": "topic:html5-game stars:>=3 archived:false"
+    },
+    {
       "repository": "Gabe1290/pythongm",
       "url": "https://github.com/Gabe1290/pythongm",
       "description": "Free, open-source GameMaker-style IDE for making 2D games in Python — visual blocks, no coding required. Exports to Windows/macOS/Linux, HTML5, and mobile. 9 languages.",
@@ -33256,30 +33277,6 @@
         "html5-game",
         "javascript",
         "single-file"
-      ],
-      "defaultBranch": "main",
-      "reviewStatus": "needs_asset_and_build_review",
-      "discoveredBy": "topic:html5-game stars:>=3 archived:false"
-    },
-    {
-      "repository": "technicalnihilist-lgtm/Voxel-Racing",
-      "url": "https://github.com/technicalnihilist-lgtm/Voxel-Racing",
-      "description": "Single-file 3D racing game — dynamic weather, day/night cycle, PBR graphics and an Android APK. No build step.",
-      "language": "HTML",
-      "stars": 4,
-      "pushedAt": "2026-11-18T09:04:47Z",
-      "licenseSpdx": "MIT",
-      "licenseUrl": "https://api.github.com/licenses/mit",
-      "topics": [
-        "3d",
-        "android",
-        "apk",
-        "game",
-        "html5-game",
-        "javascript",
-        "no-build",
-        "racing",
-        "webgl"
       ],
       "defaultBranch": "main",
       "reviewStatus": "needs_asset_and_build_review",
