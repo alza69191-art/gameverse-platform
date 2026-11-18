@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { browserGames } from "@/lib/catalog";
 
-const categories = ["الكل", ...Array.from(new Set(browserGames.map((game) => game.category)))];
+type SubmittedGame = { id: number; title: string; slug: string; description: string; official_url: string; game_type: string };\nconst categories = ["الكل", ...Array.from(new Set(browserGames.map((game) => game.category)))];
 
 export default function GamesPage() {
   const [query, setQuery] = useState("");
@@ -24,8 +24,8 @@ export default function GamesPage() {
         <aside className="filters"><h3>التصنيفات</h3><div className="filter-list">{categories.map((item) => <button key={item} className={category === item ? "selected" : ""} onClick={() => setCategory(item)}>{item}<span>{item === "الكل" ? browserGames.length : browserGames.filter((g) => g.category === item).length}</span></button>)}</div>
           <h3 className="filter-subtitle">نوع اللعبة</h3><div className="filter-list"><button className="selected">ألعاب متصفح HTML5</button><button onClick={() => setCategory("الكل")}>عرض الكل</button></div>
         </aside>
-        <div className="catalog-results"><div className="results-head"><div><span className="eyebrow">العب مباشرة</span><h2>{category === "الكل" ? "جميع الألعاب" : category}</h2></div><span className="result-count">{filtered.length} لعبة</span></div>
-          {filtered.length ? <div className="game-grid">{filtered.map((game, index) => <article className="game-card" key={game.slug}><div className={"game-art art-" + (index % 6)}><span className="game-art-label">HTML5 · 2D</span><span className="game-glyph">{["✦", "◈", "⌁", "⬡", "✧", "◉"][index % 6]}</span><span className="game-category">{game.category}</span></div><div className="game-info"><h3>{game.title}</h3><p>{game.description}</p><div className="game-card-foot"><span>{game.sourceName} · {game.license}</span><a href={game.sourceUrl} target="_blank" rel="noopener noreferrer">المصدر ↗</a></div><Link className="game-play-button" href={"/play/" + game.slug}>▶ العب الآن</Link></div></article>)}</div> : <div className="empty-state"><span>⌕</span><h3>لا توجد نتائج مطابقة</h3><p>جرّب كلمة بحث أخرى أو غيّر التصنيف.</p><button onClick={() => { setQuery(""); setCategory("الكل"); }}>إعادة ضبط الفلاتر</button></div>}
+        <div className="catalog-results"><div className="results-head"><div><span className="eyebrow">العب مباشرة</span><h2>{category === "الكل" ? "جميع الألعاب" : category}</h2></div><span className="result-count">{filtered.length + submittedGames.length} لعبة</span></div>
+          {(filtered.length || submittedGames.length) ? <div className="game-grid">{submittedGames.map((game) => <article className="game-card" key={"submitted-" + game.id}><div className="game-art art-2"><span className="game-art-label">لعبة مطور · {game.game_type}</span><span className="game-glyph">✧</span><span className="game-category">من المجتمع</span></div><div className="game-info"><h3>{game.title}</h3><p>{game.description}</p><div className="game-card-foot"><span>لعبة معتمدة من GameVerse</span><span>مراجعة إدارية</span></div><Link className="game-play-button" href={"/play/submitted/" + encodeURIComponent(game.slug)}>▶ العب الآن</Link></div></article>)}{filtered.map((game, index) => <article className="game-card" key={game.slug}><div className={"game-art art-" + (index % 6)}><span className="game-art-label">HTML5 · 2D</span><span className="game-glyph">{["✦", "◈", "⌁", "⬡", "✧", "◉"][index % 6]}</span><span className="game-category">{game.category}</span></div><div className="game-info"><h3>{game.title}</h3><p>{game.description}</p><div className="game-card-foot"><span>{game.sourceName} · {game.license}</span><a href={game.sourceUrl} target="_blank" rel="noopener noreferrer">المصدر ↗</a></div><Link className="game-play-button" href={"/play/" + game.slug}>▶ العب الآن</Link></div></article>)}</div> : <div className="empty-state"><span>⌕</span><h3>لا توجد نتائج مطابقة</h3><p>جرّب كلمة بحث أخرى أو غيّر التصنيف.</p><button onClick={() => { setQuery(""); setCategory("الكل"); }}>إعادة ضبط الفلاتر</button></div>}
           <p className="catalog-note">الألعاب التسع من Upload Arcade، ومصدرها يذكر أنها ألعاب أصلية بترخيص MIT ويسمح بتضمينها في المواقع الشخصية والتجارية. يتم تشغيلها من خوادم المصدر مع إبقاء نسب العمل إلى صاحبه.</p>
         </div>
       </section>
