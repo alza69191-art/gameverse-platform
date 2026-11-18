@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDbPool } from "@/lib/db";
+import { consumeRateLimit, requestIpKey } from "@/lib/rate-limit";
 import { hashPassword, createSessionToken, sessionCookie } from "@/lib/auth";
 
 export const runtime = "nodejs";
@@ -17,6 +18,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "الاسم يجب أن يكون بين حرفين و100 حرف" }, { status: 400 });
     if (password.length < 10 || password.length > 128)
       return NextResponse.json({ error: "كلمة المرور يجب أن تكون بين 10 و128 حرفاً" }, { status: 400 });
+    const ipLimit = await consumeRateLimit("register-ip", requestIpKey(request), 5, 3600);
+    const emailLimit = await consumeRateLimit("register-email", email, 3, 3600);
+    if (!ipLimit.allowed || !emailLimit.allowed)
+      return NextResponse.json({ error: "طلبات كثيرة. حاول بعد ساعة." }, { status: 429, headers: { "Retry-After": "3600" } });
 
     const pool = getDbPool();
     const [existing] = await pool.execute("SELECT id FROM users WHERE email = ? LIMIT 1", [email]);
