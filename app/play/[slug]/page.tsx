@@ -10,7 +10,7 @@ export default async function PlayGamePage({ params }: { params: Promise<{ slug:
 
   return (
     <main className="site-shell play-page">
-      <header className="topbar"><a className="brand" href="/">GAME<span>VERSE</span></a><nav className="main-nav"><a href="/">الرئيسية</a><a className="active" href="/games">الألعاب</a><a href="/libraries">مكتبة المطور</a><a href="/rules">القواعد</a><a href="/account">حسابي</a></nav><Link className="nav-cta" href="/games">كل الألعاب ←</Link></header>
+      <header className="topbar"><a className="brand" href="/">GAME<span>VERSE</span></a><nav className="main-nav"><a href="/">الرئيسية</a><a className="active" href="/games">ألعاب المتصفح</a><a href="/downloads">تنزيلات</a><a href="/libraries">مكتبة المطور</a><a href="/rules">القواعد</a><a href="/account">حسابي</a></nav><Link className="nav-cta" href="/games">كل الألعاب ←</Link></header>
       <section className="play-heading"><div><span className="eyebrow"><i /> تشغيل مباشر · {game.mode} HTML5/WebGL</span><h1>{game.title}</h1><p>{game.description}</p></div><Link className="back-to-games" href="/games">← العودة إلى المكتبة</Link></section>
       <section className="game-player-shell">
         <div className="game-player-top"><span>GAMEVERSE PLAYER</span><span>{game.category} · {game.mode}</span></div>
