@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "نتيجة الفحص غير صالحة" }, { status: 400 });
     const pool = getDbPool();
     const [result] = await pool.execute(
-      "UPDATE game_uploads SET scan_status = ?, scanned_at = CURRENT_TIMESTAMP WHERE id = ? AND upload_status = 'uploaded' AND scan_status = 'pending'",
+      "UPDATE game_uploads SET scan_status = ?, scanned_at = CURRENT_TIMESTAMP WHERE id = ? AND upload_status = 'uploaded' AND scan_status = 'scanning'",
       [status, id]
     );
     if ((result as {affectedRows:number}).affectedRows !== 1)
