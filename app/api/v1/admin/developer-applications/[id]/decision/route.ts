@@ -38,6 +38,14 @@ export async function POST(request: NextRequest, context: { params: Promise<{ id
     if (decision === "approve") {
       await connection.execute("UPDATE users SET role = 'developer' WHERE id = ? AND status = 'active'", [application.user_id]);
     }
+    await connection.execute(
+      "INSERT INTO user_notifications (user_id, notification_type, title, body) VALUES (?, 'developer_application', ?, ?)",
+      [application.user_id, decision === "approve" ? "تم اعتماد حساب المطوّر" : "تحديث طلب المطوّر", decision === "approve" ? "تم اعتماد طلبك. يمكنك الآن رفع ألعابك من بوابة المطوّرين." : (notes || "لم تتم الموافقة على طلب المطوّر.")]
+    );
+    await connection.execute(
+      "INSERT INTO admin_audit_logs (actor_id, action, entity_type, entity_id, details) VALUES (?, ?, 'developer_application', ?, ?)",
+      [admin.id, decision, String(applicationId), JSON.stringify({ notes })]
+    );
     await connection.commit();
     return NextResponse.json({ success: true, status });
   } catch (error) {
