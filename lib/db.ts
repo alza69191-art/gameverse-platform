@@ -17,6 +17,8 @@ export function getDbPool() {
       connectionLimit: 8,
       queueLimit: 0,
       ssl: { minVersion: "TLSv1.2" },
+      // Required by mysql2 when running with Cloudflare Workers' Node.js compatibility.
+      disableEval: true
     });
   }
   return globalForDb.gameversePool;
