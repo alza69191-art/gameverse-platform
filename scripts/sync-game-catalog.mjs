@@ -25,9 +25,18 @@ function add(item) {
   if(!prior||score(item)>score(prior))items.set(key,item);
 }
 async function getJson(url) {
-  const response=await fetch(url,{headers,signal:AbortSignal.timeout(30000)});
-  if(!response.ok)throw new Error("HTTP "+response.status+" from "+url);
-  return response.json();
+  let lastError;
+  for(let attempt=0;attempt<3;attempt++){
+    try{
+      const response=await fetch(url,{headers,signal:AbortSignal.timeout(45000)});
+      if(!response.ok)throw new Error("HTTP "+response.status+" from "+url);
+      return await response.json();
+    }catch(error){
+      lastError=error;
+      if(attempt<2)await sleep(1500*(attempt+1));
+    }
+  }
+  throw lastError;
 }
 
 // OpenGames: paginated public directory of 2,000+ open-source games.
