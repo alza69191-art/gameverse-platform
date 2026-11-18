@@ -1,17 +1,15 @@
-const features = ["ألعاب متصفح فورية","ألعاب 2D و3D","صفحات ألعاب موثوقة","حساب ومكتبة ألعاب"];
-
+const highlights = [
+  { icon: "🎮", title: "مكتبة ألعاب متنوعة", detail: "اكتشف ألعاب المتصفح وألعاب الكمبيوتر والهاتف." },
+  { icon: "🔎", title: "بحث وتصنيفات", detail: "اعثر على لعبتك حسب النوع والمنصة." },
+  { icon: "🧩", title: "مكتبة المطور", detail: "أصول 2D و3D وأصوات وواجهات ومراجع موثقة." },
+];
 export default function Home() {
-  return (
-    <main className="shell">
-      <nav className="nav"><a className="brand" href="/">GameVerse</a><span className="nav-tag">اللاعبون</span></nav>
-      <section className="hero">
-        <div className="eyebrow">GAMEVERSE · GAMEVERSE</div>
-        <h1>منصة الألعاب</h1>
-        <p className="lead">اكتشف ألعاب المتصفح وحمّل ألعاب الحاسوب والهاتف.</p>
-        <a className="primary" href="#features">استكشف الألعاب<span aria-hidden="true"> ←</span></a>
-      </section>
-      <section id="features" className="features"><h2>منظومة متكاملة</h2><div className="grid">{features.map((feature) => <article className="card" key={feature}><span className="dot" />{feature}</article>)}</div></section>
-      <footer>© {new Date().getFullYear()} GameVerse. جميع الحقوق محفوظة.</footer>
-    </main>
-  );
+  return <main className="site-shell">
+    <header className="topbar"><a className="brand" href="/">GAME<span>VERSE</span></a><nav className="main-nav"><a className="active" href="/">الرئيسية</a><a href="/games">الألعاب</a><a href="/libraries">مكتبة المطور</a></nav><a className="nav-cta" href="/games">ابدأ اللعب ←</a></header>
+    <section className="hero"><div className="hero-copy"><span className="eyebrow"><i /> عالمك للألعاب يبدأ هنا</span><h1>اكتشف لعبتك<br/><em>القادمة.</em></h1><p>من ألعاب المتصفح السريعة إلى عوالم الكمبيوتر والهاتف. تصفّح، اكتشف، والعب من مكان واحد.</p><form action="/games" className="hero-search"><span>⌕</span><input name="q" placeholder="ابحث عن لعبة أو نوع..." aria-label="ابحث عن لعبة"/><button>ابحث الآن</button></form><div className="hero-links"><a href="/games?category=ألغاز">ألعاب الألغاز</a><a href="/games?category=أكشن">ألعاب الأكشن</a><a href="/games?platform=متصفح">ألعاب المتصفح</a></div></div><div className="hero-art"><div className="art-orbit orbit-one"/><div className="art-orbit orbit-two"/><div className="art-core">GV<span>✦</span></div><div className="float-card float-top"><b>01</b><span>PLAY<br/>YOUR WAY</span></div><div className="float-card float-bottom"><span className="pulse"/> READY PLAYER</div><div className="art-spark spark-a">✦</div><div className="art-spark spark-b">✧</div></div></section>
+    <section className="quick-stats"><div><strong>01</strong><span>اكتشف الألعاب</span></div><div><strong>02</strong><span>اختر تصنيفك</span></div><div><strong>03</strong><span>ابدأ المغامرة</span></div></section>
+    <section className="section-block"><div className="section-heading"><div><span className="eyebrow">استكشف المنصة</span><h2>كل ما تحتاجه في مكان واحد</h2></div><a className="text-link" href="/games">جميع الألعاب ←</a></div><div className="feature-grid">{highlights.map(item=><article className="feature-card" key={item.title}><span className="feature-icon">{item.icon}</span><h3>{item.title}</h3><p>{item.detail}</p></article>)}</div></section>
+    <section className="wide-banner"><div><span className="eyebrow">للمبدعين والمطورين</span><h2>ابنِ لعبتك التالية<br/>بموارد أفضل.</h2><p>مكتبة منظمة لأصول 2D و3D والصوت والواجهات، مع توضيح مصادر التراخيص.</p><a className="button-light" href="/libraries">تصفح مكتبة المطور ←</a></div><div className="banner-symbol">✳</div></section>
+    <footer className="footer"><a className="brand" href="/">GAME<span>VERSE</span></a><p>منصة لاكتشاف الألعاب وموارد تطويرها.</p><span>© {new Date().getFullYear()} GameVerse</span></footer>
+  </main>;
 }
