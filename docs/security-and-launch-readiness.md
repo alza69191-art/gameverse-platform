@@ -10,7 +10,7 @@ Updated: 2026-11-18
 - Registration assigns the `player` role on the server. A browser request cannot choose `developer` or `admin`.
 - Login and registration use database-backed rate-limit buckets.
 - Mutating auth and user-notification routes check the request Origin.
-- API access for the separately hosted admin and developer portals is restricted to an explicit allow-list and uses credentialed CORS. Browser clients must use `credentials: "include"`; never copy session tokens into localStorage.
+- The separately hosted admin and developer portals use a same-origin server-side API proxy. The browser receives only an HttpOnly portal cookie; the proxy forwards the opaque central session token to the player API. Session tokens are never exposed to page JavaScript or stored in localStorage. The central API checks the exact portal Origin against `ALLOWED_APP_ORIGINS`.
 - Security response headers disable MIME sniffing, restrict framing, set HSTS, and restrict browser permissions.
 - Render provides automatic DDoS protection for deployed services and encrypts environment variables/secret files at rest. These platform protections do not replace application controls.
 
