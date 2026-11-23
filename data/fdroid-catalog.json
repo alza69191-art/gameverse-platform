@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-18T12:17:24.951Z",
+  "generatedAt": "2026-11-23T14:37:31.988Z",
   "source": "F-Droid index-v1.json",
-  "total": 5002,
+  "total": 5026,
   "items": [
     {
       "id": "fdroid-dev.lonami.klooni",
@@ -820,6 +820,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-app.canapestudio.webmote",
+      "packageName": "app.canapestudio.webmote",
+      "title": "app.canapestudio.webmote",
+      "category": "Remote Controller",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/app.canapestudio.webmote/",
+      "downloadUrl": "https://f-droid.org/packages/app.canapestudio.webmote/",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-app.cbdm.qrcodedisplayer",
       "packageName": "app.cbdm.qrcodedisplayer",
       "title": "app.cbdm.qrcodedisplayer",
@@ -1036,23 +1053,6 @@
       "source": "F-Droid official repository",
       "sourceUrl": "https://f-droid.org/packages/app.dumdum/",
       "downloadUrl": "https://f-droid.org/packages/app.dumdum/",
-      "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-app.easy.launcher",
-      "packageName": "app.easy.launcher",
-      "title": "app.easy.launcher",
-      "category": "Launcher",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/app.easy.launcher/",
-      "downloadUrl": "https://f-droid.org/packages/app.easy.launcher/",
       "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
@@ -2078,6 +2078,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-app.sidecoin",
+      "packageName": "app.sidecoin",
+      "title": "app.sidecoin",
+      "category": "Security",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/app.sidecoin/",
+      "downloadUrl": "https://f-droid.org/packages/app.sidecoin/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-app.siftrecipes",
       "packageName": "app.siftrecipes",
       "title": "app.siftrecipes",
@@ -2431,6 +2448,23 @@
       "sourceUrl": "https://f-droid.org/packages/app.tally.expenses/",
       "downloadUrl": "https://f-droid.org/packages/app.tally.expenses/",
       "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-app.tankste.fdroid",
+      "packageName": "app.tankste.fdroid",
+      "title": "app.tankste.fdroid",
+      "category": "Market & Price",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/app.tankste.fdroid/",
+      "downloadUrl": "https://f-droid.org/packages/app.tankste.fdroid/",
+      "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
     },
@@ -6868,6 +6902,23 @@
       "sourceUrl": "https://f-droid.org/packages/com.agepony.app/",
       "downloadUrl": "https://f-droid.org/packages/com.agepony.app/",
       "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.agilesalt.trackrfinder",
+      "packageName": "com.agilesalt.trackrfinder",
+      "title": "com.agilesalt.trackrfinder",
+      "category": "Connectivity",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.agilesalt.trackrfinder/",
+      "downloadUrl": "https://f-droid.org/packages/com.agilesalt.trackrfinder/",
+      "license": "MIT",
       "verified": false,
       "status": "metadata_only"
     },
@@ -13026,23 +13077,6 @@
       "status": "metadata_only"
     },
     {
-      "id": "fdroid-com.cosmos.unreddit",
-      "packageName": "com.cosmos.unreddit",
-      "title": "com.cosmos.unreddit",
-      "category": "Forum",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/com.cosmos.unreddit/",
-      "downloadUrl": "https://f-droid.org/packages/com.cosmos.unreddit/",
-      "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
       "id": "fdroid-com.covertwogames.dozeoff.foss",
       "packageName": "com.covertwogames.dozeoff.foss",
       "title": "com.covertwogames.dozeoff.foss",
@@ -15491,6 +15525,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.egron.lampan",
+      "packageName": "com.egron.lampan",
+      "title": "com.egron.lampan",
+      "category": "Cast",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.egron.lampan/",
+      "downloadUrl": "https://f-droid.org/packages/com.egron.lampan/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.ehang.ehhelper",
       "packageName": "com.ehang.ehhelper",
       "title": "com.ehang.ehhelper",
@@ -15946,6 +15997,23 @@
       "sourceUrl": "https://f-droid.org/packages/com.epione.app/",
       "downloadUrl": "https://f-droid.org/packages/com.epione.app/",
       "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.erenium.snaplock",
+      "packageName": "com.erenium.snaplock",
+      "title": "com.erenium.snaplock",
+      "category": "Password & 2FA",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.erenium.snaplock/",
+      "downloadUrl": "https://f-droid.org/packages/com.erenium.snaplock/",
+      "license": "GPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
     },
@@ -21118,6 +21186,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.gt610.lunadial",
+      "packageName": "com.gt610.lunadial",
+      "title": "com.gt610.lunadial",
+      "category": "Clock",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.gt610.lunadial/",
+      "downloadUrl": "https://f-droid.org/packages/com.gt610.lunadial/",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.gtp.showapicturetoyourfriend",
       "packageName": "com.gtp.showapicturetoyourfriend",
       "title": "com.gtp.showapicturetoyourfriend",
@@ -23476,23 +23561,6 @@
       "source": "F-Droid official repository",
       "sourceUrl": "https://f-droid.org/packages/com.jmstudios.chibe/",
       "downloadUrl": "https://f-droid.org/packages/com.jmstudios.chibe/",
-      "license": "GPL-3.0-or-later",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-com.jmstudios.redmoon",
-      "packageName": "com.jmstudios.redmoon",
-      "title": "com.jmstudios.redmoon",
-      "category": "System",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/com.jmstudios.redmoon/",
-      "downloadUrl": "https://f-droid.org/packages/com.jmstudios.redmoon/",
       "license": "GPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
@@ -26554,6 +26622,23 @@
       "sourceUrl": "https://f-droid.org/packages/com.marotoweb.cajuscan_app/",
       "downloadUrl": "https://f-droid.org/packages/com.marotoweb.cajuscan_app/",
       "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.marotoweb.kmemo",
+      "packageName": "com.marotoweb.kmemo",
+      "title": "com.marotoweb.kmemo",
+      "category": "Note",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.marotoweb.kmemo/",
+      "downloadUrl": "https://f-droid.org/packages/com.marotoweb.kmemo/",
+      "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
     },
@@ -30332,6 +30417,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.opensetlist.app",
+      "packageName": "com.opensetlist.app",
+      "title": "com.opensetlist.app",
+      "category": "Music Practice Tool",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.opensetlist.app/",
+      "downloadUrl": "https://f-droid.org/packages/com.opensetlist.app/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.opensource.i2pradio",
       "packageName": "com.opensource.i2pradio",
       "title": "com.opensource.i2pradio",
@@ -30464,6 +30566,23 @@
       "sourceUrl": "https://f-droid.org/packages/com.osfans.trime/",
       "downloadUrl": "https://f-droid.org/packages/com.osfans.trime/",
       "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.osscabinet.ossWallet",
+      "packageName": "com.osscabinet.ossWallet",
+      "title": "com.osscabinet.ossWallet",
+      "category": "Finance Manager",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.osscabinet.ossWallet/",
+      "downloadUrl": "https://f-droid.org/packages/com.osscabinet.ossWallet/",
+      "license": "AGPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
     },
@@ -30837,6 +30956,23 @@
       "source": "F-Droid official repository",
       "sourceUrl": "https://f-droid.org/packages/com.peaceray.codeword/",
       "downloadUrl": "https://f-droid.org/packages/com.peaceray.codeword/",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.peaknav.fdroid",
+      "packageName": "com.peaknav.fdroid",
+      "title": "com.peaknav.fdroid",
+      "category": "Navigation",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.peaknav.fdroid/",
+      "downloadUrl": "https://f-droid.org/packages/com.peaknav.fdroid/",
       "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
@@ -33460,6 +33596,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.rr.numio.decibel",
+      "packageName": "com.rr.numio.decibel",
+      "title": "com.rr.numio.decibel",
+      "category": "Volume",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.rr.numio.decibel/",
+      "downloadUrl": "https://f-droid.org/packages/com.rr.numio.decibel/",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.rr.numio.ezhuthola",
       "packageName": "com.rr.numio.ezhuthola",
       "title": "com.rr.numio.ezhuthola",
@@ -33783,6 +33936,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.sakusaku3939.datranslator",
+      "packageName": "com.sakusaku3939.datranslator",
+      "title": "com.sakusaku3939.datranslator",
+      "category": "Reading",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.sakusaku3939.datranslator/",
+      "downloadUrl": "https://f-droid.org/packages/com.sakusaku3939.datranslator/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.sal.privacykit.lite",
       "packageName": "com.sal.privacykit.lite",
       "title": "com.sal.privacykit.lite",
@@ -34033,23 +34203,6 @@
       "source": "F-Droid official repository",
       "sourceUrl": "https://f-droid.org/packages/com.saschl.cameragps/",
       "downloadUrl": "https://f-droid.org/packages/com.saschl.cameragps/",
-      "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-com.saverio.wordoftheday_en",
-      "packageName": "com.saverio.wordoftheday_en",
-      "title": "com.saverio.wordoftheday_en",
-      "category": "Reading",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/com.saverio.wordoftheday_en/",
-      "downloadUrl": "https://f-droid.org/packages/com.saverio.wordoftheday_en/",
       "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
@@ -34883,6 +35036,23 @@
       "source": "F-Droid official repository",
       "sourceUrl": "https://f-droid.org/packages/com.sidhant.blockblast/",
       "downloadUrl": "https://f-droid.org/packages/com.sidhant.blockblast/",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.sidhant.blocksort",
+      "packageName": "com.sidhant.blocksort",
+      "title": "com.sidhant.blocksort",
+      "category": "Casual Game",
+      "kind": "game",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.sidhant.blocksort/",
+      "downloadUrl": "https://f-droid.org/packages/com.sidhant.blocksort/",
       "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
@@ -35823,23 +35993,6 @@
       "status": "metadata_only"
     },
     {
-      "id": "fdroid-com.smartpack.busyboxinstaller",
-      "packageName": "com.smartpack.busyboxinstaller",
-      "title": "com.smartpack.busyboxinstaller",
-      "category": "System",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/com.smartpack.busyboxinstaller/",
-      "downloadUrl": "https://f-droid.org/packages/com.smartpack.busyboxinstaller/",
-      "license": "GPL-3.0-or-later",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
       "id": "fdroid-com.smartpack.packagemanager",
       "packageName": "com.smartpack.packagemanager",
       "title": "com.smartpack.packagemanager",
@@ -36639,23 +36792,6 @@
       "status": "metadata_only"
     },
     {
-      "id": "fdroid-com.sunilpaulmathew.translator",
-      "packageName": "com.sunilpaulmathew.translator",
-      "title": "com.sunilpaulmathew.translator",
-      "category": "Development",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/com.sunilpaulmathew.translator/",
-      "downloadUrl": "https://f-droid.org/packages/com.sunilpaulmathew.translator/",
-      "license": "GPL-3.0-or-later",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
       "id": "fdroid-com.sunstep.travel.foss",
       "packageName": "com.sunstep.travel.foss",
       "title": "com.sunstep.travel.foss",
@@ -36911,6 +37047,40 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.synsound.app",
+      "packageName": "com.synsound.app",
+      "title": "com.synsound.app",
+      "category": "Internet",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.synsound.app/",
+      "downloadUrl": "https://f-droid.org/packages/com.synsound.app/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.sysreadout.app",
+      "packageName": "com.sysreadout.app",
+      "title": "com.sysreadout.app",
+      "category": "Launcher",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.sysreadout.app/",
+      "downloadUrl": "https://f-droid.org/packages/com.sysreadout.app/",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.sysreadoutmonitor.app",
       "packageName": "com.sysreadoutmonitor.app",
       "title": "com.sysreadoutmonitor.app",
@@ -37077,6 +37247,23 @@
       "sourceUrl": "https://f-droid.org/packages/com.talsk.amadz/",
       "downloadUrl": "https://f-droid.org/packages/com.talsk.amadz/",
       "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.tamimarafat.ferngeist",
+      "packageName": "com.tamimarafat.ferngeist",
+      "title": "com.tamimarafat.ferngeist",
+      "category": "AI Chat",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.tamimarafat.ferngeist/",
+      "downloadUrl": "https://f-droid.org/packages/com.tamimarafat.ferngeist/",
+      "license": "MIT",
       "verified": false,
       "status": "metadata_only"
     },
@@ -37523,6 +37710,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.theforeveriris.simplevoicetool",
+      "packageName": "com.theforeveriris.simplevoicetool",
+      "title": "com.theforeveriris.simplevoicetool",
+      "category": "Development",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.theforeveriris.simplevoicetool/",
+      "downloadUrl": "https://f-droid.org/packages/com.theforeveriris.simplevoicetool/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.therealbluepandabear.pixapencil",
       "packageName": "com.therealbluepandabear.pixapencil",
       "title": "com.therealbluepandabear.pixapencil",
@@ -37778,6 +37982,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.thothterm.arch",
+      "packageName": "com.thothterm.arch",
+      "title": "com.thothterm.arch",
+      "category": "Development",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.thothterm.arch/",
+      "downloadUrl": "https://f-droid.org/packages/com.thothterm.arch/",
+      "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.thothterm.debian",
       "packageName": "com.thothterm.debian",
       "title": "com.thothterm.debian",
@@ -37790,6 +38011,23 @@
       "source": "F-Droid official repository",
       "sourceUrl": "https://f-droid.org/packages/com.thothterm.debian/",
       "downloadUrl": "https://f-droid.org/packages/com.thothterm.debian/",
+      "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.thothterm.security",
+      "packageName": "com.thothterm.security",
+      "title": "com.thothterm.security",
+      "category": "Development",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.thothterm.security/",
+      "downloadUrl": "https://f-droid.org/packages/com.thothterm.security/",
       "license": "Apache-2.0",
       "verified": false,
       "status": "metadata_only"
@@ -39682,6 +39920,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-com.ventouxlabs.netlens",
+      "packageName": "com.ventouxlabs.netlens",
+      "title": "com.ventouxlabs.netlens",
+      "category": "Network Analyzer",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.ventouxlabs.netlens/",
+      "downloadUrl": "https://f-droid.org/packages/com.ventouxlabs.netlens/",
+      "license": "AGPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-com.verdettoqr.scanner",
       "packageName": "com.verdettoqr.scanner",
       "title": "com.verdettoqr.scanner",
@@ -40460,6 +40715,23 @@
       "sourceUrl": "https://f-droid.org/packages/com.wchung.qrshare/",
       "downloadUrl": "https://f-droid.org/packages/com.wchung.qrshare/",
       "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.webmini.app",
+      "packageName": "com.webmini.app",
+      "title": "com.webmini.app",
+      "category": "AI Chat",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.webmini.app/",
+      "downloadUrl": "https://f-droid.org/packages/com.webmini.app/",
+      "license": "MIT",
       "verified": false,
       "status": "metadata_only"
     },
@@ -41752,6 +42024,23 @@
       "sourceUrl": "https://f-droid.org/packages/com.zoffcc.applications.avifview/",
       "downloadUrl": "https://f-droid.org/packages/com.zoffcc.applications.avifview/",
       "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-com.zoffcc.applications.cpuspy",
+      "packageName": "com.zoffcc.applications.cpuspy",
+      "title": "com.zoffcc.applications.cpuspy",
+      "category": "System",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/com.zoffcc.applications.cpuspy/",
+      "downloadUrl": "https://f-droid.org/packages/com.zoffcc.applications.cpuspy/",
+      "license": "GPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
     },
@@ -43745,6 +44034,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-de.goekselcaliskan.kichatassistent.fdroid",
+      "packageName": "de.goekselcaliskan.kichatassistent.fdroid",
+      "title": "de.goekselcaliskan.kichatassistent.fdroid",
+      "category": "AI Chat",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/de.goekselcaliskan.kichatassistent.fdroid/",
+      "downloadUrl": "https://f-droid.org/packages/de.goekselcaliskan.kichatassistent.fdroid/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-de.goork.mapflip",
       "packageName": "de.goork.mapflip",
       "title": "de.goork.mapflip",
@@ -45424,23 +45730,6 @@
       "sourceUrl": "https://f-droid.org/packages/de.morzo.realmscore/",
       "downloadUrl": "https://f-droid.org/packages/de.morzo.realmscore/",
       "license": "GPL-3.0-or-later",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-de.msal.muzei.nationalgeographic",
-      "packageName": "de.msal.muzei.nationalgeographic",
-      "title": "de.msal.muzei.nationalgeographic",
-      "category": "Multimedia",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/de.msal.muzei.nationalgeographic/",
-      "downloadUrl": "https://f-droid.org/packages/de.msal.muzei.nationalgeographic/",
-      "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
     },
@@ -49576,6 +49865,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-dev.slint.viewer",
+      "packageName": "dev.slint.viewer",
+      "title": "dev.slint.viewer",
+      "category": "Development",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/dev.slint.viewer/",
+      "downloadUrl": "https://f-droid.org/packages/dev.slint.viewer/",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-dev.spiegl.flyingcarpet",
       "packageName": "dev.spiegl.flyingcarpet",
       "title": "dev.spiegl.flyingcarpet",
@@ -52126,6 +52432,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-fi.nikosavola.clockifywear.fdroid",
+      "packageName": "fi.nikosavola.clockifywear.fdroid",
+      "title": "fi.nikosavola.clockifywear.fdroid",
+      "category": "Time Tracker",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/fi.nikosavola.clockifywear.fdroid/",
+      "downloadUrl": "https://f-droid.org/packages/fi.nikosavola.clockifywear.fdroid/",
+      "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-org.jumascola.filmflip",
       "packageName": "org.jumascola.filmflip",
       "title": "FilmFlip",
@@ -53571,23 +53894,6 @@
       "status": "metadata_only"
     },
     {
-      "id": "fdroid-geddit.buzl.uk",
-      "packageName": "geddit.buzl.uk",
-      "title": "geddit.buzl.uk",
-      "category": "Forum",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/geddit.buzl.uk/",
-      "downloadUrl": "https://f-droid.org/packages/geddit.buzl.uk/",
-      "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
       "id": "fdroid-io.github.acidefluorhydrique.geminiassist",
       "packageName": "io.github.acidefluorhydrique.geminiassist",
       "title": "geminiAssist",
@@ -53975,23 +54281,6 @@
       "sourceUrl": "https://f-droid.org/packages/helium314.keyboard/",
       "downloadUrl": "https://f-droid.org/packages/helium314.keyboard/",
       "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-helium314.localbackend",
-      "packageName": "helium314.localbackend",
-      "title": "helium314.localbackend",
-      "category": "Navigation",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/helium314.localbackend/",
-      "downloadUrl": "https://f-droid.org/packages/helium314.localbackend/",
-      "license": "GPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
     },
@@ -56019,6 +56308,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-io.github.calculatorpascaline",
+      "packageName": "io.github.calculatorpascaline",
+      "title": "io.github.calculatorpascaline",
+      "category": "Calculator",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/io.github.calculatorpascaline/",
+      "downloadUrl": "https://f-droid.org/packages/io.github.calculatorpascaline/",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-io.github.capitan0n.droynis",
       "packageName": "io.github.capitan0n.droynis",
       "title": "io.github.capitan0n.droynis",
@@ -56950,6 +57256,23 @@
       "sourceUrl": "https://f-droid.org/packages/io.github.garemat.lunachron/",
       "downloadUrl": "https://f-droid.org/packages/io.github.garemat.lunachron/",
       "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-io.github.gccammelli.meowstache",
+      "packageName": "io.github.gccammelli.meowstache",
+      "title": "io.github.gccammelli.meowstache",
+      "category": "Health Manager",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/io.github.gccammelli.meowstache/",
+      "downloadUrl": "https://f-droid.org/packages/io.github.gccammelli.meowstache/",
+      "license": "MIT",
       "verified": false,
       "status": "metadata_only"
     },
@@ -59419,6 +59742,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-io.github.starboardhome.nomaddays",
+      "packageName": "io.github.starboardhome.nomaddays",
+      "title": "io.github.starboardhome.nomaddays",
+      "category": "Calendar & Agenda",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/io.github.starboardhome.nomaddays/",
+      "downloadUrl": "https://f-droid.org/packages/io.github.starboardhome.nomaddays/",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-io.github.stardomains3.oxproxion",
       "packageName": "io.github.stardomains3.oxproxion",
       "title": "io.github.stardomains3.oxproxion",
@@ -61391,6 +61731,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-it.allard.rassh",
+      "packageName": "it.allard.rassh",
+      "title": "it.allard.rassh",
+      "category": "File Transfer",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/it.allard.rassh/",
+      "downloadUrl": "https://f-droid.org/packages/it.allard.rassh/",
+      "license": "ISC",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-it.belloworld.mercurygram",
       "packageName": "it.belloworld.mercurygram",
       "title": "it.belloworld.mercurygram",
@@ -61612,6 +61969,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-it.pviotti.readeck",
+      "packageName": "it.pviotti.readeck",
+      "title": "it.pviotti.readeck",
+      "category": "Bookmark",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/it.pviotti.readeck/",
+      "downloadUrl": "https://f-droid.org/packages/it.pviotti.readeck/",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-it.reyboz.bustorino",
       "packageName": "it.reyboz.bustorino",
       "title": "it.reyboz.bustorino",
@@ -61659,6 +62033,23 @@
       "sourceUrl": "https://f-droid.org/packages/it.rignanese.leo.slimfacebook/",
       "downloadUrl": "https://f-droid.org/packages/it.rignanese.leo.slimfacebook/",
       "license": "GPL-2.0-or-later",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-it.trenirt",
+      "packageName": "it.trenirt",
+      "title": "it.trenirt",
+      "category": "Public Transport",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/it.trenirt/",
+      "downloadUrl": "https://f-droid.org/packages/it.trenirt/",
+      "license": "AGPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
     },
@@ -62542,6 +62933,23 @@
       "source": "F-Droid official repository",
       "sourceUrl": "https://f-droid.org/packages/live.fourthepeople.keeply/",
       "downloadUrl": "https://f-droid.org/packages/live.fourthepeople.keeply/",
+      "license": "Apache-2.0",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-live.fourthepeople.podcasts",
+      "packageName": "live.fourthepeople.podcasts",
+      "title": "live.fourthepeople.podcasts",
+      "category": "Podcast",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/live.fourthepeople.podcasts/",
+      "downloadUrl": "https://f-droid.org/packages/live.fourthepeople.podcasts/",
       "license": "Apache-2.0",
       "verified": false,
       "status": "metadata_only"
@@ -64107,23 +64515,6 @@
       "sourceUrl": "https://f-droid.org/packages/moe.dic1911.urlsanitizer/",
       "downloadUrl": "https://f-droid.org/packages/moe.dic1911.urlsanitizer/",
       "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-moe.lz233.unvcode",
-      "packageName": "moe.lz233.unvcode",
-      "title": "moe.lz233.unvcode",
-      "category": "Writing",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/moe.lz233.unvcode/",
-      "downloadUrl": "https://f-droid.org/packages/moe.lz233.unvcode/",
-      "license": "MPL-2.0",
       "verified": false,
       "status": "metadata_only"
     },
@@ -69942,23 +70333,6 @@
       "status": "metadata_only"
     },
     {
-      "id": "fdroid-org.commonvoice.saverio",
-      "packageName": "org.commonvoice.saverio",
-      "title": "org.commonvoice.saverio",
-      "category": "Science & Education",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/org.commonvoice.saverio/",
-      "downloadUrl": "https://f-droid.org/packages/org.commonvoice.saverio/",
-      "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
       "id": "fdroid-org.comunes.tane",
       "packageName": "org.comunes.tane",
       "title": "org.comunes.tane",
@@ -70244,6 +70618,23 @@
       "sourceUrl": "https://f-droid.org/packages/org.decsync.sparss.floss/",
       "downloadUrl": "https://f-droid.org/packages/org.decsync.sparss.floss/",
       "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-org.deluge.trireme",
+      "packageName": "org.deluge.trireme",
+      "title": "org.deluge.trireme",
+      "category": "Download",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/org.deluge.trireme/",
+      "downloadUrl": "https://f-droid.org/packages/org.deluge.trireme/",
+      "license": "GPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
     },
@@ -80669,6 +81060,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-ru.netstatus.app",
+      "packageName": "ru.netstatus.app",
+      "title": "ru.netstatus.app",
+      "category": "Connectivity",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/ru.netstatus.app/",
+      "downloadUrl": "https://f-droid.org/packages/ru.netstatus.app/",
+      "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-ru.nsu.bobrofon.easysshfs",
       "packageName": "ru.nsu.bobrofon.easysshfs",
       "title": "ru.nsu.bobrofon.easysshfs",
@@ -80852,23 +81260,6 @@
       "sourceUrl": "https://f-droid.org/packages/run.moritz.howmany/",
       "downloadUrl": "https://f-droid.org/packages/run.moritz.howmany/",
       "license": "MIT",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-ryey.easer.beta",
-      "packageName": "ryey.easer.beta",
-      "title": "ryey.easer.beta",
-      "category": "System",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/ryey.easer.beta/",
-      "downloadUrl": "https://f-droid.org/packages/ryey.easer.beta/",
-      "license": "GPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
     },
@@ -82743,6 +83134,23 @@
       "status": "metadata_only"
     },
     {
+      "id": "fdroid-tech.mmarca.openwatch",
+      "packageName": "tech.mmarca.openwatch",
+      "title": "tech.mmarca.openwatch",
+      "category": "Connectivity",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/tech.mmarca.openwatch/",
+      "downloadUrl": "https://f-droid.org/packages/tech.mmarca.openwatch/",
+      "license": "AGPL-3.0-or-later",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
       "id": "fdroid-tech.platypush.platypush",
       "packageName": "tech.platypush.platypush",
       "title": "tech.platypush.platypush",
@@ -83334,23 +83742,6 @@
       "sourceUrl": "https://f-droid.org/packages/tribixbite.cleverkeys/",
       "downloadUrl": "https://f-droid.org/packages/tribixbite.cleverkeys/",
       "license": "GPL-3.0-only",
-      "verified": false,
-      "status": "metadata_only"
-    },
-    {
-      "id": "fdroid-org.deluge.trireme",
-      "packageName": "org.deluge.trireme",
-      "title": "Trireme for Deluge",
-      "category": "Download",
-      "kind": "app",
-      "platform": [
-        "Android"
-      ],
-      "description": "Use this app to connect and manage your Deluge Daemon. Deluge is a popular torrent client which follows a server client model. This app will act as a client.",
-      "source": "F-Droid official repository",
-      "sourceUrl": "https://f-droid.org/packages/org.deluge.trireme/",
-      "downloadUrl": "https://f-droid.org/packages/org.deluge.trireme/",
-      "license": "GPL-3.0-or-later",
       "verified": false,
       "status": "metadata_only"
     },
@@ -84677,6 +85068,23 @@
       "sourceUrl": "https://f-droid.org/packages/xyz.jekyllex/",
       "downloadUrl": "https://f-droid.org/packages/xyz.jekyllex/",
       "license": "MIT",
+      "verified": false,
+      "status": "metadata_only"
+    },
+    {
+      "id": "fdroid-xyz.labunix.dlectio",
+      "packageName": "xyz.labunix.dlectio",
+      "title": "xyz.labunix.dlectio",
+      "category": "Religion",
+      "kind": "app",
+      "platform": [
+        "Android"
+      ],
+      "description": "",
+      "source": "F-Droid official repository",
+      "sourceUrl": "https://f-droid.org/packages/xyz.labunix.dlectio/",
+      "downloadUrl": "https://f-droid.org/packages/xyz.labunix.dlectio/",
+      "license": "GPL-3.0-only",
       "verified": false,
       "status": "metadata_only"
     },

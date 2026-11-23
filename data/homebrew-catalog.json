@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-18T12:17:49.525Z",
+  "generatedAt": "2026-11-23T14:37:51.903Z",
   "source": "Homebrew Formulae and Cask JSON APIs",
   "sources": {
-    "formulae": 8733,
-    "casks": 7835
+    "formulae": 8742,
+    "casks": 7849
   },
-  "total": 16568,
+  "total": 16591,
   "notice": "Homebrew package metadata only. GameVerse links to upstream project homepages and Homebrew package detail pages; it does not host package binaries. Check each package's actual supported OS, licence, publisher and availability.",
   "items": [
     {
@@ -2246,6 +2246,23 @@
       "sourceUrl": "https://formulae.brew.sh/formula/addons-linter/",
       "downloadUrl": "https://github.com/mozilla/addons-linter",
       "license": "MPL-2.0",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-formula-ade",
+      "title": "Ade",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "Graph construction, manipulation, and processing framework",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/ade/",
+      "downloadUrl": "https://github.com/opencv/ade",
+      "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -5267,6 +5284,22 @@
       "description": "Application launcher and productivity software",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/alfred%404/",
+      "downloadUrl": "https://www.alfredapp.com/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-alfred@5",
+      "title": "Alfred",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Application launcher and productivity software",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/alfred%405/",
       "downloadUrl": "https://www.alfredapp.com/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
@@ -9350,6 +9383,23 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-formula-apicula",
+      "title": "Apicula",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "Open source tools for Gowin FPGAs",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/apicula/",
+      "downloadUrl": "https://github.com/YosysHQ/apicula",
+      "license": "MIT",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-cask-apidog",
       "title": "Apidog",
       "category": "تطبيقات macOS",
@@ -10185,7 +10235,7 @@
       "description": "Layer 1 blockchain built to support fair access to decentralized assets for all",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/aptos/",
-      "downloadUrl": "https://aptosfoundation.org/",
+      "downloadUrl": "https://aptosnetwork.com/",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -10564,39 +10614,6 @@
       "sourceUrl": "https://formulae.brew.sh/formula/archey4/",
       "downloadUrl": "https://github.com/HorlogeSkynet/archey4",
       "license": "GPL-3.0-or-later",
-      "verified": false,
-      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
-    },
-    {
-      "id": "homebrew-formula-archgw",
-      "title": "Archgw",
-      "category": "أدوات ومكتبات للمطورين",
-      "kind": "app",
-      "platform": [
-        "macOS",
-        "Linux"
-      ],
-      "description": "CLI for Arch Gateway",
-      "source": "Homebrew Formula catalogue",
-      "sourceUrl": "https://formulae.brew.sh/formula/archgw/",
-      "downloadUrl": "https://github.com/katanemo/archgw/tree/main/arch/tools",
-      "license": "Apache-2.0",
-      "verified": false,
-      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
-    },
-    {
-      "id": "homebrew-cask-archi",
-      "title": "Archi",
-      "category": "تطبيقات macOS",
-      "kind": "app",
-      "platform": [
-        "macOS"
-      ],
-      "description": "Open-source ArchiMate modelling toolkit",
-      "source": "Homebrew Cask catalogue",
-      "sourceUrl": "https://formulae.brew.sh/cask/archi/",
-      "downloadUrl": "https://www.archimatetool.com/",
-      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -23361,7 +23378,7 @@
       "platform": [
         "macOS"
       ],
-      "description": "Desktop password and login vault",
+      "description": "Open source desktop password manager with encrypted vault and autofilling",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/bitwarden/",
       "downloadUrl": "https://bitwarden.com/",
@@ -28260,7 +28277,7 @@
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/bun/",
       "downloadUrl": "https://bun.com/",
-      "license": "MIT AND LGPL-2.0-or-later AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND IJG AND LGPL-2.1-or-later AND Zlib AND (Apache-2.0 WITH LLVM-exception)",
+      "license": "MIT AND LGPL-2.0-or-later AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND IJG AND ISC AND LGPL-2.1-or-later AND Zlib AND (Apache-2.0 WITH LLVM-exception)",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -33891,7 +33908,7 @@
       "description": "C++ library for large-scale optimization",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/ceres-solver/",
-      "downloadUrl": "http://ceres-solver.org/",
+      "downloadUrl": "https://ceres-solver.github.io/ceres-solver/",
       "license": "BSD-3-Clause",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -37037,6 +37054,22 @@
       "sourceUrl": "https://formulae.brew.sh/formula/chunkah/",
       "downloadUrl": "https://github.com/coreos/chunkah",
       "license": "Apache-2.0",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-font-chunkfive",
+      "title": "ChunkFive",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "حزمة برمجية عبر Homebrew",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/font-chunkfive/",
+      "downloadUrl": "https://www.theleagueofmoveabletype.com/chunk",
+      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -41358,6 +41391,22 @@
       "description": "Semantic code analysis engine",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/codeql/",
+      "downloadUrl": "https://codeql.github.com/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-codeql-bundle",
+      "title": "CodeQL Bundle",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Semantic code analysis engine with precompiled standard query packs",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/codeql-bundle/",
       "downloadUrl": "https://codeql.github.com/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
@@ -53276,6 +53325,23 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-formula-dezoomify-cli",
+      "title": "Dezoomify Cli",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "Download zoomable images from museum websites, image galleries, and map viewers",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/dezoomify-cli/",
+      "downloadUrl": "https://dezoomify.ophir.dev",
+      "license": "GPL-3.0-or-later",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-formula-dezoomify-rs",
       "title": "Dezoomify Rs",
       "category": "أدوات ومكتبات للمطورين",
@@ -54194,6 +54260,22 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-cask-font-dinish",
+      "title": "DINish",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "حزمة برمجية عبر Homebrew",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/font-dinish/",
+      "downloadUrl": "https://github.com/playbeing/dinish",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-cask-dintch",
       "title": "Dintch",
       "category": "تطبيقات macOS",
@@ -54977,7 +55059,7 @@
       "description": "Use any Linux distribution inside your terminal",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/distrobox/",
-      "downloadUrl": "https://distrobox.privatedns.org/",
+      "downloadUrl": "https://distrobox.it/",
       "license": "GPL-3.0-only",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -69367,7 +69449,7 @@
       "description": "Thrift functions for querying information from a service",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/fb303/",
-      "downloadUrl": "https://github.com/facebook/fb303",
+      "downloadUrl": "https://github.com/meta/fb303",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -69417,7 +69499,7 @@
       "description": "Facebook's branch of Apache Thrift, including a new C++ server",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/fbthrift/",
-      "downloadUrl": "https://github.com/facebook/fbthrift",
+      "downloadUrl": "https://github.com/meta/fbthrift",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -71815,22 +71897,6 @@
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/firefly-shimmer/",
       "downloadUrl": "https://firefly.iota.org/",
-      "license": "راجع ترخيص المصدر",
-      "verified": false,
-      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
-    },
-    {
-      "id": "homebrew-cask-firefox@cn",
-      "title": "Firefox Cn",
-      "category": "تطبيقات macOS",
-      "kind": "app",
-      "platform": [
-        "macOS"
-      ],
-      "description": "Chinese version of Firefox",
-      "source": "Homebrew Cask catalogue",
-      "sourceUrl": "https://formulae.brew.sh/cask/firefox%40cn/",
-      "downloadUrl": "https://www.firefox.com.cn/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -74290,7 +74356,7 @@
       "description": "Collection of reusable C++ library artifacts developed at Facebook",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/folly/",
-      "downloadUrl": "https://github.com/facebook/folly",
+      "downloadUrl": "https://github.com/meta/folly",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -88581,10 +88647,10 @@
       "platform": [
         "macOS"
       ],
-      "description": "Native implementation of Google Authenticator based on Swift3",
+      "description": "Menu bar TOTP authenticator",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/goldenpassport/",
-      "downloadUrl": "https://github.com/stanzhai/GoldenPassport",
+      "downloadUrl": "https://github.com/thatscode/GoldenPassport",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -93056,6 +93122,23 @@
       "sourceUrl": "https://formulae.brew.sh/formula/gtk4/",
       "downloadUrl": "https://gtk.org/",
       "license": "LGPL-2.1-or-later",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-formula-gtk4-layer-shell",
+      "title": "Gtk4 Layer Shell",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "GTK4 library to create desktop components using the Layer Shell Wayland protocol",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/gtk4-layer-shell/",
+      "downloadUrl": "https://github.com/wmww/gtk4-layer-shell",
+      "license": "MIT",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -97827,23 +97910,6 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
-      "id": "homebrew-formula-hister",
-      "title": "Hister",
-      "category": "أدوات ومكتبات للمطورين",
-      "kind": "app",
-      "platform": [
-        "macOS",
-        "Linux"
-      ],
-      "description": "Self-hosted search engine for your browsing history",
-      "source": "Homebrew Formula catalogue",
-      "sourceUrl": "https://formulae.brew.sh/formula/hister/",
-      "downloadUrl": "https://hister.org/",
-      "license": "AGPL-3.0-or-later",
-      "verified": false,
-      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
-    },
-    {
       "id": "homebrew-formula-historian",
       "title": "Historian",
       "category": "أدوات ومكتبات للمطورين",
@@ -100281,6 +100347,22 @@
       "sourceUrl": "https://formulae.brew.sh/formula/hypre/",
       "downloadUrl": "https://computing.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods",
       "license": "MIT OR Apache-2.0",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-hyprmac",
+      "title": "HyprMac",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Tiling window manager",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/hyprmac/",
+      "downloadUrl": "https://hyprmac.app/",
+      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -109052,6 +109134,22 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-cask-jellybox",
+      "title": "JellyBox",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Music player for Jellyfin, Navidrome and Emby servers",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/jellybox/",
+      "downloadUrl": "https://jellybox.app/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-cask-jellyfin",
       "title": "Jellyfin",
       "category": "تطبيقات macOS",
@@ -110680,6 +110778,23 @@
       "sourceUrl": "https://formulae.brew.sh/cask/jottacloud/",
       "downloadUrl": "https://jottacloud.com/",
       "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-formula-jotter",
+      "title": "Jotter",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "Jupyter notebook TUI with Vim keys, inline plots and rendered LaTeX",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/jotter/",
+      "downloadUrl": "https://samox73.github.io/jotter/",
+      "license": "MIT OR Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -117869,7 +117984,7 @@
       "description": "Kotlin code formatter",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/ktfmt/",
-      "downloadUrl": "https://facebook.github.io/ktfmt/",
+      "downloadUrl": "https://kotlin.github.io/ktfmt/",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -119709,7 +119824,7 @@
       "description": "حزمة برمجية عبر Homebrew",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/font-langdon/",
-      "downloadUrl": "https://www.ffonts.net/Langdon.font",
+      "downloadUrl": "https://www.1001fonts.com/langdon-font.html",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -119858,6 +119973,22 @@
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/lantern/",
       "downloadUrl": "https://lantern.io/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-lap",
+      "title": "Lap",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Local-first photo manager",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/lap/",
+      "downloadUrl": "https://julyx10.github.io/lap/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -121733,7 +121864,7 @@
       "description": "Tool to detect/remediate misconfig and security risks of GitHub/GitLab assets",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/legitify/",
-      "downloadUrl": "https://legitify.dev/",
+      "downloadUrl": "https://www.legitsecurity.com/legitify",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -133792,7 +133923,7 @@
       "description": "Library for database change tracking",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/liquibase/",
-      "downloadUrl": "https://www.liquibase.org/",
+      "downloadUrl": "https://www.liquibase.com/community",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -137341,6 +137472,22 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-cask-font-lucide",
+      "title": "Lucide",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Lucide icons as a TrueType font",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/font-lucide/",
+      "downloadUrl": "https://lucide.dev/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-cask-font-luciole",
       "title": "Luciole",
       "category": "تطبيقات macOS",
@@ -137581,6 +137728,22 @@
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/luminance-hdr/",
       "downloadUrl": "https://qtpfsgui.sourceforge.io/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-lumo",
+      "title": "Lumo",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "AI assistant",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/lumo/",
+      "downloadUrl": "https://proton.me/lumo",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -150120,6 +150283,22 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-cask-mistral-vibe-app",
+      "title": "Mistral Vibe",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "AI chat and coding agent",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/mistral-vibe-app/",
+      "downloadUrl": "https://mistral.ai/products/vibe/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-formula-mit-scheme",
       "title": "Mit Scheme",
       "category": "أدوات ومكتبات للمطورين",
@@ -153337,10 +153516,10 @@
       "platform": [
         "macOS"
       ],
-      "description": "حزمة برمجية عبر Homebrew",
+      "description": "Torrent client to download, stream and cast torrents",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/moose/",
-      "downloadUrl": "https://getmoose.in/",
+      "downloadUrl": "https://moose.riteshkr.com/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -156866,7 +157045,7 @@
       "description": "QUIC transport protocol implementation",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/mvfst/",
-      "downloadUrl": "https://github.com/facebook/mvfst",
+      "downloadUrl": "https://github.com/meta/mvfst",
       "license": "MIT",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -159824,7 +160003,7 @@
       "description": "Neon CLI tool",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/neonctl/",
-      "downloadUrl": "https://neon.tech/docs/reference/neon-cli",
+      "downloadUrl": "https://neon.com/docs/cli",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -161402,6 +161581,23 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-formula-nextpnr-himbaechel",
+      "title": "Nextpnr Himbaechel",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "Portable FPGA place and route tool for Gowin FPGAs",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/nextpnr-himbaechel/",
+      "downloadUrl": "https://github.com/YosysHQ/nextpnr",
+      "license": "ISC",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-formula-nextpnr-ice40",
       "title": "Nextpnr Ice40",
       "category": "أدوات ومكتبات للمطورين",
@@ -162782,6 +162978,23 @@
       "sourceUrl": "https://formulae.brew.sh/cask/nodeterm/",
       "downloadUrl": "https://nodeterm.dev/",
       "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-formula-nogon",
+      "title": "Nogon",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "Self-hosted search engine for your browsing history",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/nogon/",
+      "downloadUrl": "https://nogon.eu/",
+      "license": "AGPL-3.0-or-later",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -170378,6 +170591,22 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-cask-octo-browser",
+      "title": "Octo Browser",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Anti-detect browser for managing multiple profiles",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/octo-browser/",
+      "downloadUrl": "https://octobrowser.net/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-cask-october",
       "title": "October",
       "category": "تطبيقات macOS",
@@ -173398,7 +173627,7 @@
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/opencv/",
       "downloadUrl": "https://opencv.org/",
-      "license": "Apache-2.0",
+      "license": "Apache-2.0 AND BSD-3-Clause AND MIT AND OFL-1.1-no-RFN",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -176654,6 +176883,23 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-formula-oscar64",
+      "title": "Oscar64",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "C/C++ cross-compiler, assembler, and runtime for Commodore 64 and 6502",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/oscar64/",
+      "downloadUrl": "https://github.com/drmortalwombat/oscar64",
+      "license": "GPL-3.0-only",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-formula-oscats",
       "title": "Oscats",
       "category": "أدوات ومكتبات للمطورين",
@@ -177595,7 +177841,7 @@
       "description": "Tool to create and manage Outline servers, powered by Shadowsocks",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/outline-manager/",
-      "downloadUrl": "https://www.getoutline.org/",
+      "downloadUrl": "https://getoutline.org/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -184121,6 +184367,23 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-formula-php@8.5",
+      "title": "Php@8.5",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "General-purpose scripting language",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/php%408.5/",
+      "downloadUrl": "https://www.php.net/",
+      "license": "PHP-3.01 AND Zend-2.0 AND BSL-1.0 AND MIT AND Apache-1.0 AND Apache-2.0 AND bcrypt-Solar-Designer AND BSD-2-Clause-Darwin AND BSD-2-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND ISC AND LGPL-2.1-only AND LGPL-2.1-or-later AND OLDAP-2.8 AND TCL AND Zlib",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-formula-phpantom-lsp",
       "title": "Phpantom Lsp",
       "category": "أدوات ومكتبات للمطورين",
@@ -186558,6 +186821,23 @@
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/plank/",
       "downloadUrl": "https://pinterest.github.io/plank/",
+      "license": "Apache-2.0",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-formula-planoai",
+      "title": "Planoai",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "CLI for Plano",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/planoai/",
+      "downloadUrl": "https://github.com/katanemo/plano",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -191333,7 +191613,7 @@
       "platform": [
         "macOS"
       ],
-      "description": "Open-source PostgreSQL GUI client",
+      "description": "PostgreSQL GUI client",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/postbird/",
       "downloadUrl": "https://github.com/Paxa/postbird",
@@ -191571,6 +191851,23 @@
       "description": "Object-relational database system",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/postgresql%4018/",
+      "downloadUrl": "https://www.postgresql.org/",
+      "license": "PostgreSQL",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-formula-postgresql@19",
+      "title": "Postgresql@19",
+      "category": "أدوات ومكتبات للمطورين",
+      "kind": "app",
+      "platform": [
+        "macOS",
+        "Linux"
+      ],
+      "description": "Object-relational database system",
+      "source": "Homebrew Formula catalogue",
+      "sourceUrl": "https://formulae.brew.sh/formula/postgresql%4019/",
       "downloadUrl": "https://www.postgresql.org/",
       "license": "PostgreSQL",
       "verified": false,
@@ -218088,6 +218385,22 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-cask-setshot",
+      "title": "SetShot",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Snapshot and diff system settings changes",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/setshot/",
+      "downloadUrl": "https://tidbits.com/setshot/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-formula-setweblocthumb",
       "title": "Setweblocthumb",
       "category": "أدوات ومكتبات للمطورين",
@@ -219210,6 +219523,22 @@
       "sourceUrl": "https://formulae.brew.sh/formula/shellinabox/",
       "downloadUrl": "https://github.com/shellinabox/shellinabox",
       "license": "GPL-2.0-only WITH GPL-3.0-linking-source-exception",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-shellrs",
+      "title": "ShellRS",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "SSH and SFTP client",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/shellrs/",
+      "downloadUrl": "https://shellrs.com/",
+      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -221023,22 +221352,6 @@
       "sourceUrl": "https://formulae.brew.sh/formula/simgrid/",
       "downloadUrl": "https://simgrid.org/",
       "license": "LGPL-2.1-only",
-      "verified": false,
-      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
-    },
-    {
-      "id": "homebrew-cask-puzzles-app",
-      "title": "Simon Tatham'S Portable Puzzle Collection",
-      "category": "تطبيقات macOS",
-      "kind": "app",
-      "platform": [
-        "macOS"
-      ],
-      "description": "Collection of small computer programmes which implement one-player puzzle games",
-      "source": "Homebrew Cask catalogue",
-      "sourceUrl": "https://formulae.brew.sh/cask/puzzles-app/",
-      "downloadUrl": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/",
-      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -223408,6 +223721,22 @@
       "description": "Git client",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/smartgit/",
+      "downloadUrl": "https://www.smartgit.dev/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-smartgit@preview",
+      "title": "SmartGit",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Git client",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/smartgit%40preview/",
       "downloadUrl": "https://www.smartgit.dev/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
@@ -227590,6 +227919,22 @@
       "sourceUrl": "https://formulae.brew.sh/formula/speedbump/",
       "downloadUrl": "https://github.com/kffl/speedbump",
       "license": "Apache-2.0",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-speedcrunch",
+      "title": "SpeedCrunch",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Scientific calculator",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/speedcrunch/",
+      "downloadUrl": "https://speedcrunch.org/",
+      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -233748,6 +234093,22 @@
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
     {
+      "id": "homebrew-cask-supertab",
+      "title": "SuperTab",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Switcher panel for apps, windows, clipboard history and files",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/supertab/",
+      "downloadUrl": "https://noteifyapp.com/supertab/",
+      "license": "راجع ترخيص المصدر",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
       "id": "homebrew-formula-supertux",
       "title": "Supertux",
       "category": "أدوات ومكتبات للمطورين",
@@ -234622,6 +234983,22 @@
       "sourceUrl": "https://formulae.brew.sh/formula/swi-prolog/",
       "downloadUrl": "https://www.swi-prolog.org/",
       "license": "BSD-2-Clause",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-swi-prolog-app",
+      "title": "SWI Prolog",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "ISO/Edinburgh-style Prolog interpreter",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/swi-prolog-app/",
+      "downloadUrl": "https://www.swi-prolog.org/",
+      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -239114,22 +239491,6 @@
       "description": "Developer-friendly browser for cloud infrastructure",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/teleport-connect/",
-      "downloadUrl": "https://goteleport.com/",
-      "license": "راجع ترخيص المصدر",
-      "verified": false,
-      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
-    },
-    {
-      "id": "homebrew-cask-tsh",
-      "title": "Teleport TSH",
-      "category": "تطبيقات macOS",
-      "kind": "app",
-      "platform": [
-        "macOS"
-      ],
-      "description": "SSH server for teams managing distributed infrastructure",
-      "source": "Homebrew Cask catalogue",
-      "sourceUrl": "https://formulae.brew.sh/cask/tsh/",
       "downloadUrl": "https://goteleport.com/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
@@ -249038,10 +249399,10 @@
       "platform": [
         "macOS"
       ],
-      "description": "Create, maintain, and interact with Xcode projects at scale",
+      "description": "Build caching and analytics tool",
       "source": "Homebrew Cask catalogue",
       "sourceUrl": "https://formulae.brew.sh/cask/tuist/",
-      "downloadUrl": "https://tuist.io/",
+      "downloadUrl": "https://tuist.dev/",
       "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
@@ -255427,6 +255788,22 @@
       "sourceUrl": "https://formulae.brew.sh/formula/veilid/",
       "downloadUrl": "https://veilid.com/",
       "license": "MPL-2.0",
+      "verified": false,
+      "status": "package_manager_metadata_only_check_upstream_platform_and_license"
+    },
+    {
+      "id": "homebrew-cask-velaterm",
+      "title": "VelaTerm",
+      "category": "تطبيقات macOS",
+      "kind": "app",
+      "platform": [
+        "macOS"
+      ],
+      "description": "Terminal multiplexer and agentic development environment for AI coding agents",
+      "source": "Homebrew Cask catalogue",
+      "sourceUrl": "https://formulae.brew.sh/cask/velaterm/",
+      "downloadUrl": "https://velaterm.com/",
+      "license": "راجع ترخيص المصدر",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -266141,7 +266518,7 @@
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/xcinfo/",
       "downloadUrl": "https://github.com/XcodeReleasesOrg/xcinfo",
-      "license": "MIT",
+      "license": "LGPL-3.0-only",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
     },
@@ -270938,7 +271315,7 @@
       "description": "Zeebe CLI client",
       "source": "Homebrew Formula catalogue",
       "sourceUrl": "https://formulae.brew.sh/formula/zbctl/",
-      "downloadUrl": "https://docs.camunda.io/docs/apis-tools/community-clients/cli-client/",
+      "downloadUrl": "https://github.com/camunda-community-hub/zeebe-client-go",
       "license": "Apache-2.0",
       "verified": false,
       "status": "package_manager_metadata_only_check_upstream_platform_and_license"
