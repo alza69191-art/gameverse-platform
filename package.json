@@ -21,10 +21,10 @@
     "@aws-sdk/s3-request-presigner": "^3.850.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "typescript": "^5.8.0"
+    "typescript": "^7.0.2"
   },
   "overrides": {
     "postcss": "8.5.32"
